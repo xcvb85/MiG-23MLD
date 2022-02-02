@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Instrument from MiG-29 -->
+<!-- 2011, Сергей "Mercenary_Mercury" Салов -->
+<PropertyList>
+    <path>Mach.ac</path>
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>glass</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <object-name>face</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+        <object-name>machNeedle</object-name>
+    </effect>
+    <animation>
+        <type>rotate</type>
+        <object-name>machNeedle</object-name>
+        <property>/instrumentation/airspeed-indicator/indicated-mach</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>2.9</ind>
+                <dep>348.0</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+</PropertyList>

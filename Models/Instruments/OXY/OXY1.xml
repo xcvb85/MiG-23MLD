@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- Cabin altitude indicator -->
+<PropertyList>
+ <path>uvpd-15.ac</path>
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>glass</object-name>
+  </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <object-name>face</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+        <object-name>needle_alt</object-name>
+        <object-name>needle_diff</object-name>
+    </effect>
+
+<animation>
+  <type>rotate</type>
+  <object-name>needle_alt</object-name>
+  <!--condition>
+  <property>an24/AZS/sw0205</property>
+  <value>1</value>
+  </condition-->
+  <property>an24/Pressure/cabin_alt-inhg</property>
+  <interpolation>
+    <entry><ind>	0.0</ind>	<dep> 17.0</dep></entry>
+    <entry><ind>        5000</ind>	<dep> 72.0</dep></entry>
+    <entry><ind>        10000</ind>	<dep> 121.0</dep></entry>
+    <entry><ind>        15000</ind>	<dep> 165.0</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>needle_diff</object-name>
+  <!--condition>
+  <property>an24/AZS/sw0205</property>
+  <value>1</value>
+  </condition-->
+  <property>an24/Pressure/cabin_diff-press-atm</property>
+  <interpolation>
+    <entry><ind>	-0.04</ind>	<dep> 11.0</dep></entry>
+    <entry><ind>        0.0</ind>	<dep> 50.0</dep></entry>
+    <entry><ind>        0.4</ind>	<dep> 135.0</dep></entry>
+    <entry><ind>        0.6</ind>	<dep> 168.0</dep></entry>
+  </interpolation>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- TEXT OSG -->
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">UVPD-15 Cabin Alt</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </text>
+
+</PropertyList>

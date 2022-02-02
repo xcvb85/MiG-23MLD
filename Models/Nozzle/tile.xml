@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>tile.ac</path>
+    <animation>
+        <type>rotate</type>
+        <object-name>tile</object-name>
+        <property>sim/multiplay/generic/float[1]</property>
+        <factor>-20</factor>
+        <offset-deg>25</offset-deg>
+        <axis>
+            <x> 0 </x>
+            <y> 1 </y>
+            <z> 0 </z>
+        </axis>
+    </animation>
+</PropertyList>

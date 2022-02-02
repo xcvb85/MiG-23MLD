@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Instrument from AN-24 -->
+<!-- Gear/Flap indication; Book "ТЕХНИЧЕСКОЕ ОПИСАНИЕ, Книга VI" -->
+<PropertyList>
+
+ <path>pps.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>front_up</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+     <or>
+     <equals>
+      <property>gear/gear[0]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>l-main_up</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+     <or>
+     <equals>
+      <property>gear/gear[1]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>r-main_up</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+     <equals>
+      <property>gear/gear[2]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>front_down</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+     <equals>
+      <property>gear/gear[0]/position-norm</property>
+      <value>1.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>l-main_down</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+     <equals>
+      <property>gear/gear[1]/position-norm</property>
+      <value>1.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>r-main_down</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+     <equals>
+      <property>gear/gear[2]/position-norm</property>
+      <value>1.0</value>
+     </equals>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+     </or>
+    </and>
+   </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>extend_gear</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/gear-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+    <equals>
+     <property>an24/PPS/light-test-knob</property>
+     <value>1.0</value>
+    </equals>
+    <greater-than>
+     <property>an24/PPS/warning</property>
+     <value>1</value>
+    </greater-than>
+    </or>
+    </and>
+   </condition>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>1.0</blue>
+   <factor-prop>an24/PPS/lighting</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>release_flaps</object-name>
+   <condition>
+    <and>
+     <equals>
+      <property>an24/PPS/flaps-light-power</property>
+      <value>1</value>
+     </equals>
+    <or>
+    <equals>
+     <property>an24/PPS/light-test-knob</property>
+     <value>1.0</value>
+    </equals>
+    <equals>
+     <property>an24/PPS/warning</property>
+     <value>1</value>
+    </equals>
+    <equals>
+     <property>an24/PPS/warning</property>
+     <value>2</value>
+    </equals>
+    </or>
+    </and>
+   </condition>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+    <factor-prop>an24/PPS/lighting</factor-prop>
+  </emission>
+ </animation>
+
+<!-- Not used on AN-24s -->
+ <!--animation>
+  <type>material</type>
+  <object-name>gear-doors_closed</object-name>
+    <condition>
+    <or>
+    <and>
+     <equals>
+      <property>gear/gear[0]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+     <equals>
+      <property>gear/gear[1]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+     <equals>
+      <property>gear/gear[2]/position-norm</property>
+      <value>0.0</value>
+     </equals>
+    </and>
+     <equals>
+      <property>an24/PPS/light-test-knob</property>
+      <value>1.0</value>
+     </equals>
+    </or>
+    </condition>
+   <emission>
+     <red>1.0</red>
+     <green>1.0</green>
+     <blue>1.0</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation-->
+
+ <animation>
+   <type>knob</type>
+   <object-name>light-knob</object-name>
+   <property>an24/PPS/lighting-save</property>
+   <factor>-100</factor>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+    <action>
+     <binding>
+      <command>property-adjust</command>
+      <property>an24/PPS/lighting</property>
+      <factor>-0.1</factor>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+     </binding>
+     <binding>
+      <command>property-adjust</command>
+      <property>an24/PPS/lighting-save</property>
+      <factor>-0.1</factor>
+      <min>0</min>
+      <max>1</max>
+      <wrap>false</wrap>
+     </binding>
+    </action>
+ </animation>
+
+ <!--animation>
+  <type>material</type>
+  <object-name>light_plate</object-name>
+   <emission>
+     <red>0.7</red>
+     <green>0.7</green>
+     <blue>0.7</blue>
+     <factor-prop>an24/PPS/lighting</factor-prop>
+   </emission>
+ </animation-->
+
+<animation>
+  <type>pick</type>
+  <object-name>light-test</object-name>
+  <visible>false</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>nasal</command>
+      <script>
+	if( getprop("an24/PPS/lighting-save") == nil ) setprop("an24/PPS/lighting-save", 0 );
+        interpolate("an24/PPS/lighting", 1.0, 0.1 );
+        interpolate("an24/PPS/light-test-knob", 1.0, 0.1 );
+      </script>
+    </binding>
+      <mod-up>
+	<binding>
+	<command>nasal</command>
+      <script>
+	setprop("an24/PPS/lighting", getprop("an24/PPS/lighting-save") );
+        interpolate("an24/PPS/light-test-knob", 0.0, 0.1 );
+      </script>
+	</binding>
+      </mod-up>
+  </action>
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>light-knob</object-name>
+  <property>an24/PPS/light-test-knob</property>
+  <factor>0.003</factor>
+  <axis>   
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- Text OSG -->
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">PPS-2 Gear/ Flap</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </text>
+
+</PropertyList>

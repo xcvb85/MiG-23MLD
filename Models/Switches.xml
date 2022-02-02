@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <model>
+        <name>Master Arm Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/masterarm.xml</path>
+        <offsets>
+            <x-m>-5.285</x-m>
+            <y-m>-0.063</y-m>
+            <z-m> 0.380</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Radar Beam Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/radarbeam.xml</path>
+        <offsets>
+            <x-m>-5.329</x-m>
+            <y-m> 0.206</y-m>
+            <z-m> 0.455</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Radar Heading Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/radarhdg.xml</path>
+        <offsets>
+            <x-m>-5.329</x-m>
+            <y-m> 0.231</y-m>
+            <z-m> 0.442</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Radar Homing Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/radarhmg.xml</path>
+        <offsets>
+            <x-m>-5.329</x-m>
+            <y-m> 0.255</y-m>
+            <z-m> 0.442</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Landing Lights Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/landinglight.xml</path>
+        <offsets>
+            <x-m>-5.308</x-m>
+            <y-m>-0.331</y-m>
+            <z-m> 0.226</z-m>
+            <heading-deg>28</heading-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Cockpit Lights Knob</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/lights.xml</path>
+        <offsets>
+            <x-m>-5.017</x-m>
+            <y-m> 0.355</y-m>
+            <z-m> 0.278</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Radio Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/radio.xml</path>
+        <offsets>
+            <x-m>-4.942</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.270</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>AP Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/autopilot.xml</path>
+        <offsets>
+            <x-m>-4.918</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.270</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>ARK Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/ark.xml</path>
+        <offsets>
+            <x-m>-4.942</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.210</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>RSBN Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/rsbn.xml</path>
+        <offsets>
+            <x-m>-4.918</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.210</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Instruments Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/instruments.xml</path>
+        <offsets>
+            <x-m>-5.013</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.150</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Cannon Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/cannon.xml</path>
+        <offsets>
+            <x-m>-5.214</x-m>
+            <y-m> 0.291</y-m>
+            <z-m> 0.083</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Gunsight Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/gunsight.xml</path>
+        <offsets>
+            <x-m>-5.214</x-m>
+            <y-m> 0.311</y-m>
+            <z-m> 0.083</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Fuselage Rails Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/railf.xml</path>
+        <offsets>
+            <x-m>-5.162</x-m>
+            <y-m> 0.333</y-m>
+            <z-m> 0.077</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Wing Rails Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/railw.xml</path>
+        <offsets>
+            <x-m>-5.162</x-m>
+            <y-m> 0.354</y-m>
+            <z-m> 0.077</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Starter Unit Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/starterunit.xml</path>
+        <offsets>
+            <x-m>-4.922</x-m>
+            <y-m> 0.328</y-m>
+            <z-m> 0.044</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Booster Pump Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/pump.xml</path>
+        <offsets>
+            <x-m>-4.922</x-m>
+            <y-m> 0.349</y-m>
+            <z-m> 0.044</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Battery Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/battery.xml</path>
+        <offsets>
+            <x-m>-4.880</x-m>
+            <y-m> 0.306</y-m>
+            <z-m> 0.041</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>DC Generator Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/dcgenerator.xml</path>
+        <offsets>
+            <x-m>-4.880</x-m>
+            <y-m> 0.330</y-m>
+            <z-m> 0.041</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>AC Generator Switch</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/acgenerator.xml</path>
+        <offsets>
+            <x-m>-4.880</x-m>
+            <y-m> 0.350</y-m>
+            <z-m> 0.041</z-m>
+            <pitch-deg>-80</pitch-deg>
+        </offsets>
+    </model>
+</PropertyList>

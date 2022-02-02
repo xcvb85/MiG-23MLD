@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <model>
+        <name>HUD</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/HUD/HUD.xml</path>
+        <offsets>
+            <x-m>-5.400</x-m>
+            <y-m> 0.017</y-m>
+            <z-m> 0.537</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Warnings1</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Warnings/Warnings-1.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.256</y-m>
+            <z-m> 0.336</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Warnings2</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Warnings/Warnings-2.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.124</y-m>
+            <z-m> 0.271</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Warnings3</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Warnings/Warnings-3.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.182</y-m>
+            <z-m> 0.271</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>EGT</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/EGT/EGT.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.249</y-m>
+            <z-m> 0.254</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>AOA</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/AOA/AOA.xml</path>
+        <offsets>
+            <x-m>-5.329</x-m>
+            <y-m>-0.137</y-m>
+            <z-m> 0.506</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Sweep</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Sweep/Sweep.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.160</y-m>
+            <z-m> 0.455</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>ASI</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/ASI/ASI.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.243</y-m>
+            <z-m> 0.346</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>ADI</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/ADI/ADI.xml</path>
+        <offsets>
+            <x-m>-5.326</x-m>
+            <y-m>-0.134</y-m>
+            <z-m> 0.335</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>ALT</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/ALT/ALT.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.243</y-m>
+            <z-m> 0.261</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>OXY2</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/OXY/OXY2.xml</path>
+        <offsets>
+            <x-m>-5.312</x-m>
+            <y-m>-0.323</y-m>
+            <z-m> 0.173</z-m>
+            <heading-deg>27</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Mach</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Mach/Mach.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.243</y-m>
+            <z-m> 0.180</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>HSI</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/HSI/HSI.xml</path>
+        <offsets>
+            <x-m>-5.326</x-m>
+            <y-m>-0.137</y-m>
+            <z-m> 0.224</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>VSI</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/VSI/VSI.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.033</y-m>
+            <z-m> 0.225</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Gear Indicator</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Gear/Gear.xml</path>
+        <offsets>
+            <x-m>-5.307</x-m>
+            <y-m>-0.330</y-m>
+            <z-m> 0.110</z-m>
+            <heading-deg>27</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>DME</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/DME/DME.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.083</y-m>
+            <z-m> 0.124</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Chronometer</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Chronometer/Chronometer.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.005</y-m>
+            <z-m> 0.134</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Pressure</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Pressure/Pressure.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.077</y-m>
+            <z-m> 0.127</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>RPM</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/RPM/RPM.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.170</y-m>
+            <z-m> 0.351</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>RALT</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/RALT/RALT.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.158</y-m>
+            <z-m> 0.186</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Fuel</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Fuel/Fuel.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.249</y-m>
+            <z-m> 0.170</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>OXY1</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/OXY/OXY1.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.037</y-m>
+            <z-m>-0.093</z-m>
+        </offsets>
+    </model>
+    <!--<model>
+        <name>Weapons</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Weapons/Weapons.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.037</y-m>
+            <z-m> 0.026</z-m>
+        </offsets>
+    </model>-->
+    <model>
+        <name>RWR</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/RWR/RWR.xml</path>
+        <offsets>
+            <x-m>-5.287</x-m>
+            <y-m> 0.320</y-m>
+            <z-m> 0.303</z-m>
+            <heading-deg>-20</heading-deg>
+        </offsets>
+    </model>
+</PropertyList>

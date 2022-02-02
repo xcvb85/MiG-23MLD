@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>masterwarning.ac</path>
+    <animation>
+        <type>pick</type>
+        <object-name>lampon</object-name>
+        <object-name>lampoff</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>fdm/jsbsim/warning-lights/masterwarn-state</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>lampon</object-name>
+        <condition>
+            <property>fdm/jsbsim/warning-lights/masterwarn</property>
+        </condition>
+    </animation>
+</PropertyList>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Instrument from AN-24 -->
+<PropertyList>
+    <path>itg-2.ac</path>
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>glass</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <object-name>face</object-name>
+        <object-name>needle</object-name>
+    </effect>
+    <animation>
+        <type>rotate</type>
+        <object-name>needle</object-name>
+        <property>engines/engine[0]/egt-degf</property>
+        <interpolation>
+            <entry>
+                <ind>392</ind>
+                <dep>-104</dep>
+            </entry>
+            <entry>
+                <ind>2012</ind>
+                <dep>110</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+</PropertyList>

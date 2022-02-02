@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="warning-lights">
+    <channel name="masterwarn" execrate="3">
+        <!-- until i can find an actual list, im going to use these warnings for master warning:
+        600L FUEL REMAIN: If there is 600L of fuel
+        DC GEN OFF: DC generator is off/malfunctioning
+        AC GEN OFF: AC generator is off/malfunctioning
+        FIRE: the engine is on fire
+        -->
+        
+        <!-- pressing the masterwarn button should set warning-lights/masterwarn-state to 0 -->
+        <pure_gain name="warning-lights/masterwarn-last">
+            <input>warning-lights/masterwarn-input</input>
+            <gain>1.0</gain>
+            <output>warning-lights/masterwarn-last</output>
+        </pure_gain>
+        
+        <fcs_function name="warning-lights/masterwarn-input">
+            <function>
+                <sum>
+                    <property>warning-lights/L600</property>
+                    <property>warning-lights/dc-gen-off</property>
+                    <property>warning-lights/ac-gen-off</property>
+                    <!--<property>warning-lights/fire</property>-->
+                </sum>
+            </function>
+            <output>warning-lights/masterwarn-input</output>
+        </fcs_function>
+        
+        <!-- if masterwarn-input is greater than masterwarn-last or the light is on, then the light should be beeping. -->
+        <switch name="warning-lights/masterwarn-state">
+            <default value="0"/>
+            <test logic="OR" value="1">
+                warning-lights/masterwarn-state == 1
+                warning-lights/masterwarn-input gt warning-lights/masterwarn-last
+            </test>
+            <output>warning-lights/masterwarn-state</output>
+        </switch>
+        
+        <fcs_function name="warning-lights/masterwarn-cycle">
+            <function>
+                <!-- if state == 1 then increment cycle, else set cycle = 0 -->
+                <ifthen>
+                    <eq>
+                        <property>warning-lights/masterwarn-state</property>
+                        <value>1</value>
+                    </eq>
+                    <!-- if cycle = 40 then cycle = 0 else cycle = cycle + 1-->
+                    <ifthen>
+                        <ge>
+                            <property>warning-lights/masterwarn-cycle</property>
+                            <value>40</value>
+                        </ge>
+                        <value>0</value>
+                        <sum>
+                            <property>warning-lights/masterwarn-cycle</property>
+                            <value>1</value>
+                        </sum>
+                    </ifthen>
+                    <value>0</value>
+                </ifthen>
+            </function>
+            <output>warning-lights/masterwarn-cycle</output>
+        </fcs_function>
+        
+        <fcs_function name="warning-lights/masterwarn">
+            <function>
+                <product>
+                    <max>
+                        <gt>
+                            <property>warning-lights/masterwarn-cycle</property>
+                            <value>20</value>
+                        </gt>
+                        <gt>
+                            <property>/orientation/alpha-deg</property>
+                            <value>15</value>
+                        </gt>
+                    </max>
+                    <property>electric/sources/output-dc</property>
+                </product>
+            </function>
+            <clipto>
+                <min>0</min>
+                <max>1</max>
+            </clipto>
+            <output>warning-lights/masterwarn</output>
+        </fcs_function>
+        
+        <fcs_function name="warning-lights/L600">
+            <function>
+                <product>
+                    <le>
+                        <property>/consumables/fuel/total-fuel-gal_us</property>
+                        <value>160</value>
+                    </le>
+                    <property>electric/sources/output-dc</property>
+                </product>
+            </function>
+            <clipto>
+                <min>0</min>
+                <max>1</max>
+            </clipto>
+            <output>warning-lights/L600</output>
+        </fcs_function>
+        <fcs_function name="warning-lights/dc-gen-off">
+            <function>
+                <product>
+                    <lt>
+                        <property>electric/sources/dc-gen</property>
+                        <value>20</value>
+                    </lt>
+                    <property>electric/sources/output-dc</property>
+                </product>
+            </function>
+            <clipto>
+                <min>0</min>
+                <max>1</max>
+            </clipto>
+            <output>warning-lights/dc-gen-off</output>
+        </fcs_function>
+        <fcs_function name="warning-lights/ac-gen-off">
+            <function>
+                <product>
+                    <lt>
+                        <property>electric/sources/ac-gen</property>
+                        <value>80</value>
+                    </lt>
+                    <property>electric/sources/output-dc</property>
+                </product>
+            </function>
+            <clipto>
+                <min>0</min>
+                <max>1</max>
+            </clipto>
+            <output>warning-lights/ac-gen-off</output>
+        </fcs_function>
+    </channel>
+</system>

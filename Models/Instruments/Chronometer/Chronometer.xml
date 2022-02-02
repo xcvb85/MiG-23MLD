@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Instrument from AN-24 -->
+<!-- Achs-1, clock -->
+<PropertyList>
+ <path>achs-1.ac</path>
+ <effect>
+     <inherits-from>Effects/model-transparent</inherits-from>
+     <object-name>glass</object-name>
+ </effect>
+ <effect>
+     <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+     <object-name>face</object-name>
+     <object-name>mode_ind_flag</object-name>
+ </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm3</inherits-from>
+        <object-name>hour_needle</object-name>
+        <object-name>min_needle</object-name>
+        <object-name>sec_needle</object-name>
+    </effect>
+
+ <animation>
+   <type>material</type>
+   <object-name>mode_ind_flag</object-name>
+   <object-name>achs-face</object-name>
+   <object-name>achs-housing</object-name>
+   <object-name>hour_needle</object-name>
+   <object-name>min_needle</object-name>
+   <object-name>sec_needle</object-name>
+   <object-name>ft_hour_needle</object-name>
+   <object-name>ft_min_needle</object-name>
+   <object-name>timer_sec_needle</object-name>
+   <object-name>timer_min_needle</object-name>
+   <emission>
+     <red>1.0</red>
+     <green>0.4</green>
+     <blue>0.4</blue>
+     <!-- uv-style red>0.1</red>
+     <green>1.0</green>
+     <blue>0.9</blue-->
+     <factor-prop>controls/lighting/nav_panel_instr_red</factor-prop>
+   </emission>
+ </animation>
+
+<!-- *********************** Left knob; ********************************************
+	Neutral: Wind-up (only CCW)
+	Press: Cycle through modes (red-white/white/red flag)
+	Pull: Adjust clock time; Adjust clock time + flight time (in red mode)
+-->
+
+  <animation>
+    <type>knob</type>
+    <object-name>left_knob</object-name>
+    <property>an24/AChS/nav_l-knob-anim</property>
+    <factor>20</factor>
+     <center>
+      <x-m>0.0</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>-0.017</z-m>
+     </center>
+     <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+     </axis>
+      <action>
+       <binding>
+        <command>property-adjust</command>
+        <property>an24/AChS/nav_l-knob-anim</property>
+       </binding>
+<!-- Pulled out: Clock time adjust -->
+       <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>1.0</value>
+         </equals>
+        </condition>
+        <command>property-adjust</command>
+        <property>instrumentation/clock[2]/offset-sec</property>
+          <factor>-60</factor>
+        </binding>
+<!-- Pulled out + Red flag: Clock time + flight time adjust -->
+       <binding>
+        <condition>
+        <and>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>1.0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_l-mode</property>
+          <value>-1</value>
+         </equals>
+        </and>
+        </condition>
+        <command>property-adjust</command>
+        <property>an24/AChS/nav_ft-offset</property>
+          <factor>-60</factor>
+        </binding>
+       </action>
+<!-- Neutral: Wind up -->
+      <increase>
+       <binding>
+        <condition>
+         <equals>
+         <property>an24/AChS/nav_l-press-anim</property>
+         <value>0.0</value> <!-- Neutral position -->
+         </equals>
+        </condition>
+        <command>property-adjust</command>
+        <property>an24/AChS/nav_wind_up</property>
+          <step>120</step>
+          <min>0</min>
+          <max>2590</max> <!-- 3 days in sec/10 -->
+          <wrap>false</wrap>
+        </binding>
+
+       <binding>
+        <condition>
+         <equals>
+         <property>an24/AChS/nav_l-press-anim</property>
+         <value>0.0</value> <!-- Neutral position -->
+         </equals>
+        </condition>
+        <command>nasal</command>
+        <property>an24/AChS/nav_wind_up</property>
+        <script>
+	instruments.nav_wtimer.start();
+        </script>
+        </binding>
+      </increase>
+    </animation>
+
+<!-- Press (LMB) -->
+
+<animation>
+  <type>pick</type>
+  <object-name>l-press</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-cycle</command>
+      <property>an24/AChS/nav_l-mode</property>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>0</value>
+         </equals>
+        </condition>
+      <value>-1</value> <!-- red -> Stopped -->
+      <value>0</value> <!-- red/white -> Reset -->
+      <value>1</value> <!-- white -> Running -->
+      <wrap>true</wrap>
+    </binding>
+<!-- Start Flighttimer -->
+       <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_running</property>
+          <value>1</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_l-mode</property>
+          <value>1</value>
+         </equals>
+         </and>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_flitetimer.start();
+        </script>
+        </binding>
+<!-- Stop Flighttimer -->
+       <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_l-mode</property>
+          <value>-1</value>
+         </equals>
+         </and>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_flitetimer.stop();
+        </script>
+        </binding>
+
+       <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_l-mode</property>
+          <value>0</value>
+         </equals>
+         </and>
+        </condition>
+        <command>property-assign</command>
+          <property>an24/AChS/nav_flighttime</property>
+          <value>0</value>
+        </binding>
+
+       <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_l-mode</property>
+          <value>0</value>
+         </equals>
+         </and>
+        </condition>
+        <command>property-assign</command>
+          <property>an24/AChS/nav_ft-offset</property>
+          <value>0</value>
+        </binding>
+
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("an24/AChS/nav_l-press-anim", -1.0, 0.1 );
+        settimer(func {interpolate("an24/AChS/nav_l-press-anim", 0.0, 0.1 );},0.1);
+      </script>
+    </binding>
+  </action>
+
+  <hovered>
+    <binding>
+        <condition>
+        <not>
+         <equals>
+          <property>an24/AChS/nav_l-press-anim</property>
+          <value>1</value>
+         </equals>
+        </not>
+        </condition>
+      <command>set-tooltip</command>
+      <tooltip-id>achs_nav1</tooltip-id>
+      <label>Flighttimer %s</label>
+      <property>an24/AChS/nav_l-mode</property>
+      <mapping>nasal</mapping>
+      <script>
+        var nav_l_mode = ['resetted', 'running', 'stopped'];
+        return nav_l_mode[arg[0]];
+      </script>
+    </binding>
+  </hovered>
+
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>mode_ind_flag</object-name>
+  <property>an24/AChS/nav_l-mode</property>
+  <factor>0.003</factor>
+  <axis>
+    <x>0</x>
+    <y>-1</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<!-- Pull (MMB) -->
+
+<animation>
+  <type>pick</type>
+  <object-name>l-press</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+       <binding>
+        <command>property-cycle</command>
+        <property>an24/AChS/nav_l-press-anim</property>
+          <value>0</value>
+          <value>1</value>
+          <wrap>true</wrap>
+        </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>l-press</object-name>
+  <object-name>left_knob</object-name>
+  <property>an24/AChS/nav_l-press-anim</property>
+  <factor>0.003</factor>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<!-- *********************** Right knob; ********************************************
+
+	Press: Start/Stop/Reset timer
+	Turn right: Stop Seconds Hand of Clock
+
+
+ Turn right, both seconds hands stop -->
+ <animation>
+    <type>knob</type>
+    <object-name>right_knob</object-name>
+    <property>an24/AChS/nav_r-turn</property>
+    <factor>20</factor>
+     <center>
+      <x-m>0.0</x-m>
+      <y-m>0.035</y-m>
+      <z-m>-0.017</z-m>
+     </center>
+     <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+     </axis>
+      <action>
+       <binding>
+        <command>property-adjust</command>
+        <property>an24/AChS/nav_r-turn</property>
+          <min>0</min>
+          <max>1</max>
+          <wrap>false</wrap>
+        </binding>
+
+<!-- Flighttime Start/Stop -->
+       <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_running</property>
+          <value>1.0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_r-turn</property>
+          <value>1</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_r-mode</property>
+          <value>0</value>
+         </equals>
+         </and>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_stopwatch.start();
+        </script>
+        </binding>
+
+       <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_r-turn</property>
+          <value>0</value>
+         </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_stopwatch.stop();
+        </script>
+        </binding>
+      </action>
+  </animation>
+
+<!-- Push -->
+<animation>
+  <type>pick</type>
+  <object-name>r-press</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-cycle</command>
+      <property>an24/AChS/nav_r-mode</property>
+      <value type="int">0</value> <!-- Start -->
+      <value type="int">1</value> <!-- Stop -->
+      <value type="int">2</value> <!-- Reset -->
+      <wrap>true</wrap>
+    </binding>
+
+    <binding>
+        <condition>
+         <and>
+         <equals>
+          <property>an24/AChS/nav_running</property>
+          <value>1.0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_r-mode</property>
+          <value>0</value>
+         </equals>
+         <equals>
+          <property>an24/AChS/nav_r-turn</property>
+          <value>1</value>
+         </equals>
+         </and>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_stopwatch.start();
+        </script>
+    </binding>
+
+    <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_r-mode</property>
+          <value>1</value>
+         </equals>
+        </condition>
+        <command>nasal</command>
+        <script>
+	instruments.nav_stopwatch.stop();
+        </script>
+    </binding>
+
+    <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_r-mode</property>
+          <value>2</value>
+         </equals>
+        </condition>
+        <command>property-assign</command>
+         <property>an24/AChS/nav_stopwatch</property>
+         <value>0</value>
+    </binding>
+
+    <binding>
+      <command>nasal</command>
+      <script>
+        interpolate("an24/AChS/nav_r-press-anim", -1.0, 0.1 );
+        settimer(func {interpolate("an24/AChS/nav_r-press-anim", 0.0, 0.1 );},0.1);
+      </script>
+    </binding>
+  </action>
+
+  <hovered>
+    <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_r-turn</property>
+          <value>1</value>
+         </equals>
+        </condition>
+      <command>set-tooltip</command>
+      <tooltip-id>nav_achs_stopwatch</tooltip-id>
+      <label>Timer %s</label>
+      <property>an24/AChS/nav_r-mode</property>
+      <mapping>nasal</mapping>
+      <script>
+        var nav_stopwatch = ['running', 'stopped', 'resetted'];
+        return nav_stopwatch[arg[0]];
+      </script>
+    </binding>
+
+    <binding>
+        <condition>
+         <equals>
+          <property>an24/AChS/nav_r-turn</property>
+          <value>0</value>
+         </equals>
+        </condition>
+      <command>set-tooltip</command>
+      <tooltip-id>nav_achs_stopwatch2</tooltip-id>
+      <label>Intermediate stop (%s)</label>
+      <property>an24/AChS/nav_r-mode</property>
+      <mapping>nasal</mapping>
+      <script>
+        var nav_stopwatch2 = ['running', 'stopped', 'resetted'];
+        return nav_stopwatch2[arg[0]];
+      </script>
+    </binding>
+  </hovered>
+
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>r-press</object-name>
+  <object-name>right_knob</object-name>
+  <property>an24/AChS/nav_r-press-anim</property>
+  <factor>0.003</factor>
+  <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<!-- Needles Clock -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>hour_needle</object-name>
+  <property>instrumentation/clock[2]/indicated-min</property>
+    <condition>
+      <equals>
+       <property>an24/AChS/nav_running</property>
+       <value>1.0</value>
+       </equals>
+    </condition>
+  <factor>-0.5</factor>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>hour_needle</object-name>
+  <property>instrumentation/clock[2]/indicated-hour</property>
+    <condition>
+      <equals>
+       <property>an24/AChS/nav_running</property>
+       <value>1.0</value>
+       </equals>
+    </condition>
+  <factor>-30.0</factor>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>min_needle</object-name>
+  <property>instrumentation/clock[2]/indicated-sec</property>
+    <condition>
+      <equals>
+       <property>an24/AChS/nav_running</property>
+       <value>1.0</value>
+       </equals>
+    </condition>
+  <factor>-0.1</factor>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>sec_needle</object-name>
+  <property>an24/AChS/nav_r-turn</property>
+    <condition>
+      <equals>
+       <property>an24/AChS/nav_running</property>
+       <value>1.0</value>
+       </equals>
+    </condition>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- Needles Flighttime -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>ft_hour_needle</object-name>
+  <property>an24/AChS/nav_flighttime</property>
+  <factor>-0.00833333</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0174</z-m>
+  </center>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>ft_hour_needle</object-name>
+   <property>an24/AChS/nav_ft-offset</property>
+  <factor>-0.00833333</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0174</z-m>
+  </center>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>ft_min_needle</object-name>
+  <property>an24/AChS/nav_flighttime</property>
+  <factor>-0.1</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0174</z-m>
+  </center>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>ft_min_needle</object-name>
+   <property>an24/AChS/nav_ft-offset</property>
+  <factor>-0.1</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0174</z-m>
+  </center>
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- Needles Timer -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>timer_min_needle</object-name>
+  <property>an24/AChS/nav_stopwatch</property>
+  <factor>0.1</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.0181</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>timer_sec_needle</object-name>
+  <property>an24/AChS/nav_stopwatch</property>
+  <factor>6.0</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.0181</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<!-- Text OSG -->
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">Achs-1 Clock</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </text>
+
+</PropertyList>

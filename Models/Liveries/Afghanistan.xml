@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">USSR Afghanistan</name>
+                <texture>fuzcamo_afg.png</texture>
+            </livery>
+        </model>
+    </sim>
+    <fdm>
+        <jsbsim>
+            <fcs>
+                <dogtooth type="int">1</dogtooth>
+                <vortex-generator type="int">1</vortex-generator>
+                <cfd>1</cfd>
+            </fcs>
+        </jsbsim>
+    </fdm>
+</PropertyList>

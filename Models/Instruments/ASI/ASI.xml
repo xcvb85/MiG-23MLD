@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>asi.ac</path>
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>glass</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <object-name>face</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+        <object-name>needle</object-name>
+    </effect>
+    <animation>
+        <type>rotate</type>
+        <object-name>needle</object-name>
+        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <interpolation>
+            <entry><ind>   0.00 </ind><dep>   3 </dep></entry>
+            <entry><ind>  81.00 </ind><dep>  12 </dep></entry>
+            <entry><ind> 108.00 </ind><dep>  29 </dep></entry>
+            <entry><ind> 162.00 </ind><dep>  66 </dep></entry>
+            <entry><ind> 215.98 </ind><dep> 106 </dep></entry>
+            <entry><ind> 270.00 </ind><dep> 149 </dep></entry>
+            <entry><ind> 378.00 </ind><dep> 230 </dep></entry>
+            <entry><ind> 540.00 </ind><dep> 353 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> -1 </x>
+            <y>  0 </y>
+            <z>  0 </z>
+        </axis>
+    </animation>
+</PropertyList>

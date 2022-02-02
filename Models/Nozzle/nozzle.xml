@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <!-- Tile 01 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.000</y-m>
+            <z-m> 0.542</z-m>
+        </offsets>
+    </model>
+
+    <!-- Tile 02 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.140</y-m>
+            <z-m> 0.524</z-m>
+            <roll-deg>345</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 03 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.271</y-m>
+            <z-m> 0.469</z-m>
+            <roll-deg>330</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 04 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.383</y-m>
+            <z-m> 0.383</z-m>
+            <roll-deg>315</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 05 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.469</y-m>
+            <z-m> 0.271</z-m>
+            <roll-deg>300</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 06 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.524</y-m>
+            <z-m> 0.140</z-m>
+            <roll-deg>285</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 07 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.542</y-m>
+            <z-m> 0.000</z-m>
+            <roll-deg>270</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 08 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.524</y-m>
+            <z-m>-0.140</z-m>
+            <roll-deg>255</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 09 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.469</y-m>
+            <z-m>-0.271</z-m>
+            <roll-deg>240</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 10 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.383</y-m>
+            <z-m>-0.383</z-m>
+            <roll-deg>225</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 11 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.271</y-m>
+            <z-m>-0.469</z-m>
+            <roll-deg>210</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 12 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.140</y-m>
+            <z-m>-0.524</z-m>
+            <roll-deg>195</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 13 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.542</z-m>
+            <roll-deg>180</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 14 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.140</y-m>
+            <z-m>-0.524</z-m>
+            <roll-deg>165</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 15 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.271</y-m>
+            <z-m>-0.469</z-m>
+            <roll-deg>150</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 16 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.383</y-m>
+            <z-m>-0.383</z-m>
+            <roll-deg>135</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 17 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.469</y-m>
+            <z-m>-0.271</z-m>
+            <roll-deg>120</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 18 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.524</y-m>
+            <z-m>-0.140</z-m>
+            <roll-deg>115</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 19 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.542</y-m>
+            <z-m> 0.000</z-m>
+            <roll-deg>90</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 20 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.524</y-m>
+            <z-m> 0.140</z-m>
+            <roll-deg>75</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 21 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.469</y-m>
+            <z-m> 0.271</z-m>
+            <roll-deg>60</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 22 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.383</y-m>
+            <z-m> 0.383</z-m>
+            <roll-deg>45</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 23 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.271</y-m>
+            <z-m> 0.469</z-m>
+            <roll-deg>30</roll-deg>
+        </offsets>
+    </model>
+
+    <!-- Tile 24 -->
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/tile.xml</path>
+        <offsets>
+            <x-m> 0.000</x-m>
+            <y-m>-0.140</y-m>
+            <z-m> 0.524</z-m>
+            <roll-deg>15</roll-deg>
+        </offsets>
+    </model>
+</PropertyList>

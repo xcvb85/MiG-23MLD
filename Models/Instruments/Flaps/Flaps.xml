@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>Flaps.ac</path>
+
+    <animation>
+        <type>translate</type>
+        <object-name>flapsUpButton</object-name>
+        <property>controls/flight/flap-panel/up</property>
+        <factor>0.0075</factor>
+        <offset-m>0</offset-m>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>flapsUpButton</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>flapsUp-bug</tooltip-id>
+                <label>Flaps Up</label>
+            </binding>
+        </hovered>
+        <action>
+            <button>0</button>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.flap_setting(1);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>flapsTakeoffButton</object-name>
+        <property>controls/flight/flap-panel/takeoff</property>
+        <factor>0.0075</factor>
+        <offset-m>0</offset-m>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>flapsTakeoffButton</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>flapsTakeOff-bug</tooltip-id>
+                <label>Flaps Take Off</label>
+            </binding>
+        </hovered>
+        <action>
+            <button>0</button>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.flap_setting(2);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>flapsLandingButton</object-name>
+        <property>controls/flight/flap-panel/landing</property>
+        <factor>0.0075</factor>
+        <offset-m>0</offset-m>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>flapsLandingButton</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>flapsLanding-bug</tooltip-id>
+                <label>Flaps Landing</label>
+            </binding>
+        </hovered>
+        <action>
+            <button>0</button>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.flap_setting(3);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>flapsOffButton</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>flapsOff-bug</tooltip-id>
+                <label>Flaps Off</label>
+            </binding>
+        </hovered>
+        <action>
+            <button>0</button>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.flap_setting(0);</script>
+            </binding>
+        </action>
+    </animation>
+</PropertyList>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <default>
+        <menu n="100">
+            <label>MiG-23MLD</label>
+            <enabled type="bool">true</enabled>
+            <item>
+                <label>Select Livery</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>aircraft.livery.dialog.toggle()</script>
+                </binding>
+            </item>
+            <item>
+                <label>Refill</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>libraries.refill();</script>
+                </binding>
+            </item>
+            <item>
+                <label>Autostart</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>libraries.autostart();</script>
+                </binding>
+            </item>
+        </menu>
+    </default>
+</PropertyList>

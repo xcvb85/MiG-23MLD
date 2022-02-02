@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <key n="2">
+        <name>Ctrl-B</name>
+        <desc>Toggle Speedbrake</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>controls/flight/speedbrake</property>
+        </binding>
+    </key>
+    <key n="26">
+        <name>Ctrl+z</name>
+        <desc>center tank jettison</desc>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/armament/jettison/center_tank</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>/controls/armament/jettison/center_tank</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+    </key>
+    <key n="60">
+        <name>&lt;</name>
+        <desc>Decrease Sweep</desc>
+        <binding>
+            <command>nasal</command>
+            <script>libraries.wingSweep(-1)</script>
+        </binding>
+    </key>
+    <key n="62">
+        <name>&gt;</name>
+        <desc>Increase Sweep</desc>
+        <binding>
+            <command>nasal</command>
+            <script>libraries.wingSweep(1)</script>
+        </binding>
+    </key>
+    <key n="68">
+        <name>D</name>
+        <desc>Close Canopy</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>sim/model/canopy-positions/Canopy/position-norm</property>
+            <value>0</value>
+        </binding>
+    </key>
+    <key n="76">
+        <name>L</name>
+        <desc>Cockpit Light</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>fdm/jsbsim/electric/switches/lights</property>
+        </binding>
+    </key>
+    <key n="79">
+        <name>O</name>
+        <desc>Release Chute</desc>
+        <repeatable type="bool">false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>fdm/jsbsim/systems/chute/deploy-rqst</property>
+            <value type="int">0</value>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/flight/chute_jettisoned</property>
+            <value type="int">1</value>
+        </binding>
+    </key>
+    <key n="93">
+        <name>]</name>
+        <desc>Flaps Down</desc>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>libraries.flap_keybind(0)</script>
+        </binding>
+    </key>
+    <key n="91">
+        <name>[</name>
+        <desc>Flaps Up</desc>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>libraries.flap_keybind(1)</script>
+        </binding>
+    </key>
+    <key n="100">
+        <name>d</name>
+        <desc>Open Canopy</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>sim/model/canopy-positions/Canopy/position-norm</property>
+            <value>1</value>
+        </binding>
+    </key>
+    <key n="101">
+        <name>e</name>
+        <desc>trigger</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/armament/trigger</property>
+            <value>1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/armament/trigger</property>
+                <value>0</value>
+            </binding>
+        </mod-up>
+    </key>
+    <key n="108">
+        <name>l</name>
+        <desc>Landing Light</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>fdm/jsbsim/electric/switches/landinglight</property>
+        </binding>
+    </key>
+    <key n="109">
+        <name>m</name>
+        <desc>Masterarm</desc>
+        <binding>
+            <command>nasal</command>
+            <script><![CDATA[
+                setprop("controls/armament/master-arm",!getprop("controls/armament/master-arm"));
+                screen.log.write("Master-arm "~(getprop("controls/armament/master-arm")==0?"OFF":"ON"), 0.5, 0.5, 1);
+                ]]></script>
+        </binding>
+    </key>
+    <key n="111">
+        <name>o</name>
+        <desc>Deploy Chute</desc>
+        <repeatable type="bool">false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>fdm/jsbsim/systems/chute/deploy-rqst</property>
+            <value type="int">1</value>
+        </binding>
+    </key>
+    <key n="113">
+        <name>q</name>
+        <desc>Trigger flare release</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>/ai/submodels/submodel[0]/flare-release</property>
+            <value type="bool">true</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>/ai/submodels/submodel[0]/flare-release</property>
+                <value type="bool">false</value>
+            </binding>
+        </mod-up>
+    </key>
+    <key n="119">
+        <name>w</name>
+        <desc>Cycle Weapon Type</desc>
+        <binding>
+            <command>nasal</command>
+            <script>pylons.fcs.cycleLoadedWeapon();</script>
+        </binding>
+    </key>
+</PropertyList>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!-- S.76 -->
+<turbine_engine name="Tumansky-R35-300">
+    <milthrust>   18850 </milthrust> <!-- Turbofan and Turbojet Engines p.391 -->
+    <maxthrust>   28660 </maxthrust> <!-- Turbofan and Turbojet Engines p.391 -->
+    <tsfc>              0.93 </tsfc> <!-- http://www.leteckemotory.cz/motory/r-35/ -->
+    <atsfc>             1.95 </atsfc><!-- http://www.leteckemotory.cz/motory/r-35/ -->
+    <bleed>             0.03 </bleed>
+    <idlen1>           30.0 </idlen1>
+    <idlen2>           45.0 </idlen2>
+    <maxn1>           103.0 </maxn1>
+    <maxn2>           107.0 </maxn2>
+    <augmented>            1 </augmented>
+    <augmethod>            1 </augmethod>
+    <injected>             0 </injected>
+
+    <function name="N1SpoolUp">
+        <table>
+            <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
+            <tableData>
+                30  18
+                50  26
+                70  35
+                90  40
+                105 50
+            </tableData>
+        </table>
+    </function>
+    
+    <function name="N1SpoolDown">
+        <table>
+            <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
+            <tableData>
+                30  18
+                50  24
+                70  30
+                90  35
+                105 45
+            </tableData>
+        </table>
+    </function>
+    
+    <function name="N2SpoolUp">
+        <table>
+            <independentVar lookup="row">propulsion/engine[0]/n2</independentVar>
+            <tableData>
+                30   4
+                50   7
+                70  13
+                90  22
+                105 24
+            </tableData>
+        </table>
+    </function>
+    
+    <function name="N2SpoolDown">
+        <table>
+            <independentVar lookup="row">propulsion/engine[0]/n2</independentVar>
+            <tableData>
+                30   4
+                50   7
+                70  13
+                90  22
+                105 24
+            </tableData>
+        </table>
+    </function>
+
+    <function name="IdleThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
+                    -10000   0       10000   20000   30000   40000   50000
+                0.0  0.0430  0.0488  0.0528  0.0694  0.0899  0.1183  0.1467
+                0.2  0.0500  0.0501  0.0335  0.0544  0.0797  0.1049  0.1342
+                0.4  0.0040  0.0047  0.0020  0.0272  0.0595  0.0891  0.1203
+                0.6  0.0     0.0     0.0     0.0     0.0276  0.0718  0.1073
+                0.8  0.0     0.0     0.0     0.0     0.0474  0.0868  0.0900
+                1.0  0.0     0.0     0.0     0.0     0.0     0.0552  0.0800
+            </tableData>
+        </table>
+    </function>
+
+    <function name="MilThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
+                      0       10000   20000   30000   36100   50000
+                0.0   1.000   0.740   0.534   0.372   0.257   0.149
+                0.2   0.934   0.697   0.506   0.355   0.246   0.143
+                0.4   0.921   0.692   0.506   0.357   0.246   0.145
+                0.6   0.951   0.721   0.532   0.378   0.269   0.154
+                0.8   1.020   0.782   0.582   0.417   0.304   0.170
+                1.0   1.120   0.871   0.651   0.475   0.363   0.195
+                1.2   1.230   0.975   0.744   0.545   0.433   0.225
+                1.4   1.340   1.086   0.845   0.628   0.503   0.263
+                1.6   1.410   1.156   0.915   0.698   0.573   0.333
+                1.8   1.457   1.203   0.962   0.745   0.620   0.380
+                2.0   1.457   1.203   0.962   0.745   0.620   0.380
+                2.2   1.434   1.180   0.939   0.722   0.597   0.357
+                2.4   1.387   1.133   0.892   0.675   0.550   0.310
+            </tableData>
+        </table>
+    </function>
+
+    <function name="AugThrust">
+        <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <independentVar lookup="column">atmosphere/density-altitude</independentVar>
+            <tableData>
+                         0   3280  16400  26250  36100  59100  75500
+                0.0  0.954  0.854  0.554  0.369  0.262  0.177  0.115
+                0.2  0.923  0.854  0.554  0.369  0.254  0.177  0.115
+                0.4  0.931  0.854  0.554  0.369  0.262  0.177  0.115
+                0.6  0.985  0.908  0.616  0.423  0.285  0.177  0.115
+                0.8  1.139  1.039  0.708  0.500  0.331  0.177  0.115
+                1.0  1.293  1.193  0.808  0.593  0.392  0.177  0.115
+                1.2  1.385  1.339  1.000  0.693  0.477  0.177  0.115
+                1.4  1.385  1.339  1.177  0.877  0.600  0.200  0.115
+                1.6  1.385  1.339  1.308  1.016  0.746  0.246  0.115
+                1.8  1.385  1.339  1.308  1.154  0.862  0.285  0.139
+                2.0  1.385  1.339  1.308  1.154  0.954  0.323  0.154
+                2.2  1.385  1.339  1.308  1.154  1.023  0.354  0.162
+                2.4  1.385  1.339  1.308  1.154  1.070  0.385  0.162
+            </tableData>
+        </table>
+    </function>
+</turbine_engine>

@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <!-- Drag Chute -->
+    <model>
+        <name>Drag Chute</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Chute/Chute.xml</path>
+        <offsets>
+            <x-m>6.7</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.8</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>Drag Chute</object-name>
+        <type>select</type>
+        <condition>
+            <greater-than>
+                <property>sim/multiplay/generic/float[6]</property>
+                <value>0</value>
+            </greater-than>
+        </condition>
+    </animation>
+    <!-- Left side -->
+    <model>
+        <name>R-13M Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-13M/R-13M.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-13M Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-type</property>
+                    <value>R-13M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-3R Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-3R Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-type</property>
+                    <value>R-3R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-24T Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24T/R-24T.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-24T Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-type</property>
+                    <value>R-24T</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-24R Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24R/R-24R.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-24R Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-type</property>
+                    <value>R-24R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>S-24 Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>S-24 Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-type</property>
+                    <value>S-24</value>
+                </equals>
+                <equals>
+                    <property>ai/submodels/submodel[16]/count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>Kh-23 Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Kh-23/Kh-23.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>Kh-23 Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/weight[0]/selected</property>
+                <value>Kh-23</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>UB-32 Missiles 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-0.xml</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.304</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>UB-32 Missiles 1</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-0-set</property>
+                <value>UB-32</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>UPK-23 Cannon 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UPK-23/UPK-23.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>UPK-23 Cannon 1</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-0-set</property>
+                <value>UPK-23</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>FAB-500 Bomb 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/FAB-500/FAB-500.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>FAB-500 Bomb 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-set</property>
+                    <value>FAB-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>RBK-500 Bomb 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/RBK-500/RBK-500.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m>-1.560</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>RBK-500 Bomb 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-0-set</property>
+                    <value>RBK-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-0-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+
+    <!-- Left fuselage -->
+    <model>
+        <name>R-13M Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-13M/R-13M.ac</path>
+        <offsets>
+            <x-m>-1.650</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-13M Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>R-13M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-3R Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <offsets>
+            <x-m>-1.650</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-3R Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>R-3R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-60M Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/R-60M.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.280</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-60M Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>R-60M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>2</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-60M Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/R-60M.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m>-0.646</y-m>
+            <z-m>-1.002</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-60M Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>R-60M</value>
+                </equals>
+                <gt>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>0</value>
+                </gt>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>rail-left</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/rail.ac</path>
+        <offsets>
+            <x-m>-0.600</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-0.962</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>rail-left</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-1-set</property>
+                <value>2 x R-60M</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>R-73 Missile 1</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-73/R-73.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-73 Missile 1</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>R-73</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>S-24 Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>S-24 Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>S-24</value>
+                </equals>
+                <equals>
+                    <property>ai/submodels/submodel[17]/count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+
+    <!-- Central fuselage -->
+    <model>
+        <name>Droptank</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Droptank/Droptank.ac</path>
+        <offsets>
+            <x-m>-0.455</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-1.268</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>Droptank</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-2-type</property>
+                    <value>Droptank</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-2-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+
+    <!-- Right fuselage -->
+    <model>
+        <name>R-13M Missile 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-13M/R-13M.ac</path>
+        <offsets>
+            <x-m>-1.650</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-13M Missile 3</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>R-13M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-3-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-3R Missile 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <offsets>
+            <x-m>-1.650</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-3R Missile 3</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>R-3R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-3-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-60M Missile 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/R-60M.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.280</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-60M Missile 3</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>R-60M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-3-count</property>
+                    <value>2</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-60M Missile 4</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/R-60M.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m> 0.646</y-m>
+            <z-m>-1.002</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-60M Missile 4</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>R-60M</value>
+                </equals>
+                <gt>
+                    <property>payload/armament/station/id-3-count</property>
+                    <value>0</value>
+                </gt>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>rail-right</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/rail.ac</path>
+        <offsets>
+            <x-m>-0.600</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-0.962</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>rail-right</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-3-set</property>
+                <value>2 x R-60M</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>R-73 Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-73/R-73.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-73 Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>R-73</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-3-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>S-24 Missile 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.042</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>S-24 Missile 3</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-3-type</property>
+                    <value>S-24</value>
+                </equals>
+                <equals>
+                    <property>ai/submodels/submodel[18]/count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+
+    <!-- Right side -->
+    <model>
+        <name>R-13M Missile 4</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-13M/R-13M.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-13M Missile 4</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-type</property>
+                    <value>R-13M</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-3R Missile 4</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-3R Missile 4</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-type</property>
+                    <value>R-3R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-24T Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24T/R-24T.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-24T Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-type</property>
+                    <value>R-24T</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>R-24R Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24R/R-24R.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>R-24R Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-type</property>
+                    <value>R-24R</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>S-24 Missile 4</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>S-24 Missile 4</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-type</property>
+                    <value>S-24</value>
+                </equals>
+                <equals>
+                    <property>ai/submodels/submodel[19]/count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>Kh-23 Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Kh-23/Kh-23.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>Kh-23 Missile 2</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/weight[4]/selected</property>
+                <value>Kh-23</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>UB-32 Missiles 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-4.xml</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.304</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>UB-32 Missiles 2</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-4-set</property>
+                <value>UB-32</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>UPK-23 Cannon 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UPK-23/UPK-23.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.104</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>UPK-23 Cannon 2</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-4-set</property>
+                <value>UPK-23</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>FAB-500 Bomb 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/FAB-500/FAB-500.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>FAB-500 Bomb 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-set</property>
+                    <value>FAB-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+    <model>
+        <name>RBK-500 Bomb 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/RBK-500/RBK-500.ac</path>
+        <offsets>
+            <x-m>-1.368</x-m>
+            <y-m> 1.560</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>RBK-500 Bomb 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-set</property>
+                    <value>RBK-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
+</PropertyList>

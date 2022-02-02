@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>model.ac</path>
+    <model>
+        <name>cockpit</name>
+        <path>Aircraft/MiG-23MLD/Models/Cockpit.xml</path>
+        <offsets>
+            <pitch-deg>-3</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <type>select</type>
+        <object-name>leadingEdge</object-name>
+        <condition>
+            <not>
+                <property>sim/multiplay/generic/int[0]</property>
+            </not>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>vortexGenerator</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[1]</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>cfd</object-name>
+        <condition>
+            <property>sim/multiplay/generic/int[2]</property>
+        </condition>
+    </animation>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/fuselage</inherits-from>
+        <object-name>fuselage</object-name>
+        <object-name>wingL</object-name>
+        <object-name>wingR</object-name>
+        <object-name>flapL</object-name>
+        <object-name>flapR</object-name>
+        <object-name>slatL</object-name>
+        <object-name>slatR</object-name>
+        <object-name>spoilerL</object-name>
+        <object-name>spoilerR</object-name>
+        <object-name>aileronL</object-name>
+        <object-name>aileronR</object-name>
+        <object-name>elevatorL</object-name>
+        <object-name>elevatorR</object-name>
+        <object-name>rudder</object-name>
+        <object-name>fin</object-name>
+        <object-name>noseDoorL1</object-name>
+        <object-name>noseDoorL2</object-name>
+        <object-name>noseDoorR1</object-name>
+        <object-name>noseDoorR2</object-name>
+        <object-name>leftDoor1</object-name>
+        <object-name>leftDoor3</object-name>
+        <object-name>leftGear2</object-name>
+        <object-name>leftGear6</object-name>
+        <object-name>rightDoor1</object-name>
+        <object-name>rightDoor3</object-name>
+        <object-name>rightGear2</object-name>
+        <object-name>rightGear6</object-name>
+        <object-name>intakeL</object-name>
+        <object-name>intakeR</object-name>
+        <object-name>speedbrakeLB1</object-name>
+        <object-name>speedbrakeRB1</object-name>
+        <object-name>speedbrakeLT1</object-name>
+        <object-name>speedbrakeRT1</object-name>
+        <object-name>canopy.002</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/reflectglas-uber</inherits-from>
+        <object-name>Glass1</object-name>
+        <object-name>Glass2.001</object-name>
+    </effect>
+    <animation>
+        <type>material</type>
+        <object-name>fuselage</object-name>
+        <object-name>wingL</object-name>
+        <object-name>wingR</object-name>
+        <object-name>flapL</object-name>
+        <object-name>flapR</object-name>
+        <object-name>slatL</object-name>
+        <object-name>slatR</object-name>
+        <object-name>spoilerL</object-name>
+        <object-name>spoilerR</object-name>
+        <object-name>aileronL</object-name>
+        <object-name>aileronR</object-name>
+        <object-name>elevatorL</object-name>
+        <object-name>elevatorR</object-name>
+        <object-name>rudder</object-name>
+        <object-name>fin</object-name>
+        <object-name>noseDoorL1</object-name>
+        <object-name>noseDoorL2</object-name>
+        <object-name>noseDoorR1</object-name>
+        <object-name>noseDoorR2</object-name>
+        <object-name>leftDoor1</object-name>
+        <object-name>leftDoor3</object-name>
+        <object-name>leftGear2</object-name>
+        <object-name>leftGear6</object-name>
+        <object-name>rightDoor1</object-name>
+        <object-name>rightDoor3</object-name>
+        <object-name>rightGear2</object-name>
+        <object-name>rightGear6</object-name>
+        <object-name>intakeL</object-name>
+        <object-name>intakeR</object-name>
+        <object-name>speedbrakeLB1</object-name>
+        <object-name>speedbrakeRB1</object-name>
+        <object-name>speedbrakeLT1</object-name>
+        <object-name>speedbrakeRT1</object-name>
+        <object-name>canopy.002</object-name>
+        <property-base>sim/model/livery/</property-base>
+        <texture-prop>texture</texture-prop>
+        <texture>fuzcamo_afg.png</texture>
+    </animation>
+    <model>
+        <name>taxi light</name>
+        <path>Aircraft/MiG-23MLD/Models/Effects/lights/taxi-light.xml</path>
+        <offsets>
+            <x-m>-5.400</x-m>
+            <y-m> 0.005</y-m>
+            <z-m>-1.620</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>landing light1</name>
+        <path>Aircraft/MiG-23MLD/Models/Effects/lights/landing-light.xml</path>
+        <offsets>
+            <x-m>-3.35</x-m>
+            <y-m>-0.73</y-m>
+            <z-m>-0.72</z-m>
+            <heading-deg>5</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>landing light2</name>
+        <path>Aircraft/MiG-23MLD/Models/Effects/lights/landing-light.xml</path>
+        <offsets>
+            <x-m>-3.35</x-m>
+            <y-m> 0.73</y-m>
+            <z-m>-0.72</z-m>
+            <heading-deg>-5</heading-deg>
+        </offsets>
+    </model>
+    <animation>
+        <type>rotate</type>
+        <object-name>lights</object-name>
+        <property>fdm/jsbsim/electric/switches/landinglight</property>
+        <factor>85</factor>
+        <center>
+            <x-m>-3.35</x-m>
+            <y-m> 0.00</y-m>
+            <z-m>-0.64</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>lights</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>0.8</blue>
+            <factor-prop>fdm/jsbsim/electric/output/landinglight</factor-prop>
+        </emission>
+    </animation>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Nozzle/nozzle.xml</path>
+        <offsets>
+            <x-m> 6.400</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.100</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Effects/afterburner/afterburner.xml</path>
+        <condition>
+            <property>sim/multiplay/generic/float[2]</property>
+        </condition>
+        <offsets>
+            <x-m> 6.5</x-m>
+            <y-m> 0.0</y-m>
+            <z-m>-0.1</z-m>
+        </offsets>
+    </model>
+
+    <!-- Stores -->
+    <model>
+        <name>Stores</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores.xml</path>
+    </model>
+
+    <!-- nose gear -->
+    <animation>
+        <type>rotate</type>
+        <object-name>noseDoorL1</object-name>
+        <object-name>noseDoorL2</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>-90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m>-0.21</y-m>
+            <z-m>-0.88</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>noseDoorR1</object-name>
+        <object-name>noseDoorR2</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.21</y-m>
+            <z-m>-0.88</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>noseGear1</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>92</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-5.4</x-m>
+            <y-m> 0.0</y-m>
+            <z-m>-0.8</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>noseGear2</object-name>
+        <property>gear/gear[0]/steering-norm</property>
+        <factor>30</factor>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.00</y-m>
+            <z-m>-0.77</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>noseGear5</object-name>
+        <object-name>noseWheels</object-name>
+        <property>gear/gear[0]/compression-norm</property>
+        <factor>0.4</factor>
+        <offset-m>0.05</offset-m>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>spin</type>
+        <object-name>noseWheels</object-name>
+        <property>gear/gear[0]/rollspeed-ms</property>
+        <factor>40</factor>
+        <center>
+            <x-m>-4.100</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.564</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+    <!-- left gear -->
+    <animation>
+        <type>rotate</type>
+        <object-name>leftDoor1</object-name>
+        <object-name>leftDoor2</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>-30</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m>-0.86</y-m>
+            <z-m> 0.15</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>leftDoor3</object-name>
+        <object-name>leftDoor4</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.6</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m>-0.25</y-m>
+            <z-m>-0.88</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>leftGear1</object-name>
+        <object-name>leftGear2</object-name>
+        <object-name>leftGear3</object-name>
+        <object-name>leftGear4</object-name>
+        <object-name>leftGear5</object-name>
+        <object-name>leftGear6</object-name>
+        <object-name>leftGear7</object-name>
+        <object-name>leftGear8</object-name>
+        <object-name>leftWheel</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m>-0.27</y-m>
+            <z-m>-0.82</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>leftGear3</object-name>
+        <object-name>leftGear4</object-name>
+        <object-name>leftGear5</object-name>
+        <object-name>leftGear6</object-name>
+        <object-name>leftGear7</object-name>
+        <object-name>leftGear8</object-name>
+        <object-name>leftWheel</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>-130</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m>-0.60</y-m>
+            <z-m>-0.11</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>spin</type>
+        <object-name>leftWheel</object-name>
+        <property>gear/gear[1]/rollspeed-ms</property>
+        <factor>30</factor>
+        <axis>
+            <x1-m> 0.890</x1-m>
+            <y1-m>-0.421</y1-m>
+            <z1-m>-0.382</z1-m>
+            <x2-m> 0.890</x2-m>
+            <y2-m>-0.633</y2-m>
+            <z2-m>-0.555</z2-m>
+        </axis>
+    </animation>
+
+    <!-- right gear -->
+    <animation>
+        <type>rotate</type>
+        <object-name>rightDoor1</object-name>
+        <object-name>rightDoor2</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>30</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.86</y-m>
+            <z-m> 0.15</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>rightDoor3</object-name>
+        <object-name>rightDoor4</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.6</ind><dep>-90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.25</y-m>
+            <z-m>-0.88</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>rightGear1</object-name>
+        <object-name>rightGear2</object-name>
+        <object-name>rightGear3</object-name>
+        <object-name>rightGear4</object-name>
+        <object-name>rightGear5</object-name>
+        <object-name>rightGear6</object-name>
+        <object-name>rightGear7</object-name>
+        <object-name>rightGear8</object-name>
+        <object-name>rightWheel</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>-90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.27</y-m>
+            <z-m>-0.82</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>rightGear3</object-name>
+        <object-name>rightGear4</object-name>
+        <object-name>rightGear5</object-name>
+        <object-name>rightGear6</object-name>
+        <object-name>rightGear7</object-name>
+        <object-name>rightGear8</object-name>
+        <object-name>rightWheel</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep> 130</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.00</x-m>
+            <y-m> 0.60</y-m>
+            <z-m>-0.11</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>spin</type>
+        <object-name>rightWheel</object-name>
+        <property>gear/gear[2]/rollspeed-ms</property>
+        <factor>-30</factor>
+        <axis>
+            <x1-m> 0.890</x1-m>
+            <y1-m> 0.421</y1-m>
+            <z1-m>-0.382</z1-m>
+            <x2-m> 0.890</x2-m>
+            <y2-m> 0.633</y2-m>
+            <z2-m>-0.555</z2-m>
+        </axis>
+    </animation>
+
+    <!-- fin -->
+    <animation>
+        <type>rotate</type>
+        <object-name>fin</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry><ind>0.8</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m> 0.0</x-m>
+            <y-m> 0.0</y-m>
+            <z-m>-0.9</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+    <!-- wing sweep -->
+    <animation>
+        <type>rotate</type>
+        <object-name>wingL</object-name>
+        <object-name>flapL</object-name>
+        <object-name>slatL</object-name>
+        <object-name>spoilerL</object-name>
+        <object-name>aileronL</object-name>
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>-56</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-0.006</x-m>
+            <y-m>-1.520</y-m>
+            <z-m> 0.000</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>wingR</object-name>
+        <object-name>flapR</object-name>
+        <object-name>slatR</object-name>
+        <object-name>spoilerR</object-name>
+        <object-name>aileronR</object-name>
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>56</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-0.006</x-m>
+            <y-m> 1.520</y-m>
+            <z-m> 0.000</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <!-- ailerons -->
+    <animation>
+        <type>rotate</type>
+        <object-name>aileronL</object-name>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>-30</factor>
+        <axis>
+            <x1-m> 3.970</x1-m>
+            <y1-m>-2.513</y1-m>
+            <z1-m> 0.338</z1-m>
+            <x2-m> 5.157</x2-m>
+            <y2-m>-3.165</y2-m>
+            <z2-m> 0.318</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>aileronR</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>-30</factor>
+        <axis>
+            <x1-m> 3.970</x1-m>
+            <y1-m> 2.513</y1-m>
+            <z1-m> 0.338</z1-m>
+            <x2-m> 5.157</x2-m>
+            <y2-m> 3.165</y2-m>
+            <z2-m> 0.318</z2-m>
+        </axis>
+    </animation>
+
+    <!-- rudder -->
+    <animation>
+        <type>rotate</type>
+        <object-name>rudder</object-name>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>20</factor>
+        <axis>
+            <x1-m>5.708</x1-m>
+            <y1-m>0.000</y1-m>
+            <z1-m>1.050</z1-m>
+            <x2-m>6.340</x2-m>
+            <y2-m>0.000</y2-m>
+            <z2-m>2.330</z2-m>
+        </axis>
+    </animation>
+
+    <!-- elevator -->
+    <animation>
+        <type>rotate</type>
+        <object-name>elevatorL</object-name>
+        <object-name>elevatorR</object-name>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>12</factor>
+        <center>
+            <x-m> 5.10</x-m>
+            <y-m> 0.00</y-m>
+            <z-m> 0.30</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+    <!-- ailerons -->
+    <animation>
+        <type>rotate</type>
+        <object-name>flapL</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>-30</factor>
+        <axis>
+            <x1-m> 3.970</x1-m>
+            <y1-m>-2.513</y1-m>
+            <z1-m> 0.338</z1-m>
+            <x2-m> 5.157</x2-m>
+            <y2-m>-3.165</y2-m>
+            <z2-m> 0.318</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>flapR</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>30</factor>
+        <axis>
+            <x1-m> 3.970</x1-m>
+            <y1-m> 2.513</y1-m>
+            <z1-m> 0.338</z1-m>
+            <x2-m> 5.157</x2-m>
+            <y2-m> 3.165</y2-m>
+            <z2-m> 0.318</z2-m>
+        </axis>
+    </animation>
+
+    <!-- slats -->
+    <animation>
+        <type>rotate</type>
+        <object-name>slatL</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>20</dep></entry>
+        </interpolation>
+        <axis>
+            <x1-m> 1.580</x1-m>
+            <y1-m>-2.737</y1-m>
+            <z1-m> 0.333</z1-m>
+            <x2-m> 4.709</x2-m>
+            <y2-m>-3.770</y2-m>
+            <z2-m> 0.300</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>slatR</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>-20</dep></entry>
+        </interpolation>
+        <axis>
+            <x1-m> 1.580</x1-m>
+            <y1-m> 2.737</y1-m>
+            <z1-m> 0.333</z1-m>
+            <x2-m> 4.709</x2-m>
+            <y2-m> 3.770</y2-m>
+            <z2-m> 0.300</z2-m>
+        </axis>
+    </animation>
+
+    <!-- intakes -->
+    <animation>
+        <type>rotate</type>
+        <object-name>intakeL</object-name>
+        <property>fdm/jsbsim/fcs/intake-pos-norm</property>
+        <factor>-2.2</factor>
+        <center>
+            <x-m>-3.90</x-m>
+            <y-m>-0.50</y-m>
+            <z-m> 0.00</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>intakeR</object-name>
+        <property>fdm/jsbsim/fcs/intake-pos-norm</property>
+        <factor>2.2</factor>
+        <center>
+            <x-m>-3.90</x-m>
+            <y-m> 0.50</y-m>
+            <z-m> 0.00</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+    </animation>
+
+    <!-- speedbrake -->
+    <animation>
+        <type>rotate</type>
+        <object-name>speedbrakeLT1</object-name>
+        <object-name>speedbrakeLT2</object-name>
+        <property>surface-positions/speedbrake-pos-norm</property>
+        <factor>50</factor>
+        <axis>
+            <x1-m> 4.90</x1-m>
+            <y1-m>-0.26</y1-m>
+            <z1-m> 0.58</z1-m>
+            <x2-m> 4.90</x2-m>
+            <y2-m>-0.43</y2-m>
+            <z2-m> 0.50</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>speedbrakeRT1</object-name>
+        <object-name>speedbrakeRT2</object-name>
+        <property>surface-positions/speedbrake-pos-norm</property>
+        <factor>-50</factor>
+        <axis>
+            <x1-m> 4.90</x1-m>
+            <y1-m> 0.26</y1-m>
+            <z1-m> 0.58</z1-m>
+            <x2-m> 4.9</x2-m>
+            <y2-m> 0.43</y2-m>
+            <z2-m> 0.50</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>speedbrakeLB1</object-name>
+        <object-name>speedbrakeLB2</object-name>
+        <property>surface-positions/speedbrake-pos-norm</property>
+        <factor>50</factor>
+        <axis>
+            <x1-m> 4.92</x1-m>
+            <y1-m>-0.64</y1-m>
+            <z1-m>-0.32</z1-m>
+            <x2-m> 4.9</x2-m>
+            <y2-m>-0.55</y2-m>
+            <z2-m>-0.50</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>speedbrakeRB1</object-name>
+        <object-name>speedbrakeRB2</object-name>
+        <property>surface-positions/speedbrake-pos-norm</property>
+        <factor>-50</factor>
+        <axis>
+            <x1-m> 4.92</x1-m>
+            <y1-m> 0.64</y1-m>
+            <z1-m>-0.32</z1-m>
+            <x2-m> 4.9</x2-m>
+            <y2-m> 0.55</y2-m>
+            <z2-m>-0.50</z2-m>
+        </axis>
+    </animation>
+</PropertyList>

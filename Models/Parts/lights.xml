@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>knob.ac</path>
+    <animation>
+        <type>pick</type>
+        <object-name>knob</object-name>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>fdm/jsbsim/electric/switches/lights</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>knob</object-name>
+        <property>fdm/jsbsim/electric/switches/lights</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>35</dep></entry>
+            <entry><ind>1.0</ind><dep>-35</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+</PropertyList>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <fdm>
+        <jsbsim>
+            <fcs>
+                <wing-sweep-cmd type="double">1</wing-sweep-cmd>
+                <dogtooth type="int">1</dogtooth>
+                <vortex-generator type="int">1</vortex-generator>
+                <cfd>1</cfd>
+            </fcs>
+            <systems>
+                <chute>
+                    <deploy type="double">0</deploy>
+                    <deploy-rqst type="double">0</deploy-rqst>
+                </chute>
+            </systems>
+        </jsbsim>
+    </fdm>
+    <controls>
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+        <flight>
+            <flaps>0</flaps>
+            <flap-panel>
+                <up type="bool">1</up>
+                <takeoff type="bool">0</takeoff>
+                <landing type="bool">0</landing>
+            </flap-panel>
+            <elevator-trim>0.00</elevator-trim>
+            <chute_jettisoned type="int">0</chute_jettisoned>
+        </flight>
+    </controls>
+</PropertyList>

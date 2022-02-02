@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <model>
+        <name>Master Warning</name>
+        <path>Aircraft/MiG-23MLD/Models/Lamps/masterwarning.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m>-0.108</y-m>
+            <z-m> 0.564</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Lamp1</name>
+        <path>Aircraft/MiG-23MLD/Models/Lamps/lamp.xml</path>
+        <offsets>
+            <x-m>-5.294</x-m>
+            <y-m>-0.357</y-m>
+            <z-m> 0.298</z-m>
+            <heading-deg>25</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Lamp2</name>
+        <path>Aircraft/MiG-23MLD/Models/Lamps/apmode.xml</path>
+        <offsets>
+            <x-m>-5.302</x-m>
+            <y-m>-0.340</y-m>
+            <z-m> 0.298</z-m>
+            <heading-deg>25</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Lamp3</name>
+        <path>Aircraft/MiG-23MLD/Models/Lamps/lamp.xml</path>
+        <offsets>
+            <x-m>-5.310</x-m>
+            <y-m>-0.325</y-m>
+            <z-m> 0.298</z-m>
+            <heading-deg>25</heading-deg>
+        </offsets>
+    </model>
+</PropertyList>

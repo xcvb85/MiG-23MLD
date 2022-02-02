@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>green1.ac</path>
+    <animation>
+        <type>material</type>
+        <object-name>lamp</object-name>
+        <ambient>
+            <red>0.0</red>
+            <green>0.1</green>
+            <blue>0.0</blue>
+        </ambient>
+    </animation>
+</PropertyList>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>ite.ac</path>
+
+    <!-- Internal instruments lighting -->
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>glass</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <object-name>face</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+        <object-name>needle1</object-name>
+        <object-name>needle2</object-name>
+    </effect>
+
+    <!-- Needle 1 -->
+    <animation>
+        <type>rotate</type>
+        <object-name>needle1</object-name>
+        <property>engines/engine/n1</property>
+        <interpolation>
+            <entry><ind>   0.0 </ind><dep>  50.0 </dep></entry>
+            <entry><ind>  55.0 </ind><dep> 219.2 </dep></entry>
+            <entry><ind> 100.0 </ind><dep> 360.0 </dep></entry>
+            <entry><ind> 110.0 </ind><dep> 376.3 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> -1.0 </x>
+            <y>  0.0 </y>
+            <z>  0.0 </z>
+        </axis>
+    </animation>
+
+    <!-- Needle 2 -->
+    <animation>
+        <type>rotate</type>
+        <object-name>needle2</object-name>
+        <property>engines/engine/n2</property>
+        <interpolation>
+            <entry><ind>   0.0 </ind><dep>  50.0 </dep></entry>
+            <entry><ind>  55.0 </ind><dep> 219.2 </dep></entry>
+            <entry><ind> 100.0 </ind><dep> 360.0 </dep></entry>
+            <entry><ind> 110.0 </ind><dep> 376.3 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> -1.0 </x>
+            <y>  0.0 </y>
+            <z>  0.0 </z>
+        </axis>
+    </animation>
+</PropertyList>

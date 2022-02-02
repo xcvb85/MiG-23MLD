@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>cockpit.ac</path>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Instruments.xml</path>
+    </model>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Switches.xml</path>
+    </model>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Lamps.xml</path>
+    </model>
+    <model>
+        <name>lights1</name>
+        <path>Aircraft/MiG-23MLD/Models/Effects/instruments/cockpit-light.xml</path>
+        <offsets>
+            <x-m>-4.83</x-m>
+            <y-m> 0.36</y-m>
+            <z-m> 0.21</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <type>material</type>
+        <object-name>labels</object-name>
+        <emission>
+            <red>0.042</red>
+            <green>0.0125</green>
+            <blue>0.0125</blue>
+            <factor-prop>fdm/jsbsim/electric/output/lights</factor-prop>
+        </emission>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>joystick</object-name>
+        <property>controls/flight/elevator</property>
+        <interpolation>
+            <entry><ind>-1.0</ind><dep> 14.0</dep></entry>
+            <entry><ind> 0.0</ind><dep>  0.0</dep></entry>
+            <entry><ind> 1.0</ind><dep> -7.0</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-5.225</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.238</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>joystick</object-name>
+        <property>controls/flight/aileron</property>
+        <interpolation>
+            <entry><ind>-1.0</ind><dep> -10.5</dep></entry>
+            <entry><ind> 0.0</ind><dep>   0.0</dep></entry>
+            <entry><ind> 1.0</ind><dep>  10.5</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-5.225</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.238</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y> 0</y>
+            <z> 0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>throttle</object-name>
+        <expression>
+            <sum>
+                <product>
+                    <property>fdm/jsbsim/fcs/throttle-cmd-norm</property>
+                    <difference>
+                        <property>controls/engines/engine[0]/cutoff</property>
+                        <value>1</value>
+                    </difference>
+                    <value>0.15</value>
+                </product>
+                <product>
+                    <property>controls/engines/engine[0]/cutoff</property>
+                    <value>0.03</value>
+                </product>
+            </sum>
+        </expression>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>throttle</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/engines/engine[0]/cutoff</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>cutoff-bug</tooltip-id>
+                <label>%s</label>
+                <property>controls/engines/engine[0]/cutoff</property>
+                <mapping>nasal</mapping>
+                <script>
+                    var modes = ['Throttle', 'Cutoff'];
+                    return modes[arg[0]];
+                </script>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>gearLever</object-name>
+        <property>controls/gear/gear-down</property>
+        <factor>50</factor>
+        <axis>
+            <x1-m>-5.288</x1-m>
+            <y1-m>-0.372</y1-m>
+            <z1-m> 0.246</z1-m>
+            <x2-m>-5.329</x2-m>
+            <y2-m>-0.294</y2-m>
+            <z2-m> 0.246</z2-m>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>gearLever</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/gear/gear-down</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>gearLever-bug</tooltip-id>
+                <label>Gear Lever %s</label>
+                <property>controls/gear/gear-down</property>
+                <mapping>nasal</mapping>
+                <script>
+                    var modes = ['Up', 'Down'];
+                    return modes[arg[0]];
+                </script>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>sweepLever</object-name>
+        <property>fdm/jsbsim/fcs/wing-sweep-cmd</property>
+        <factor>50</factor>
+        <center>
+            <x-m>-5.020</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.040</z-m>
+        </center>
+        <axis>
+            <x> 0</x>
+            <y> 1</y>
+            <z> 0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>engineStarter</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.engineStart()</script>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>starter-bug</tooltip-id>
+                <label>Engine Starter</label>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>pedalLeft</object-name>
+        <property>controls/flight/rudder</property>
+        <factor>0.045</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>pedalRight</object-name>
+        <property>controls/flight/rudder</property>
+        <factor>0.045</factor>
+        <axis>
+            <x>-1</x>
+            <y> 0</y>
+            <z> 0</z>
+        </axis>
+    </animation>
+    <model>
+        <name>HUD</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Flaps/Flaps.xml</path>
+        <offsets>
+            <x-m>-5.020</x-m>
+            <y-m>-0.355</y-m>
+            <z-m> 0.053</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Seat</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/seat.ac</path>
+        <offsets>
+            <x-m>-4.650</x-m>
+            <y-m> 0.000</y-m>
+            <z-m> 0.100</z-m>
+        </offsets>
+    </model>
+</PropertyList>

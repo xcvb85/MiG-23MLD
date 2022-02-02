@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList include="Systems/initialization.xml">
+    <sim include="Systems/views.xml">
+        <description>Mikoyan-Gurevich MiG-23MLD</description>
+        <author>Tim Samedov (3D), Daniel Overbeck</author>
+        <long-description>The Mikoyan-Gurevich MiG-23MLD Flogger-K is the ultimate variant of this 3rd generation fighter jet. It has Tumanskiy R35-300 engines and was produced since 1984. This model simulates the Izdeliye 23-18 subvariant (Flogger-K), as well as the export version Izdeliye 23-22 (Flogger-G, same Nato designation as the older MiG-23ML/MLA), which did not receive all aerodynamic updates. The latest subvariants Izdeliye 23-19 (autolanding) or 23-98 (R-27/R-77 compatible) are not included.</long-description>
+        <startup>
+            <splash-texture>Aircraft/MiG-23MLD/splash.png</splash-texture>
+        </startup>
+        <rating>
+            <FDM type="int">3</FDM>
+            <systems type="int">3</systems>
+            <cockpit type="int">4</cockpit>
+            <model type="int">4</model>
+        </rating>
+        <flight-model>jsb</flight-model>
+        <aero>MiG-23MLD</aero>
+        <model>
+            <variant type="int">1</variant>
+            <path>Aircraft/MiG-23MLD/Models/MiG-23MLD.xml</path>
+        </model>
+        <flight-recorder include="Systems/flight-recorder.xml"/>
+        <menubar include="Systems/menubar.xml"/>
+        <help include="Systems/help.xml"/>
+        <sound>
+            <path>Aircraft/MiG-23MLD/Sounds/Sounds.xml</path>
+        </sound>
+        <multiplay>
+            <generic>
+                <int   n="0" type="int"    alias="/fdm/jsbsim/fcs/dogtooth"/>
+                <int   n="1" type="int"    alias="/fdm/jsbsim/fcs/vortex-generator"/>
+                <int   n="2" type="int"    alias="/fdm/jsbsim/fcs/cfd"/>
+                <float n="0" type="double" alias="/fdm/jsbsim/fcs/wing-sweep"/>
+                <float n="1" type="double" alias="/engines/engine[0]/nozzle-pos-norm"/> <!-- Reheat  -->
+                <float n="2" type="double" alias="/engines/engine[0]/augmentation"/> <!-- Reheat  -->
+            </generic>
+        </multiplay>
+        <flaps>
+            <setting>0.0</setting>
+            <setting>0.5</setting>
+            <setting>1.0</setting>
+        </flaps>
+        <submodels>
+            <serviceable type="bool">true</serviceable>
+            <path>Aircraft/MiG-23MLD/Systems/submodels.xml</path>
+        </submodels>
+    </sim>
+    <input>
+        <keyboard include="Systems/keyboard.xml"/>
+    </input>
+    <nasal include="Systems/nasal.xml"/>
+    <payload include="Systems/payload.xml"/>
+</PropertyList>

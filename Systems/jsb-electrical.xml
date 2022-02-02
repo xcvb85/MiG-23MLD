@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<system name="electric">
+    <property value="0">electric/switches/battery</property>
+    <property value="0">electric/switches/ac-gen</property>
+    <property value="0">electric/switches/dc-gen</property>
+
+    <property value="0">electric/switches/lights</property>
+    <property value="0">electric/switches/landinglight</property>
+    <property value="0">electric/switches/radio</property>
+    <property value="0">electric/switches/ap</property>
+    <property value="0">electric/switches/ark</property>
+    <property value="0">electric/switches/rsbn</property>
+    <property value="0">electric/switches/instruments</property>
+
+    <property value="0">electric/switches/cannon</property>
+    <property value="0">electric/switches/gunsight</property>
+    <property value="0">electric/switches/starterunit</property>
+    <property value="0">electric/switches/pump</property>
+
+    <channel name="sources">
+        <fcs_function name="electric/sources/battery">
+            <function>
+                <product>
+                    <property>electric/switches/battery</property>
+                    <value>24</value>
+                </product>
+            </function>
+            <output>electric/sources/battery</output>
+        </fcs_function>
+        <fcs_function name="electric/sources/dc-gen">
+            <function>
+                <product>
+                    <property>electric/switches/dc-gen</property>
+                    <table>
+                        <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
+                        <tableData>
+                            0.0	 0.0
+                            30.0	24.0
+                            100.0   28.0
+                        </tableData>
+                    </table>
+                </product>
+            </function>
+            <output>electric/sources/dc-gen</output>
+        </fcs_function>
+        <fcs_function name="electric/sources/output-ac">
+            <function>
+                <product>
+                    <property>electric/switches/ac-gen</property>
+                    <table>
+                        <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
+                        <tableData>
+                            0.0	 0.0
+                            30.0	112.0
+                            100.0   116.0
+                        </tableData>
+                    </table>
+                </product>
+            </function>
+            <output>electric/sources/ac-gen</output>
+        </fcs_function>
+        <fcs_function name="electric/sources/output-dc">
+            <function>
+                <max>
+                    <property>electric/sources/dc-gen</property>
+                    <property>electric/sources/battery</property>
+                </max>
+            </function>
+            <output>electric/sources/output-dc</output>
+        </fcs_function>
+    </channel>
+
+    <channel name="output">
+        <switch name="electric/output/lights">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/lights == 1
+            </test>
+        </switch>
+        <switch name="electric/output/landinglight">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-ac">
+                electric/switches/landinglight == 1
+            </test>
+        </switch>
+        <switch name="electric/output/radio">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/radio == 1
+            </test>
+        </switch>
+        <switch name="electric/output/ap">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/ap == 1
+            </test>
+        </switch>
+        <switch name="electric/output/ark">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/ark == 1
+            </test>
+        </switch>
+        <switch name="electric/output/rsbn">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/rsbn == 1
+            </test>
+        </switch>
+        <switch name="electric/output/instruments">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/instruments == 1
+            </test>
+        </switch>
+        <switch name="electric/output/cannon">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-ac">
+                electric/switches/cannon == 1
+            </test>
+        </switch>
+        <switch name="electric/output/gunsight">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-ac">
+                electric/switches/gunsight == 1
+            </test>
+        </switch>
+        <switch name="electric/output/starterunit">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/starterunit == 1
+            </test>
+        </switch>
+        <switch name="electric/output/pump">
+            <default value="0"/>
+            <test logic="AND" value="electric/sources/output-dc">
+                electric/switches/pump == 1
+            </test>
+        </switch>
+    </channel>
+</system>

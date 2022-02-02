@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <title>MiG-23MLD</title>
+    <key>
+        <name>b</name>
+        <desc>Hold to deploy brakes</desc>
+    </key>
+    <key>
+        <name>B</name>
+        <desc>Toggle parking brake</desc>
+    </key>
+    <key>
+        <name>Ctrl+b</name>
+        <desc>Toggle speedbrake</desc>
+    </key>
+<!--    <key>
+        <name>d/D</name>
+        <desc>open/close canopy</desc>
+    </key>-->
+    <key>
+        <name>e</name>
+        <desc>Weapon trigger</desc>
+    </key>
+    <key>
+        <name>g/G</name>
+        <desc>Gear up/down</desc>
+    </key>
+    <key>
+        <name>m</name>
+        <desc>Masterarm toggle</desc>
+    </key>
+    <key>
+        <name>o</name>
+        <desc>Deploy dragchute</desc>
+    </key>
+    <key>
+        <name>O</name>
+        <desc>Release dragchute</desc>
+    </key>
+    <key>
+        <name>w</name>
+        <desc>Select next weapon</desc>
+    </key>
+    <key>
+        <name>q</name>
+        <desc>Trigger flare release</desc>
+    </key>
+    <key>
+        <name>l</name>
+        <desc>Landing lights</desc>
+    </key>
+    <key>
+        <name>L</name>
+        <desc>Cockpit lights</desc>
+    </key>
+    <key>
+        <name>y/Y</name>
+        <desc>Select next/prev radar contact</desc>
+    </key>
+    <key>
+        <name>&gt;</name>
+        <desc>Wing sweep aft</desc>
+    </key>
+    <key>
+        <name>&lt;</name>
+        <desc>Wing sweep forward</desc>
+    </key>
+    <key>
+        <name>[ ]</name>
+        <desc>Flaps up/down</desc>
+    </key>
+    <text>Gunsight
+-------
+The ASP-17ML is a gunsight with integrated radar screen. Use the big knob and the small switch next to it to select the different operating modes (not sure if these are correct):
+
+Switch Up (A/A): Crosshairs (short range missiles), Pipper (cannon), Radar screen (medium range missiles)
+Switch Down (A/G): CCIP (bombs), Pipper (cannon), Pipper (unguided missiles)
+
+RWR
+----
+The rectangular device on the right hand panel is the SPO-15 radar warning receiver. The small green lights around the center indicate the direction of received radar signals, the bigger yellow lights next to it indicate the biggest threat, the small rectangular lights around the center indicate the signal strength of the biggest threat and the lights at the bottom indicate the radar type. The types are as follows (from left to right):
+
+1.) Airborne radar
+2.) Long-range radar
+3.) Medium-range radar
+4.) Short-range radar
+5.) Early warning radar
+6.) AWACS
+
+A/A Weapons
+----------
+R-3R: Short range missile with SAR (semi-active radar) seeker (like AIM-9C)
+R-13M: Short range missile with IR (infrared) seeker (like AIM-9G)
+R-24R: BVR (beyond visual range) missile with SAR seeker
+R-24T: BVR (beyond visual range) missile with IR seeker
+R-60M: Leightweight short range missile with IR (infrared) seeker
+R-73: Advanced short range IR missile with thrust vector control
+
+A/G Weapons
+----------
+UPK-23: External 23mm cannon
+UB-32: Launcher for unguided S-5 missiles
+S-24: Unguided missile
+FAB-500: Bomb
+RBK-500: Cluster bomb
+</text>
+</PropertyList>
