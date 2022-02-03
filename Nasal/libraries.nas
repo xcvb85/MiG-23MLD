@@ -95,15 +95,25 @@ var refill = func {
         setprop("fdm/jsbsim/systems/chute/deploy-rqst", 0);
         setprop("controls/flight/chute_jettisoned", 0);
 
+        # chaffs/flares
+        setprop("ai/submodels/submodel[0]/count", 40);
+        setprop("ai/submodels/submodel[1]/count", 40);
+        setprop("ai/submodels/submodel[2]/count", 40);
+        setprop("ai/submodels/submodel[3]/count", 40);
+        setprop("ai/submodels/submodel[4]/count", 40);
+        setprop("ai/submodels/submodel[5]/count", 40);
+        setprop("ai/submodels/submodel[6]/count", 40);
+        setprop("ai/submodels/submodel[7]/count", 40);
+
         # cannons
-        setprop("ai/submodels/submodel[4]/count", 260);
-        setprop("ai/submodels/submodel[5]/count", 260);
-        setprop("ai/submodels/submodel[6]/count", 260);
-        setprop("ai/submodels/submodel[7]/count", 260);
         setprop("ai/submodels/submodel[8]/count", 260);
         setprop("ai/submodels/submodel[9]/count", 260);
+        setprop("ai/submodels/submodel[10]/count", 260);
+        setprop("ai/submodels/submodel[11]/count", 260);
+        setprop("ai/submodels/submodel[12]/count", 260);
+        setprop("ai/submodels/submodel[13]/count", 260);
 
-        screen.log.write("Chute and cannons refilled", 0.5, 0.5, 1);
+        screen.log.write("refill complete", 0.5, 0.5, 1);
     }
     else {
         screen.log.write("Please return to base", 0.5, 0.5, 1);
