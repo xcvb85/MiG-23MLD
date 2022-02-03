@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="misc">
+    <property value="0">fcs/upk-23-trigger1</property>
+    <property value="0">fcs/oxygen</property>
+
+    <channel name="UPK-23_1">
+        <switch name="fcs/upk-23-trigger1">
+            <default value="0"/>
+            <test logic="AND" value="1">
+                /payload/weight/weight-lb == 480
+                fcs/guntrigger gt 0
+            </test>
+        </switch>
+    </channel>
+    <channel name="UPK-23_2">
+        <switch name="fcs/upk-23-trigger2">
+            <default value="0"/>
+            <test logic="AND" value="1">
+                /payload/weight[4]/weight-lb == 480
+                fcs/guntrigger gt 0
+            </test>
+        </switch>
+    </channel>
+    
+    <channel name="breath" execrate="3">
+        <!-- breath animation -->
+        <fcs_function name="fcs/breath-cycle">
+            <function>
+                <!-- if cycle = 40 then cycle = 0 else cycle = cycle + 1-->
+                <ifthen>
+                    <ge>
+                        <property>fcs/breath-cycle</property>
+                        <value>100</value>
+                    </ge>
+                    <value>0</value>
+                    <sum>
+                        <property>fcs/breath-cycle</property>
+                        <value>1</value>
+                    </sum>
+                </ifthen>
+            </function>
+            <output>fcs/breath-cycle</output>
+        </fcs_function>
+        
+        <fcs_function name="fcs/breath-animation">
+            <function>
+                <product>
+                    <lt>
+                        <property>fcs/breath-cycle</property>
+                        <value>20</value>
+                    </lt>
+                    <property>fcs/oxygen</property>
+                </product>
+            </function>
+            <clipto>
+                <min>0</min>
+                <max>1</max>
+            </clipto>
+            <output>fcs/breath-animation</output>
+        </fcs_function>
+    </channel>
+</system>

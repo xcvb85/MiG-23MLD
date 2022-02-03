@@ -15,4 +15,31 @@
         <object-name>indicator</object-name>
         <object-name>needle</object-name>
     </effect>
+    <animation>
+        <type>rotate</type>
+        <object-name>needle</object-name>
+        <property>/fdm/jsbsim/fcs/oxygen</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>17</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>170</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>indicator</object-name>
+        <type>select</type>
+        <condition>
+            <property>/fdm/jsbsim/fcs/breath-animation</property>
+        </condition>
+    </animation>
 </PropertyList>

@@ -305,7 +305,7 @@
 
     <system file="jsb-electrical"/>
     <system file="jsb-warnings"/>
-    <system file="jsb-payloads"/>
+    <system file="jsb-misc"/>
     <system file="jsb-chute"/>
     <system file="jsb-headsight"/>
     <flight_control file="Systems/jsb-controls"/>
