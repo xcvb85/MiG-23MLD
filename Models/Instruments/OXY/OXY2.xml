@@ -12,6 +12,7 @@
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+        <object-name>indicator</object-name>
         <object-name>needle</object-name>
     </effect>
 </PropertyList>
