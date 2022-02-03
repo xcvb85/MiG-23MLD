@@ -20,6 +20,7 @@ var autostart = func {
     setprop("fdm/jsbsim/electric/switches/dc-gen",1);
     setprop("fdm/jsbsim/electric/switches/ac-gen",1);
     setprop("fdm/jsbsim/fcs/wing-sweep-cmd",0);
+    setprop("fdm/jsbsim/fcs/oxygen",1);
     setprop("controls/engines/engine[0]/starter", "true");
     settimer(func {
         setprop("controls/engines/engine[0]/cutoff", "false");
