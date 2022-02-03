@@ -14,15 +14,15 @@
             <heading-deg>0</heading-deg>
         </direction>
         <ambient>
-            <r>10.0</r>
-            <g>10.0</g>
-            <b>8.0</b>
+            <r>3.0</r>
+            <g>3.0</g>
+            <b>2.0</b>
             <a>1</a>
         </ambient>
         <diffuse>
-            <r>30.0</r>
-            <g>30.0</g>
-            <b>28.0</b>
+            <r>3.0</r>
+            <g>3.0</g>
+            <b>2.0</b>
             <a>1</a>
         </diffuse>
         <specular>

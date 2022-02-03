@@ -113,7 +113,7 @@
         <texture-prop>texture</texture-prop>
         <texture>fuzcamo_afg.png</texture>
     </animation>
-    <model>
+    <!--<model>
         <name>taxi light</name>
         <path>Aircraft/MiG-23MLD/Models/Effects/lights/taxi-light.xml</path>
         <offsets>
@@ -121,7 +121,7 @@
             <y-m> 0.005</y-m>
             <z-m>-1.620</z-m>
         </offsets>
-    </model>
+    </model>-->
     <model>
         <name>landing light1</name>
         <path>Aircraft/MiG-23MLD/Models/Effects/lights/landing-light.xml</path>
