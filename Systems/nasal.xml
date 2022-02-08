@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <rcs>
-        <file>Aircraft/MiG-23MLD/Nasal/rcs.nas</file>
-    </rcs>
-    <radardist>
-        <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-    </radardist>
-    <awg_9>
-        <file>Aircraft/MiG-23MLD/Nasal/awg_9.nas</file>
-    </awg_9>
-    <libraries>
-        <file>Aircraft/MiG-23MLD/Nasal/libraries.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bfm.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_gun.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bvr.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud.nas</file>
-    </libraries>
-    <notifications>
-        <file>Aircraft/MiG-23MLD/Nasal/ArmamentNotification.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/GeoBridgedTransmitter.nas</file>
-    </notifications>
-    <damage>
-        <file>Aircraft/MiG-23MLD/Nasal/damage.nas</file>
-    </damage>
-    <vector>
-        <file>Aircraft/MiG-23MLD/Nasal/vector.nas</file>
-    </vector>
-    <armament>
-        <file>Aircraft/MiG-23MLD/Nasal/missile-code.nas</file><!-- must be before station-manager -->
-    </armament>
-    <stations>
-        <file>Aircraft/MiG-23MLD/Nasal/station-manager.nas</file><!-- must be before fire-control and pylons -->
-    </stations>
-    <fc>
-        <file>Aircraft/MiG-23MLD/Nasal/fire-control.nas</file><!-- must be before pylons -->
-    </fc>
-    <pylons>
-        <file>Aircraft/MiG-23MLD/Nasal/pylons.nas</file>
-    </pylons>
+        <rcs>
+            <file>Aircraft/MiG-23MLD/Nasal/rcs.nas</file>
+        </rcs>
+        <radardist>
+            <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+        </radardist>
+        <notifications>
+            <file>Aircraft/MiG-23MLD/Nasal/ArmamentNotification.nas</file>
+            <file>Aircraft/MiG-23MLD/Nasal/M_frame_notification.nas</file>
+            <file>Aircraft/MiG-23MLD/Nasal/GeoBridgedTransmitter.nas</file>
+        </notifications>
+        <awg_9>
+            <file>Aircraft/MiG-23MLD/Nasal/awg_9.nas</file>
+        </awg_9>
+        <libraries>
+            <file>Aircraft/MiG-23MLD/Nasal/exec.nas</file>
+            <file>Aircraft/MiG-23MLD/Nasal/libraries.nas</file>
+            <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bfm.nas</file>
+            <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_gun.nas</file>
+            <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bvr.nas</file>
+            <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud.nas</file>
+        </libraries>
+        <damage>
+            <file>Aircraft/MiG-23MLD/Nasal/damage.nas</file>
+        </damage>
+        <vector>
+            <file>Aircraft/MiG-23MLD/Nasal/vector.nas</file>
+        </vector>
+        <armament>
+            <file>Aircraft/MiG-23MLD/Nasal/missile-code.nas</file><!-- must be before station-manager -->
+        </armament>
+        <stations>
+            <file>Aircraft/MiG-23MLD/Nasal/station-manager.nas</file><!-- must be before fire-control and pylons -->
+        </stations>
+        <fc>
+            <file>Aircraft/MiG-23MLD/Nasal/fire-control.nas</file><!-- must be before pylons -->
+        </fc>
+        <pylons>
+            <file>Aircraft/MiG-23MLD/Nasal/pylons.nas</file>
+        </pylons>
 </PropertyList>
