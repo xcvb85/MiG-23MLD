@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">VVS 12 Red</name>
+                <texture>07_blue_VVS.png</texture>
+            </livery>
+        </model>
+    </sim>
+    <fdm>
+        <jsbsim>
+            <fcs>
+                <dogtooth type="int">0</dogtooth>
+                <vortex-generator type="int">0</vortex-generator>
+                <cfd>0</cfd>
+            </fcs>
+        </jsbsim>
+    </fdm>
+</PropertyList>

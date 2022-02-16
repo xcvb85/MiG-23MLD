@@ -3,10 +3,10 @@
     <fdm>
         <jsbsim>
             <fcs>
-                <wing-sweep-cmd type="double">1</wing-sweep-cmd>
-                <dogtooth type="int">1</dogtooth>
-                <vortex-generator type="int">1</vortex-generator>
-                <cfd>1</cfd>
+                <wing-sweep-cmd type="double">0</wing-sweep-cmd>
+                <dogtooth type="int">0</dogtooth>
+                <vortex-generator type="int">0</vortex-generator>
+                <cfd>0</cfd>
             </fcs>
             <systems>
                 <chute>

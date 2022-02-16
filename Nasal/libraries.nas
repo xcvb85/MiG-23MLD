@@ -1,10 +1,4 @@
-# MiG-23MLD System Libraries
-aircraft.livery.init("Aircraft/MiG-23MLD/Models/Liveries/");
-
-var SweepAngles=[16,33,45,72]; #16=fully forward
-var Sweep=0;
-var SweepIndicator=0;
-
+# Generic System Libraries
 var engineStart = func {
     if(getprop("fdm/jsbsim/electric/output/pump") > 20 and
     getprop("fdm/jsbsim/electric/output/starterunit") > 20)
@@ -28,21 +22,6 @@ var autostart = func {
         setprop("fdm/jsbsim/electric/switches/starterunit",0);
         flap_setting(2);
     }, 5);
-}
-
-var wingSweep = func(direction) {
-    Sweep += direction;
-
-    if(Sweep > 3) {
-        Sweep = 3;
-    }
-    if(Sweep < 0) {
-        Sweep = 0;
-    }
-    SweepIndicator = Sweep-1;
-    if(SweepIndicator < 0) SweepIndicator = 0;
-    setprop("fdm/jsbsim/fcs/wing-sweep-cmd", (SweepAngles[Sweep]-16)/56.0);
-    setprop("fdm/jsbsim/fcs/wing-sweep-indicator", SweepIndicator);
 }
 
 var flap_setting = func(button) {

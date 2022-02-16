@@ -3,8 +3,8 @@
     <sim>
         <model>
             <livery>
-                <name type="string">USSR Afghanistan</name>
-                <texture>fuzcamo_afg.png</texture>
+                <name type="string">VVS 07 Blue (Aggressor)</name>
+                <texture>LiveriesMLD/07_blue_VVS.png</texture>
             </livery>
         </model>
     </sim>

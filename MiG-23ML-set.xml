@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList include="Systems/initialization.xml">
     <sim include="Systems/views.xml">
-        <description>Mikoyan-Gurevich MiG-23MLD</description>
+        <description>Mikoyan-Gurevich MiG-23ML</description>
+        <variant-of>MiG-23MLD</variant-of>
         <author>Tim Samedov (3D), Daniel Overbeck, Renaud "Wolf" Roquefort (Liveries)</author>
-        <long-description>The Mikoyan-Gurevich MiG-23MLD Flogger-K is the ultimate variant of this 3rd generation fighter jet. It has Tumanskiy R35-300 engines and was produced since 1984. This model simulates the Izdeliye 23-18 subvariant (Flogger-K), as well as the export version Izdeliye 23-22 (Flogger-G, same Nato designation as the older MiG-23ML/MLA), which did not receive all aerodynamic updates. The latest subvariants Izdeliye 23-19 (autolanding) or 23-98 (R-27/R-77 compatible) are not included.</long-description>
+        <long-description>The Mikoyan-Gurevich MiG-23ML Flogger-G is the mid-life upgrade of this 3rd generation fighter jet. It has Tumanskiy R35-300 engines and was produced since 1975.</long-description>
         <startup>
-            <splash-texture>Aircraft/MiG-23MLD/splashMLD.png</splash-texture>
+            <splash-texture>Aircraft/MiG-23MLD/splashML.png</splash-texture>
         </startup>
         <rating>
             <FDM type="int">4</FDM>
@@ -16,7 +17,7 @@
         <flight-model>jsb</flight-model>
         <aero>MiG-23MLD</aero>
         <model>
-            <path>Aircraft/MiG-23MLD/Models/MiG-23MLD.xml</path>
+            <path>Aircraft/MiG-23MLD/Models/MiG-23ML.xml</path>
         </model>
         <flight-recorder include="Systems/flight-recorder.xml"/>
         <menubar include="Systems/menubar.xml"/>
@@ -59,7 +60,7 @@
         </awg_9>
         <libraries>
             <file>Aircraft/MiG-23MLD/Nasal/libraries.nas</file>
-            <file>Aircraft/MiG-23MLD/Nasal/libraries-mld.nas</file>
+            <file>Aircraft/MiG-23MLD/Nasal/libraries-ml.nas</file>
             <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bfm.nas</file>
             <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_gun.nas</file>
             <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bvr.nas</file>
@@ -85,7 +86,7 @@
             <file>Aircraft/MiG-23MLD/Nasal/fire-control.nas</file><!-- must be before pylons -->
         </fc>
         <pylons>
-            <file>Aircraft/MiG-23MLD/Nasal/pylons-mld.nas</file>
+            <file>Aircraft/MiG-23MLD/Nasal/pylons-ml.nas</file>
         </pylons>
     </nasal>
     <payload include="Systems/payload.xml"/>

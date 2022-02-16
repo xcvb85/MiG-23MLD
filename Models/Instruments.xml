@@ -209,14 +209,4 @@
             <z-m> 0.026</z-m>
         </offsets>
     </model>-->
-    <model>
-        <name>RWR</name>
-        <path>Aircraft/MiG-23MLD/Models/Instruments/RWR/RWR.xml</path>
-        <offsets>
-            <x-m>-5.287</x-m>
-            <y-m> 0.320</y-m>
-            <z-m> 0.303</z-m>
-            <heading-deg>-20</heading-deg>
-        </offsets>
-    </model>
 </PropertyList>

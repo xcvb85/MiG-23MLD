@@ -2,9 +2,6 @@
 <PropertyList>
     <path>cockpit.ac</path>
     <model>
-        <path>Aircraft/MiG-23MLD/Models/Instruments.xml</path>
-    </model>
-    <model>
         <path>Aircraft/MiG-23MLD/Models/Switches.xml</path>
     </model>
     <model>

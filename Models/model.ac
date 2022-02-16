@@ -625,7 +625,7 @@ name "canopy.002"
 data 19
 canopy.002.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 143
 -5.39446 0.55865 0.04911
 -5.39114 0.54975 0.1221
@@ -7133,7 +7133,7 @@ name "elevatorL"
 data 17
 stab.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 32
 7.16595 0.26731 2.35937
 6.86402 0.26914 2.75196
@@ -7434,7 +7434,7 @@ name "elevatorR"
 data 17
 stab.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 32
 7.16595 0.26731 -2.35937
 6.86402 0.26914 -2.75196
@@ -7735,7 +7735,7 @@ name "fin"
 data 16
 OBJ0024.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 16
 4.12311 -0.81248 -0.03378
 4.12807 -1.15471 -0.03167
@@ -7918,7 +7918,7 @@ name "fuselage"
 data 32
 mig23mld_fuz_00Bnosser.paa_0.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 1942
 5.67353 1.05101 0.06213
 6.60545 1.07592 -0.00064
@@ -28003,7 +28003,7 @@ name "fuselage.001"
 data 32
 mig23mld_fuz_00Bnosser.paa_0.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 8
 -2.24737 -0.05286 -0.94023
 -2.24598 -0.24926 -0.94023
@@ -28044,7 +28044,7 @@ name "fuselage.002"
 data 32
 mig23mld_fuz_00Bnosser.paa_0.003
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 8
 -2.54791 -0.05497 0.93802
 -2.54656 -0.25137 0.93802
@@ -28085,7 +28085,7 @@ name "leadingEdge"
 data 28
 mig23ub_007fuzcamo1.pa_0.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 58
 -2.99939 0.41702 0.97222
 -2.99392 0.45098 0.91751
@@ -28632,7 +28632,7 @@ name "OBJ0010"
 data 16
 OBJ0010.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 67
 6.64269 0.73641 0.06906
 6.645 0.63353 0.04483
@@ -29305,7 +29305,7 @@ name "OBJ0012"
 data 16
 OBJ0012.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 67
 6.64503 0.63361 -0.04821
 6.64272 0.73649 -0.07233
@@ -31112,7 +31112,7 @@ name "intakeL"
 data 32
 mig23mld_fuz_00Bnosser.paa_0.004
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 20
 -4.57135 -0.54896 0.51145
 -3.90399 0.47832 0.49404
@@ -31267,7 +31267,7 @@ name "intakeR"
 data 32
 mig23mld_fuz_00Bnosser.paa_0.005
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 20
 -4.57135 -0.54896 -0.51145
 -3.90399 0.47832 -0.49404
@@ -31425,7 +31425,7 @@ name "leftDoor1"
 data 20
 OBJ0044.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 6
 0.20353 -0.22576 0.86036
 1.13126 -0.21575 0.86048
@@ -31581,7 +31581,7 @@ name "leftDoor3"
 data 20
 OBJ0043.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 20
 0.20905 -0.85476 0.3089
 0.20926 -0.87855 0.2536
@@ -36514,7 +36514,7 @@ name "leftGear2"
 data 16
 OBJ0125.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 4
 0.20318 -0.50334 0.8285
 0.47473 -0.50338 0.82941
@@ -39180,7 +39180,7 @@ name "leftGear6"
 data 20
 OBJ0046.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 15
 1.13 -0.21753 0.86065
 0.47744 -0.50374 0.82912
@@ -44835,7 +44835,7 @@ name "mig23mld_fuz"
 data 21
 mig23mld_fuz.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 12
 -7.25375 -0.89602 -0.12119
 -7.25895 -0.8963 -0.12119
@@ -44919,11 +44919,11 @@ refs 3
 8 0.244709 0.390857
 kids 0
 OBJECT poly
-name "mig23mld_fuz.001"
+name "radom"
 data 25
-mig23mld_fuz.001.mesh.003
+radom.mesh.003
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 232
 -8.93835 -0.47924 -0
 -8.99109 -0.50245 0.02061
@@ -54948,7 +54948,7 @@ name "mig23mld_fuz.036"
 data 25
 mig23mld_fuz.036.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 17
 4.97448 -1.00121 0.01267
 6.0476 -0.68903 -0.00089
@@ -55098,7 +55098,7 @@ name "noseDoorL1"
 data 20
 OBJ0047.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 9
 -3.80792 -0.89825 -0.00037
 -3.80793 -0.89592 0.1361
@@ -55324,7 +55324,7 @@ name "noseDoorR1"
 data 20
 OBJ0047.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 9
 -3.80792 -0.89825 0.00037
 -3.80793 -0.89592 -0.1361
@@ -74171,7 +74171,7 @@ name "OBJ0011"
 data 16
 OBJ0011.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 51
 6.645 0.63353 0.04483
 6.64269 0.73641 0.06906
@@ -85881,7 +85881,7 @@ name "OBJ096"
 data 15
 OBJ096.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 8
 -6.85154 -0.87743 -0.22364
 -6.84234 -0.84464 -0.206
@@ -86192,7 +86192,7 @@ name "rightDoor1"
 data 20
 OBJ0044.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 6
 0.20353 -0.22576 -0.86036
 1.13126 -0.21575 -0.86048
@@ -86348,7 +86348,7 @@ name "rightDoor3"
 data 20
 OBJ0043.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 20
 0.20905 -0.85476 -0.3089
 0.20926 -0.87855 -0.2536
@@ -91281,7 +91281,7 @@ name "rightGear2"
 data 16
 OBJ0125.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 4
 0.20318 -0.50334 -0.8285
 0.47473 -0.50338 -0.82941
@@ -93947,7 +93947,7 @@ name "rightGear6"
 data 20
 OBJ0046.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 15
 1.13 -0.21753 -0.86065
 0.47744 -0.50374 -0.82912
@@ -98679,7 +98679,7 @@ name "rudder"
 data 15
 rudder.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 22
 5.98581 1.61699 0.04794
 6.01594 1.76751 -0.02631
@@ -98933,7 +98933,7 @@ name "speedbrakeLB1"
 data 20
 OBJ0040.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 58
 5.02632 -0.35429 0.60235
 5.02675 -0.46974 0.52976
@@ -99749,7 +99749,7 @@ name "speedbrakeLT1"
 data 20
 OBJ0037.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 50
 5.50803 0.51376 0.25104
 5.01565 0.55398 0.25879
@@ -100358,7 +100358,7 @@ name "speedbrakeRB1"
 data 20
 OBJ0060.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 58
 5.51881 -0.45445 -0.51922
 5.0267 -0.46975 -0.53269
@@ -101169,7 +101169,7 @@ name "speedbrakeRT1"
 data 20
 OBJ0037.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 50
 5.50803 0.51376 -0.25104
 5.01565 0.55398 -0.25879
@@ -102301,7 +102301,7 @@ name "aileronL"
 data 20
 OBJ0271.001.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 16
 5.16915 0.34832 3.14518
 4.01581 0.37102 2.43318
@@ -102484,7 +102484,7 @@ name "aileronR"
 data 20
 OBJ0271.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 16
 5.16915 0.34832 -3.14518
 4.01581 0.37102 -2.43318
@@ -102667,7 +102667,7 @@ name "flapL"
 data 20
 OBJ0267.001.mesh.003
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 45
 0.68368 0.4419 0.70884
 0.50187 0.42822 0.68104
@@ -103215,7 +103215,7 @@ name "flapR"
 data 20
 OBJ0267.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 45
 0.68368 0.4419 -0.70884
 0.50187 0.42822 -0.68104
@@ -103763,7 +103763,7 @@ name "slatL"
 data 16
 OBJ0268.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 14
 1.58126 0.29916 2.73933
 1.54652 0.3018 2.79195
@@ -103905,7 +103905,7 @@ name "slatR"
 data 16
 OBJ0268.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 14
 1.58126 0.29916 -2.73933
 1.54652 0.3018 -2.79195
@@ -104047,7 +104047,7 @@ name "spoilerL"
 data 16
 OBJ0274.mesh.002
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 12
 2.14715 0.41412 1.90589
 0.98474 0.44017 1.32361
@@ -104164,7 +104164,7 @@ name "spoilerR"
 data 16
 OBJ0274.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 12
 2.14715 0.41412 -1.90589
 0.98474 0.44017 -1.32361
@@ -104281,7 +104281,7 @@ name "wingL"
 data 20
 OBJ0257.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 264
 0.28694 0.4146 2.24754
 0.22678 0.39243 2.18917
@@ -106873,7 +106873,7 @@ name "wingR"
 data 20
 OBJ0264.001.mesh.001
 crease 30.0
-texture "fuzcamo_afg.png"
+texture "12_red_VVS.png"
 numvert 216
 5.31451 0.33355 -2.91316
 0.56177 0.40088 -0.11311

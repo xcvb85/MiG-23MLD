@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">CzAF 4644 grey</name>
+                <texture>LiveriesML/4644_grey_CzAF.png</texture>
+            </livery>
+        </model>
+    </sim>
+</PropertyList>

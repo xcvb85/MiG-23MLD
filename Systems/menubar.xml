@@ -2,7 +2,7 @@
 <PropertyList>
     <default>
         <menu n="100">
-            <label>MiG-23MLD</label>
+            <label>MiG-23</label>
             <enabled type="bool">true</enabled>
             <item>
                 <label>Select Livery</label>

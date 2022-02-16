@@ -6,7 +6,7 @@
     </model>
     <model>
         <name>cockpit</name>
-        <path>Aircraft/MiG-23MLD/Models/CockpitMLD.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/CockpitML.xml</path>
         <offsets>
             <pitch-deg>-3</pitch-deg>
         </offsets>

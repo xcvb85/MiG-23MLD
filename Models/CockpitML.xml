@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Cockpit.xml</path>
+    </model>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Instruments.xml</path>
+    </model>
+    <model>
+        <name>RWR</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/RWR/SPO-10.xml</path>
+        <offsets>
+            <x-m>-5.290</x-m>
+            <y-m>-0.244</y-m>
+            <z-m> 0.540</z-m>
+            <pitch-deg>-18</pitch-deg>
+        </offsets>
+    </model>
+</PropertyList>
