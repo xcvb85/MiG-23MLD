@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <name>FAB-500</name>
-    <path>FAB-500.ac</path>
+    <name>RBK-500</name>
+    <path>RBK-500.ac</path>
     
     <particlesystem>
         <name>explosion-inner</name>
@@ -11,7 +11,7 @@
         <lighting type="bool">false</lighting>
         
         <condition>
-            <property>payload/armament/mk-83/flags/explode-id-400</property>
+            <property>payload/armament/mk-83/flags/explode-id-500</property>
         </condition>
         
         <attach>world</attach>
@@ -97,7 +97,7 @@
         <lighting type="bool">false</lighting>
         
         <condition>
-            <property>payload/armament/mk-83/flags/explode-id-400</property>
+            <property>payload/armament/mk-83/flags/explode-id-500</property>
         </condition>
         
         <attach>world</attach>
@@ -184,9 +184,9 @@
         
         <condition>
             <and>
-                <property>payload/armament/mk-83/flags/explode-id-400</property>
+                <property>payload/armament/mk-83/flags/explode-id-500</property>
                 <not>
-                    <property>payload/armament/mk-83/flags/explode-water-id-400</property>
+                    <property>payload/armament/mk-83/flags/explode-water-id-500</property>
                 </not>
             </and>
         </condition>
@@ -277,9 +277,9 @@
         
         <condition>
             <and>
-                <property>payload/armament/mk-83/flags/explode-smoke-id-400</property>
+                <property>payload/armament/mk-83/flags/explode-smoke-id-500</property>
                 <not>
-                    <property>payload/armament/mk-83/flags/explode-water-id-400</property>
+                    <property>payload/armament/mk-83/flags/explode-water-id-500</property>
                 </not>
             </and>
         </condition>
@@ -369,9 +369,9 @@
         
         <condition>
             <and>
-                <property>payload/armament/mk-83/flags/explode-id-400</property>
+                <property>payload/armament/mk-83/flags/explode-id-500</property>
                 <not>
-                    <property>payload/armament/mk-83/flags/explode-water-id-400</property>
+                    <property>payload/armament/mk-83/flags/explode-water-id-500</property>
                 </not>
             </and>
         </condition>
@@ -461,8 +461,8 @@
         
         <condition>
             <and>
-                <property>payload/armament/mk-83/flags/explode-id-400</property>
-                <property>payload/armament/mk-83/flags/explode-water-id-400</property>
+                <property>payload/armament/mk-83/flags/explode-id-500</property>
+                <property>payload/armament/mk-83/flags/explode-water-id-500</property>
             </and>
         </condition>
         
@@ -551,8 +551,8 @@
         
         <condition>
             <and>
-                <property>payload/armament/mk-83/flags/explode-smoke-id-400</property>
-                <property>payload/armament/mk-83/flags/explode-water-id-400</property>
+                <property>payload/armament/mk-83/flags/explode-smoke-id-500</property>
+                <property>payload/armament/mk-83/flags/explode-water-id-500</property>
             </and>
         </condition>
         

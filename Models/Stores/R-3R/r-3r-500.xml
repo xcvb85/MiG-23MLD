@@ -5,11 +5,11 @@
         <type>select</type>
         <object-name>R-3R</object-name>
         <condition>
-            <property>payload/armament/r-3r/flags/msl-id-300</property>
+            <property>payload/armament/r-3r/flags/msl-id-500</property>
         </condition>
     </animation>
     <model>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/motor-smoke-3.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/motor-smoke-4.xml</path>
         <offsets>
             <x-m>1.44</x-m>
             <y-m>0</y-m>
@@ -18,7 +18,7 @@
     </model>
     <model>
         <name>explosion</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/explosion-3.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/explosion-4.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>

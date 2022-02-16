@@ -5,7 +5,7 @@
         <type>select</type>
         <object-name>R-24R</object-name>
         <condition>
-            <property>payload/armament/r-24r/flags/msl-id-0</property>
+            <property>payload/armament/r-24r/flags/msl-id-100</property>
         </condition>
     </animation>
     <model>

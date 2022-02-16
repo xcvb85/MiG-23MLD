@@ -37,7 +37,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
@@ -63,7 +63,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
@@ -89,7 +89,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>R-24T</value>
                 </equals>
                 <equals>
@@ -115,7 +115,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>R-24R</value>
                 </equals>
                 <equals>
@@ -141,7 +141,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -173,7 +173,7 @@
     </animation>
     <model>
         <name>UB-32 Missiles 1</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-0.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-1.xml</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m>-1.560</y-m>
@@ -280,7 +280,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
@@ -305,7 +305,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
@@ -330,7 +330,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>R-60M</value>
                 </equals>
                 <equals>
@@ -355,7 +355,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>R-60M</value>
                 </equals>
                 <gt>
@@ -399,7 +399,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>R-73</value>
                 </equals>
                 <equals>
@@ -424,7 +424,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-2-set</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -451,7 +451,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-3-set</property>
                     <value>Droptank</value>
                 </equals>
                 <equals>
@@ -478,7 +478,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
@@ -503,7 +503,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
@@ -528,7 +528,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>R-60M</value>
                 </equals>
                 <equals>
@@ -553,7 +553,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>R-60M</value>
                 </equals>
                 <gt>
@@ -597,7 +597,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>R-73</value>
                 </equals>
                 <equals>
@@ -622,7 +622,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-4-set</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -650,7 +650,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-type</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
@@ -676,7 +676,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-type</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
@@ -702,7 +702,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-type</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>R-24T</value>
                 </equals>
                 <equals>
@@ -728,7 +728,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-type</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>R-24R</value>
                 </equals>
                 <equals>
@@ -754,7 +754,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-type</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -786,7 +786,7 @@
     </animation>
     <model>
         <name>UB-32 Missiles 2</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-4.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/UB-32/UB-32-5.xml</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m> 1.560</y-m>

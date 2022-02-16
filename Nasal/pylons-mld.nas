@@ -36,12 +36,16 @@ var s24d = stations.SubModelWeapon.new("S-24", 520, 1, [19], [], props.globals.g
 s24d.typeShort = "S-24";
 s24d.brevity = "Rockets away";
 
-var fuelTank = stations.FuelTank.new("Droptank", "droptank", 3, 200, "sim/model/MiG-23MLD/stores");
+var fuelTank1 = stations.FuelTank.new("Droptank", "droptank", 4, 200, "sim/model/MiG-23MLD/stores");
+var fuelTank2 = stations.FuelTank.new("Droptank", "droptank", 3, 200, "sim/model/MiG-23MLD/stores");
+var fuelTank3 = stations.FuelTank.new("Droptank", "droptank", 5, 200, "sim/model/MiG-23MLD/stores");
 
 var pylonSets = {
     empty: {name: "Empty", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
 
-    fueltank: {name: "Droptank", content: [fuelTank], fireOrder: [0], launcherDragArea: 0.35, launcherMass: 531, launcherJettisonable: 1, showLongTypeInsteadOfCount: 1, category: 2},
+    fueltank1: {name: "Droptank", content: [fuelTank1], fireOrder: [0], launcherDragArea: 0.35, launcherMass: 531, launcherJettisonable: 1, showLongTypeInsteadOfCount: 1, category: 2},
+    fueltank2: {name: "Droptank", content: [fuelTank2], fireOrder: [0], launcherDragArea: 0.35, launcherMass: 531, launcherJettisonable: 1, showLongTypeInsteadOfCount: 1, category: 2},
+    fueltank3: {name: "Droptank", content: [fuelTank3], fireOrder: [0], launcherDragArea: 0.35, launcherMass: 531, launcherJettisonable: 1, showLongTypeInsteadOfCount: 1, category: 2},
     mm23:  {name: "23mm Cannon", content: [cannon], fireOrder: [0], launcherDragArea: 0.0, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1},
     upk23: {name: "UPK-23", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 480, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
 
@@ -64,13 +68,13 @@ var pylonSets = {
     r500:  {name: "RBK-500", content: ["RBK-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: 70, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
 };
 
-var pylon1set = [pylonSets.empty, pylonSets.fueltank];
+var pylon1set = [pylonSets.empty, pylonSets.fueltank2];
 var pylon2set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la];
 var pylon3set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lb];
-var pylon4set = [pylonSets.empty, pylonSets.fueltank];
+var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
 var pylon5set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lc];
 var pylon6set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld];
-var pylon7set = [pylonSets.empty, pylonSets.fueltank];
+var pylon7set = [pylonSets.empty, pylonSets.fueltank3];
 
 setprop("payload/armament/fire-control/serviceable", 1);
 pylon1 = stations.Pylon.new("Left wing outboard pylon (#1)",  0, [4.510, -4.511, -0.100], pylon1set,  0, props.globals.getNode("fdm/jsbsim/inertia/pointmass-weight-lbs[0]",1),props.globals.getNode("fdm/jsbsim/inertia/pointmass-dragarea-sqft[0]",1),func{return getprop("payload/armament/fire-control/serviceable") and 1;},func{return 1;});
