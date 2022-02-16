@@ -37,11 +37,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-type</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -63,11 +63,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-type</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -89,11 +89,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-type</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>R-24T</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -115,11 +115,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-type</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>R-24R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -141,7 +141,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-type</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -186,7 +186,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-0-set</property>
+                <property>payload/armament/station/id-1-set</property>
                 <value>UB-32</value>
             </equals>
         </condition>
@@ -206,7 +206,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-0-set</property>
+                <property>payload/armament/station/id-1-set</property>
                 <value>UPK-23</value>
             </equals>
         </condition>
@@ -227,11 +227,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-set</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>FAB-500</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -253,11 +253,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-0-set</property>
+                    <property>payload/armament/station/id-1-set</property>
                     <value>RBK-500</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-0-count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -280,11 +280,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-1-count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -305,11 +305,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-1-count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -330,11 +330,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>R-60M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-1-count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>2</value>
                 </equals>
             </and>
@@ -355,11 +355,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>R-60M</value>
                 </equals>
                 <gt>
-                    <property>payload/armament/station/id-1-count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>0</value>
                 </gt>
             </and>
@@ -379,7 +379,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-1-set</property>
+                <property>payload/armament/station/id-2-set</property>
                 <value>2 x R-60M</value>
             </equals>
         </condition>
@@ -399,11 +399,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>R-73</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-1-count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -424,7 +424,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-type</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -451,11 +451,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-type</property>
+                    <property>payload/armament/station/id-3-type</property>
                     <value>Droptank</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-2-count</property>
+                    <property>payload/armament/station/id-3-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -478,11 +478,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-3-count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -503,11 +503,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-3-count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -528,11 +528,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>R-60M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-3-count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>2</value>
                 </equals>
             </and>
@@ -553,11 +553,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>R-60M</value>
                 </equals>
                 <gt>
-                    <property>payload/armament/station/id-3-count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>0</value>
                 </gt>
             </and>
@@ -577,7 +577,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-3-set</property>
+                <property>payload/armament/station/id-4-set</property>
                 <value>2 x R-60M</value>
             </equals>
         </condition>
@@ -597,11 +597,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>R-73</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-3-count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -622,7 +622,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-3-type</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -650,11 +650,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>R-13M</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -676,11 +676,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>R-3R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -702,11 +702,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>R-24T</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -728,11 +728,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>R-24R</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -754,7 +754,7 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-type</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
@@ -799,7 +799,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-4-set</property>
+                <property>payload/armament/station/id-5-set</property>
                 <value>UB-32</value>
             </equals>
         </condition>
@@ -819,7 +819,7 @@
         <type>select</type>
         <condition>
             <equals>
-                <property>payload/armament/station/id-4-set</property>
+                <property>payload/armament/station/id-5-set</property>
                 <value>UPK-23</value>
             </equals>
         </condition>
@@ -840,11 +840,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-set</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>FAB-500</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -866,11 +866,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-set</property>
+                    <property>payload/armament/station/id-5-set</property>
                     <value>RBK-500</value>
                 </equals>
                 <equals>
-                    <property>payload/armament/station/id-4-count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>

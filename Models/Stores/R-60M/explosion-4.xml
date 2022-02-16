@@ -6,7 +6,7 @@
         <emissive type="bool">true</emissive>
         <lighting type="bool">false</lighting>
         <condition>
-            <property>payload/armament/r-60m/flags/explode-id-301</property>
+            <property>payload/armament/r-60m/flags/explode-id-401</property>
         </condition>
         <attach>world</attach>
         <placer>
@@ -75,7 +75,7 @@
     <submodel>
         <name>r-60m missile 1 explosion</name>
         <model>explosion-bounds.xml</model>
-        <trigger>payload/armament/r-60m/flags/explode-id-301</trigger>
+        <trigger>payload/armament/r-60m/flags/explode-id-401</trigger>
         <speed>0.0</speed>
         <repeat>false</repeat>
         <delay>0.00</delay>
@@ -97,7 +97,7 @@
         <emissive type="bool">false</emissive>
         <lighting type="bool">false</lighting>
         <condition>
-            <property>payload/armament/r-60m/flags/explode-smoke-id-301</property>
+            <property>payload/armament/r-60m/flags/explode-smoke-id-401</property>
         </condition>
         <attach>world</attach>
         <placer>
