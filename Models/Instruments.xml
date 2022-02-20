@@ -200,7 +200,7 @@
             <z-m>-0.093</z-m>
         </offsets>
     </model>
-    <!--<model>
+    <model>
         <name>Weapons</name>
         <path>Aircraft/MiG-23MLD/Models/Instruments/Weapons/Weapons.xml</path>
         <offsets>
@@ -208,5 +208,5 @@
             <y-m>-0.037</y-m>
             <z-m> 0.026</z-m>
         </offsets>
-    </model>-->
+    </model>
 </PropertyList>

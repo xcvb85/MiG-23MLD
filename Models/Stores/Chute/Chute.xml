@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>Chute.ac</path>
+    <path>TPK-27.ac</path>
     <animation>
         <type>scale</type>
         <object-name>chute</object-name>
