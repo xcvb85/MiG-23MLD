@@ -222,6 +222,8 @@
             <feed>1</feed>
             <feed>2</feed>
             <feed>3</feed>
+            <feed>4</feed>
+            <feed>5</feed>
             <thruster file="direct">
                 <location unit="M">
                     <x>  3.5 </x>
@@ -246,6 +248,8 @@
             <feed>1</feed>
             <feed>2</feed>
             <feed>3</feed>
+            <feed>4</feed>
+            <feed>5</feed>
             <thruster file="direct">
                 <sense>1</sense>
                 <location unit="M">
@@ -267,7 +271,7 @@
                 <y>  0.0 </y>
                 <z> -0.4 </z>
             </location>
-            <priority>3</priority>
+            <priority>4</priority>
             <capacity unit="KG"> 2000 </capacity>
             <contents unit="KG"> 2000 </contents>
         </tank>
@@ -277,7 +281,7 @@
                 <y> -2.0 </y>
                 <z>  0.3 </z>
             </location>
-            <priority>2</priority>
+            <priority>3</priority>
             <capacity unit="KG">  700 </capacity>
             <contents unit="KG">  700 </contents>
         </tank>
@@ -287,11 +291,31 @@
                 <y>  2.0 </y>
                 <z>  0.3 </z>
             </location>
-            <priority>2</priority>
+            <priority>3</priority>
             <capacity unit="KG">  700 </capacity>
             <contents unit="KG">  700 </contents>
         </tank>
         <tank type="FUEL" number="3">
+            <location unit="M">
+                <x> -0.5 </x>
+                <y>  0.0 </y>
+                <z> -1.3 </z>
+            </location>
+            <priority>2</priority>
+            <capacity unit="KG">  600 </capacity>
+            <contents unit="KG">    0 </contents>
+        </tank>
+        <tank type="FUEL" number="4">
+            <location unit="M">
+                <x> -0.5 </x>
+                <y>  0.0 </y>
+                <z> -1.3 </z>
+            </location>
+            <priority>1</priority>
+            <capacity unit="KG">  600 </capacity>
+            <contents unit="KG">    0 </contents>
+        </tank>
+        <tank type="FUEL" number="5">
             <location unit="M">
                 <x> -0.5 </x>
                 <y>  0.0 </y>

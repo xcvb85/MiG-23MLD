@@ -7,7 +7,7 @@
         <switch name="fcs/upk-23-trigger1">
             <default value="0"/>
             <test logic="AND" value="1">
-                /payload/weight/weight-lb == 480
+                /payload/weight[1]/weight-lb == 480
                 fcs/guntrigger gt 0
             </test>
         </switch>
@@ -16,7 +16,7 @@
         <switch name="fcs/upk-23-trigger2">
             <default value="0"/>
             <test logic="AND" value="1">
-                /payload/weight[4]/weight-lb == 480
+                /payload/weight[5]/weight-lb == 480
                 fcs/guntrigger gt 0
             </test>
         </switch>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>R-60M.ac</path>
+    <path>R-3R.ac</path>
     <animation>
         <type>select</type>
-        <object-name>R-60M</object-name>
+        <object-name>R-3R</object-name>
         <condition>
-            <property>payload/armament/r-60m/flags/msl-id-101</property>
+            <property>payload/armament/r-3r/flags/msl-id-200</property>
         </condition>
     </animation>
     <model>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/motor-smoke-2.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/motor-smoke-2.xml</path>
         <offsets>
             <x-m>1.44</x-m>
             <y-m>0</y-m>
@@ -18,7 +18,7 @@
     </model>
     <model>
         <name>explosion</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/explosion-2.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/explosion-2.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>
@@ -26,7 +26,7 @@
         </offsets>
     </model>
     <animation>
-        <object-name>R-60M</object-name>
+        <object-name>R-3R</object-name>
         <enable-hot type="bool">false</enable-hot>
     </animation>
 </PropertyList>

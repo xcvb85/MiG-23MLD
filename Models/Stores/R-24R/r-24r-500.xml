@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>R-24T.ac</path>
+    <path>R-24R.ac</path>
     <animation>
         <type>select</type>
-        <object-name>R-24T</object-name>
+        <object-name>R-24R</object-name>
         <condition>
-            <property>payload/armament/r-24t/flags/msl-id-0</property>
+            <property>payload/armament/r-24r/flags/msl-id-500</property>
         </condition>
     </animation>
     <model>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-24T/motor-smoke-1.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24R/motor-smoke-2.xml</path>
         <offsets>
             <x-m>1.44</x-m>
             <y-m>0</y-m>
@@ -18,7 +18,7 @@
     </model>
     <model>
         <name>explosion</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-24T/explosion-1.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-24R/explosion-2.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>
@@ -26,7 +26,7 @@
         </offsets>
     </model>
     <animation>
-        <object-name>R-24T</object-name>
+        <object-name>R-24R</object-name>
         <enable-hot type="bool">false</enable-hot>
     </animation>
 </PropertyList>
