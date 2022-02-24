@@ -41,7 +41,7 @@ var FireControl = {
 			var ws = p.getWeapons();
 			foreach (var w;ws) {
 				if (w.parents[0] == armament.AIM and (w.guidance == "heat" and w.target_air)) {# or w.guidance=="vision"
-					w.setCaged(cageIt);
+					w.setCaged(0);
 				}
 			}
 		}
@@ -1173,9 +1173,9 @@ var printfDebug = func {if (debug == 1) call(printf,arg);};
 
 # This is non-generic methods, please edit it to fit your radar setup:
 # List of weapons that can be ripple/dual dropped:
-var dualWeapons = ["MK-82","MK-82AIR","MK-83","MK-84","GBU-12","GBU-24","GBU-54","CBU-87","CBU-105","GBU-31","AGM-154A","B61-7","B61-12"];
+var dualWeapons = ["MK-82"];
 var getCompleteRadarTargetsList = func {
 	# A list of all MP/AI aircraft/ships/surface-targets around the aircraft, including those that is outside radar line of sight etc..
 
-	return awg_9.tgts_list;#completeList;
+	return radar_system.getCompleteList();
 }
