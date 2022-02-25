@@ -50,7 +50,7 @@ var pylonSets = {
     upk23: {name: "UPK-23", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 480, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
 
     # A/A weapons
-    R3R:    {name: "R-3R",      content: ["R-3R"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
+    R3S:    {name: "R-3S",      content: ["R-3S"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
     R13M:   {name: "R-13M",     content: ["R-13M"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
     R24R:   {name: "R-24R",     content: ["R-24R"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
     R24T:   {name: "R-24T",     content: ["R-24T"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
@@ -69,11 +69,11 @@ var pylonSets = {
 };
 
 var pylon1set = [pylonSets.empty];
-var pylon2set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la];
-var pylon3set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lb];
+var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la];
+var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lb];
 var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-var pylon5set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lc];
-var pylon6set = [pylonSets.empty, pylonSets.R3R, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld];
+var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lc];
+var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld];
 var pylon7set = [pylonSets.empty];
 
 setprop("payload/armament/fire-control/serviceable", 1);
@@ -87,4 +87,4 @@ pylon7 = stations.Pylon.new("Right wing outboard pylon (#7)", 6, [4.510,  4.511,
 pylonI = stations.InternalStation.new("Internal gun mount",   7, [pylonSets.mm23], props.globals.getNode("fdm/jsbsim/inertia/pointmass-weight-lbs[10]", 1));
 
 pylons = [pylon1, pylon2, pylon3, pylon4, pylon5, pylon6, pylon7, pylonI];
-fcs = fc.FireControl.new(pylons, [7, 1, 5, 2, 4], ["23mm Cannon", "R-3R", "R-13M", "R-24R", "R-24T", "R-60M", "R-73", "UB-32", "FAB-500", "RBK-500", "S-24"]);
+fcs = fc.FireControl.new(pylons, [7, 1, 5, 2, 4], ["23mm Cannon", "R-3S", "R-13M", "R-24R", "R-24T", "R-60M", "R-73", "UB-32", "FAB-500", "RBK-500", "S-24"]);

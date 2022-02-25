@@ -482,12 +482,12 @@
 
         <!--================================= Missiles =============================-->
         <missiles>
-            <name>R-3R</name>
+            <name>R-3S</name>
             <path>Sounds/weapons/missile.wav</path>
             <mode>once</mode>
             <type>avionics</type>
             <condition>
-                <property>payload/armament/r-3r/sound-fire-on-off</property>
+                <property>payload/armament/r-3s/sound-fire-on-off</property>
             </condition>
             <volume>
                 <factor>0.75</factor>

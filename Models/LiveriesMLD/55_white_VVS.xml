@@ -11,9 +11,9 @@
     <fdm>
         <jsbsim>
             <fcs>
-                <dogtooth type="int">1</dogtooth>
-                <vortex-generator type="int">0</vortex-generator>
-                <cfd>1</cfd>
+                <dogtooth type="bool">1</dogtooth>
+                <vortex-generator type="bool">0</vortex-generator>
+                <cfd type="bool">1</cfd>
             </fcs>
         </jsbsim>
     </fdm>

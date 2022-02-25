@@ -89,11 +89,11 @@ The rectangular device on the right hand panel is the SPO-15 radar warning recei
 
 A/A Weapons
 ----------
-R-3R: Short range missile with SAR (semi-active radar) seeker (like AIM-9C)
-R-13M: Short range missile with IR (infrared) seeker (like AIM-9G)
-R-24R: BVR (beyond visual range) missile with SAR seeker
+R-3S: Short range missile with IR (infrared) seeker (copy of AIM-9B)
+R-13M: Short range missile with IR seeker (similar to AIM-9G)
+R-24R: BVR (beyond visual range) missile with SAR (semi-active radar) seeker
 R-24T: BVR (beyond visual range) missile with IR seeker
-R-60M: Leightweight short range missile with IR (infrared) seeker
+R-60M: Leightweight short range missile with IR seeker
 R-73: Advanced short range IR missile with thrust vector control
 
 A/G Weapons

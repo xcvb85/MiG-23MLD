@@ -6,7 +6,7 @@
         <emissive type="bool">true</emissive>
         <lighting type="bool">false</lighting>
         <condition>
-            <property>payload/armament/r-3r/flags/explode-id-500</property>
+            <property>payload/armament/r-3s/flags/explode-id-200</property>
         </condition>
         <attach>world</attach>
         <placer>
@@ -73,9 +73,9 @@
         </program>
     </particlesystem>
     <submodel>
-        <name>r-3r missile 1 explosion</name>
+        <name>r-3s missile 1 explosion</name>
         <model>explosion-bounds.xml</model>
-        <trigger>payload/armament/r-3r/flags/explode-id-500</trigger>
+        <trigger>payload/armament/r-3s/flags/explode-id-200</trigger>
         <speed>0.0</speed>
         <repeat>false</repeat>
         <delay>0.00</delay>
@@ -97,7 +97,7 @@
         <emissive type="bool">false</emissive>
         <lighting type="bool">false</lighting>
         <condition>
-            <property>payload/armament/r-3r/flags/explode-smoke-id-500</property>
+            <property>payload/armament/r-3s/flags/explode-smoke-id-200</property>
         </condition>
         <attach>world</attach>
         <placer>

@@ -48,32 +48,6 @@
         </condition>
     </animation>
     <model>
-        <name>R-3R Missile 1</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
-        <offsets>
-            <x-m>-1.368</x-m>
-            <y-m>-1.560</y-m>
-            <z-m>-0.104</z-m>
-            <pitch-deg>-2</pitch-deg>
-        </offsets>
-    </model>
-    <animation>
-        <object-name>R-3R Missile 1</object-name>
-        <type>select</type>
-        <condition>
-            <and>
-                <equals>
-                    <property>payload/armament/station/id-1-type</property>
-                    <value>R-3R</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-1-count</property>
-                    <value>1</value>
-                </equals>
-            </and>
-        </condition>
-    </animation>
-    <model>
         <name>R-24T Missile 1</name>
         <path>Aircraft/MiG-23MLD/Models/Stores/R-24T/R-24T.ac</path>
         <offsets>
@@ -291,8 +265,8 @@
         </condition>
     </animation>
     <model>
-        <name>R-3R Missile 2</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <name>R-3S Missile 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3S/R-3S.ac</path>
         <offsets>
             <x-m>-1.650</x-m>
             <y-m>-0.446</y-m>
@@ -300,13 +274,13 @@
         </offsets>
     </model>
     <animation>
-        <object-name>R-3R Missile 2</object-name>
+        <object-name>R-3S Missile 2</object-name>
         <type>select</type>
         <condition>
             <and>
                 <equals>
                     <property>payload/armament/station/id-2-type</property>
-                    <value>R-3R</value>
+                    <value>R-3S</value>
                 </equals>
                 <equals>
                     <property>payload/armament/station/id-2-count</property>
@@ -489,8 +463,8 @@
         </condition>
     </animation>
     <model>
-        <name>R-3R Missile 3</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
+        <name>R-3S Missile 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/R-3S/R-3S.ac</path>
         <offsets>
             <x-m>-1.650</x-m>
             <y-m> 0.446</y-m>
@@ -498,13 +472,13 @@
         </offsets>
     </model>
     <animation>
-        <object-name>R-3R Missile 3</object-name>
+        <object-name>R-3S Missile 3</object-name>
         <type>select</type>
         <condition>
             <and>
                 <equals>
                     <property>payload/armament/station/id-4-type</property>
-                    <value>R-3R</value>
+                    <value>R-3S</value>
                 </equals>
                 <equals>
                     <property>payload/armament/station/id-4-count</property>
@@ -652,32 +626,6 @@
                 <equals>
                     <property>payload/armament/station/id-5-type</property>
                     <value>R-13M</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-5-count</property>
-                    <value>1</value>
-                </equals>
-            </and>
-        </condition>
-    </animation>
-    <model>
-        <name>R-3R Missile 4</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-3R/R-3R.ac</path>
-        <offsets>
-            <x-m>-1.368</x-m>
-            <y-m> 1.560</y-m>
-            <z-m>-0.104</z-m>
-            <pitch-deg>-2</pitch-deg>
-        </offsets>
-    </model>
-    <animation>
-        <object-name>R-3R Missile 4</object-name>
-        <type>select</type>
-        <condition>
-            <and>
-                <equals>
-                    <property>payload/armament/station/id-5-type</property>
-                    <value>R-3R</value>
                 </equals>
                 <equals>
                     <property>payload/armament/station/id-5-count</property>

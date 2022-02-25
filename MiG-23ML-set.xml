@@ -27,9 +27,9 @@
         </sound>
         <multiplay>
             <generic>
-                <int   n="0" type="int"    alias="/fdm/jsbsim/fcs/dogtooth"/>
-                <int   n="1" type="int"    alias="/fdm/jsbsim/fcs/vortex-generator"/>
-                <int   n="2" type="int"    alias="/fdm/jsbsim/fcs/cfd"/>
+                <int   n="0" type="bool"   alias="/fdm/jsbsim/fcs/dogtooth"/>
+                <int   n="1" type="bool"   alias="/fdm/jsbsim/fcs/vortex-generator"/>
+                <int   n="2" type="bool"   alias="/fdm/jsbsim/fcs/cfd"/>
                 <float n="0" type="double" alias="/fdm/jsbsim/fcs/wing-sweep"/>
                 <float n="1" type="double" alias="/engines/engine[0]/nozzle-pos-norm"/> <!-- Reheat  -->
                 <float n="2" type="double" alias="/engines/engine[0]/augmentation"/> <!-- Reheat  -->

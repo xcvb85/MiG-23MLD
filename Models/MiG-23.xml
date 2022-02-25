@@ -6,7 +6,7 @@
         <object-name>leadingEdge</object-name>
         <condition>
             <not>
-                <property>sim/multiplay/generic/int[0]</property>
+                <property>sim/multiplay/generic/bool[0]</property>
             </not>
         </condition>
     </animation>
@@ -14,14 +14,14 @@
         <type>select</type>
         <object-name>vortexGenerator</object-name>
         <condition>
-            <property>sim/multiplay/generic/int[1]</property>
+            <property>sim/multiplay/generic/bool[1]</property>
         </condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>cfd</object-name>
         <condition>
-            <property>sim/multiplay/generic/int[2]</property>
+            <property>sim/multiplay/generic/bool[2]</property>
         </condition>
     </animation>
     <effect>
