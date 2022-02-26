@@ -4,7 +4,7 @@
         <model>
             <livery>
                 <name type="string">VVS 12 Red</name>
-                <texture>LiveriesML/07_blue_RuAF.png</texture>
+                <texture>LiveriesML/12_red_VVS.png</texture>
             </livery>
         </model>
     </sim>
