@@ -602,9 +602,9 @@ var SubModelWeapon = {
 	loop: func {
 		if (me.timer == nil) {settimer(func me.loop(), 0.5);return;}#bug in maketimer makes this loop need to run all the time :(
 		me.ammo = me.getAmmo();#print("ammo "~me.ammo);
-		for(me.i = 0;me.i<size(me.tracerSubModelNumbers);me.i+=1) {
-			setprop("ai/submodels/submodel["~me.tracerSubModelNumbers[me.i]~"]/count",me.ammo>0?-1:0);
-		}
+		#for(me.i = 0;me.i<size(me.tracerSubModelNumbers);me.i+=1) {
+			#setprop("ai/submodels/submodel["~me.tracerSubModelNumbers[me.i]~"]/count",me.ammo>0?-1:0);
+		#}
 		me.weight_launch_lbm = me.munitionMass*me.ammo;
 
 		#not sure how smart it is to do this all the time, but..:

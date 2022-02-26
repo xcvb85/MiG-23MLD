@@ -12,10 +12,10 @@
                 </binding>
             </item>
             <item>
-                <label>Refill</label>
+                <label>Payload presets</label>
                 <binding>
-                    <command>nasal</command>
-                    <script>libraries.refill();</script>
+                    <command>dialog-show</command>
+                    <dialog-name>payload</dialog-name>
                 </binding>
             </item>
             <item>

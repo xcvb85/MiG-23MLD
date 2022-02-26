@@ -440,7 +440,7 @@
             <path>Sounds/weapons/M-2000-Guns.wav</path>
             <condition>
                 <greater-than>
-                    <property>ai/submodels/submodel[4]/count</property>
+                    <property>ai/submodels/submodel[8]/count</property>
                     <value>0</value>
                 </greater-than>
                 <property>fdm/jsbsim/fcs/guntrigger</property>
@@ -455,7 +455,7 @@
             <path>Sounds/weapons/M-2000-Guns.wav</path>
             <condition>
                 <greater-than>
-                    <property>ai/submodels/submodel[6]/count</property>
+                    <property>ai/submodels/submodel[10]/count</property>
                     <value>0</value>
                 </greater-than>
                 <property>fdm/jsbsim/fcs/upk-23-trigger1</property>
@@ -470,7 +470,7 @@
             <path>Sounds/weapons/M-2000-Guns.wav</path>
             <condition>
                 <greater-than>
-                    <property>ai/submodels/submodel[8]/count</property>
+                    <property>ai/submodels/submodel[12]/count</property>
                     <value>0</value>
                 </greater-than>
                 <property>fdm/jsbsim/fcs/upk-23-trigger2</property>

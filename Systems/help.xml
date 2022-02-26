@@ -89,7 +89,7 @@ The rectangular device on the right hand panel is the SPO-15 radar warning recei
 
 A/A Weapons
 ----------
-R-3S: Short range missile with IR (infrared) seeker (copy of AIM-9B)
+R-3S: Short range missile with IR (infrared) seeker (copy of AIM-9B). Cannot be placed at outer pylons (smoke damages aircraft engine).
 R-13M: Short range missile with IR seeker (similar to AIM-9G)
 R-24R: BVR (beyond visual range) missile with SAR (semi-active radar) seeker
 R-24T: BVR (beyond visual range) missile with IR seeker
