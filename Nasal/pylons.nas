@@ -100,6 +100,22 @@ pylonI = stations.InternalStation.new("Internal gun mount",   7, [pylonSets.mm23
 pylons = [pylon1, pylon2, pylon3, pylon4, pylon5, pylon6, pylon7, pylonI];
 fcs = fc.FireControl.new(pylons, [7, 1, 5, 2, 4], ["23mm Cannon", "R-3S", "R-13M", "R-24R", "R-24T", "R-60M", "R-73", "UB-32", "FAB-500", "RBK-500", "S-24"]);
 
+var selectedWeapon = {};
+var bore_loop = func {
+    #enables firing of aim9 without radar. The aim-9 seeker will be fixed 3.5 degs below bore and any aircraft the gets near that will result in lock.
+    if (fcs != nil) {
+        selectedWeapon = fcs.getSelectedWeapon();
+        if (selectedWeapon != nil and (selectedWeapon.type == "R-3S" or selectedWeapon.type == "R-13M" or selectedWeapon.type == "R-60M" or selectedWeapon.type == "R-73")) {
+            selectedWeapon.setContacts(radar_system.getCompleteList());
+            selectedWeapon.commandDir(0,-3.5);# the real is bored to -6 deg below real bore
+        }
+    }
+    settimer(bore_loop, 0.5);
+};
+if (fcs!=nil) {
+    bore_loop();
+}
+
 var refill_cannons = func {
     if(getprop("gear/gear[0]/wow")) {
         # cannons

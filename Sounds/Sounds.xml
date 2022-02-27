@@ -482,12 +482,34 @@
 
         <!--================================= Missiles =============================-->
         <missiles>
+            <name>R-3S lock</name>
+            <path>Sounds/weapons/missile-lock.wav</path>
+            <mode>looped</mode>
+            <condition>
+                <property>payload/armament/r-3s/sound-volume</property>
+            </condition>
+            <volume>
+                <factor>0.75</factor>
+            </volume>
+        </missiles>
+        <missiles>
             <name>R-3S</name>
             <path>Sounds/weapons/missile.wav</path>
             <mode>once</mode>
             <type>avionics</type>
             <condition>
                 <property>payload/armament/r-3s/sound-fire-on-off</property>
+            </condition>
+            <volume>
+                <factor>0.75</factor>
+            </volume>
+        </missiles>
+        <missiles>
+            <name>R-13M lock</name>
+            <path>Sounds/weapons/missile-lock.wav</path>
+            <mode>looped</mode>
+            <condition>
+                <property>payload/armament/r-13m/sound-volume</property>
             </condition>
             <volume>
                 <factor>0.75</factor>
@@ -505,11 +527,33 @@
             </volume>
         </missiles>
         <missiles>
+            <name>R-60M lock</name>
+            <path>Sounds/weapons/missile-lock.wav</path>
+            <mode>looped</mode>
+            <condition>
+                <property>payload/armament/r-60m/sound-volume</property>
+            </condition>
+            <volume>
+                <factor>0.75</factor>
+            </volume>
+        </missiles>
+        <missiles>
             <name>R-60M</name>
             <path>Sounds/weapons/missile.wav</path>
             <mode>once</mode>
             <condition>
                 <property>payload/armament/r-60m/sound-fire-on-off</property>
+            </condition>
+            <volume>
+                <factor>0.75</factor>
+            </volume>
+        </missiles>
+        <missiles>
+            <name>R-73 lock</name>
+            <path>Sounds/weapons/missile-lock.wav</path>
+            <mode>looped</mode>
+            <condition>
+                <property>payload/armament/r-73/sound-volume</property>
             </condition>
             <volume>
                 <factor>0.75</factor>
