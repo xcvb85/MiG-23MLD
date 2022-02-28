@@ -1,3 +1,32 @@
+# System Libraries
+var SweepAngles=[];
+var Sweep=0;
+var SweepIndicator=0;
+
+if(getprop("/sim/variant-id")==1) {
+    aircraft.livery.init("Aircraft/MiG-23MLD/Models/LiveriesMLD/");
+    SweepAngles=[16,33,45,72]; #16=fully forward
+}
+else {
+    aircraft.livery.init("Aircraft/MiG-23MLD/Models/LiveriesML/");
+    SweepAngles=[16,45,72]; #16=fully forward
+}
+
+var wingSweep = func(direction) {
+    Sweep += direction;
+
+    if(Sweep > size(SweepAngles)-1) {
+        Sweep = size(SweepAngles)-1;
+    }
+    if(Sweep < 0) {
+        Sweep = 0;
+    }
+    SweepIndicator = Sweep-1;
+    if(SweepIndicator < 0) SweepIndicator = 0;
+    setprop("fdm/jsbsim/fcs/wing-sweep-cmd", (SweepAngles[Sweep]-16)/56.0);
+    setprop("fdm/jsbsim/fcs/wing-sweep-indicator", SweepIndicator);
+}
+
 # Generic System Libraries
 var engineStart = func {
     if(getprop("fdm/jsbsim/electric/output/pump") > 20 and

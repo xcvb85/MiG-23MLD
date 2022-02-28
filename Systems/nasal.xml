@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <rcs>
-        <file>Aircraft/MiG-23MLD/Nasal/rcs.nas</file>
-    </rcs>
+    <vector>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/vector.nas</file>
+    </vector>
+    <notifications>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/ArmamentNotification.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/GeoBridgedTransmitter.nas</file>
+    </notifications>
     <radardist>
         <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
     </radardist>
     <libraries>
         <file>Aircraft/MiG-23MLD/Nasal/libraries.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bfm.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_gun.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bvr.nas</file>
-        <file>Aircraft/MiG-23MLD/Models/Instruments/HUD/hud.nas</file>
     </libraries>
-    <notifications>
-        <file>Aircraft/MiG-23MLD/Nasal/ArmamentNotification.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/GeoBridgedTransmitter.nas</file>
-    </notifications>
-    <steerpoints>
-        <file>Aircraft/MiG-23MLD/Nasal/steerpoints.nas</file>
-    </steerpoints>
-    <datalink>
-        <file>Aircraft/MiG-23MLD/Nasal/datalink.nas</file>
-    </datalink>
-    <damage>
-        <file>Aircraft/MiG-23MLD/Nasal/damage.nas</file>
-    </damage>
-    <armament>
-        <file>Aircraft/MiG-23MLD/Nasal/missile-code.nas</file><!-- must be before station-manager -->
-    </armament>
-    <stations>
-        <file>Aircraft/MiG-23MLD/Nasal/station-manager.nas</file><!-- must be before fire-control and pylons -->
-    </stations>
-    <fc>
-        <file>Aircraft/MiG-23MLD/Nasal/fire-control.nas</file><!-- must be before pylons -->
-    </fc>
-    <pylons>
-        <file>Aircraft/MiG-23MLD/Nasal/pylons.nas</file>
-    </pylons>
+    <hud>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_bfm.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_gun.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_bvr.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud.nas</file>
+    </hud>
     <radar_system>
         <file>Aircraft/MiG-23MLD/Nasal/radar/radar-system.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/radar/apg-68.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/rwr-only.nas</file>
     </radar_system>
+    <damage>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/damage.nas</file>
+    </damage>
+    <armament>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/missile-code.nas</file><!-- must be before station-manager -->
+    </armament>
+    <stations>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/station-manager.nas</file><!-- must be before fire-control and pylons -->
+    </stations>
+    <fc>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/fire-control.nas</file><!-- must be before pylons -->
+    </fc>
+    <pylons>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/pylons.nas</file>
+    </pylons>
 </PropertyList>

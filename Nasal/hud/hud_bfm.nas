@@ -3,7 +3,7 @@ var hud_bfm = {
 	{
 		var m = { parents: [hud_bfm] };
 		m.group = canvasGroup;
-		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bfm.svg");
+		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_bfm.svg");
 		return m;
 	},
 	update: func()

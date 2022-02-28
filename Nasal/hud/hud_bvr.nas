@@ -3,7 +3,7 @@ var hud_bvr = {
 	{
 		var m = { parents: [hud_bvr] };
 		m.group = canvasGroup;
-		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Models/Instruments/HUD/hud_bvr.svg");
+		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_bvr.svg");
 
 		var svg_keys = ["horizonBar","marker1","marker2"];
 		foreach(var key; svg_keys) {
