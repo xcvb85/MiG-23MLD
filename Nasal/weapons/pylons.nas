@@ -173,7 +173,7 @@ var aa_default = func {
     }
 }
 
-var aa_low_cost = func {
+var aa_r3 = func {
     if(getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.R13M);
         pylon3.loadSet(pylonSets.R3S);
@@ -184,7 +184,7 @@ var aa_low_cost = func {
     }
 }
 
-var aa_guns = func {
+var aa_upk23 = func {
     if(getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.upk23);
         pylon3.loadSet(pylonSets.empty);
@@ -195,7 +195,7 @@ var aa_guns = func {
     }
 }
 
-var ag_rockets = func {
+var ag_s5 = func {
     if(getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.ub32l);
         pylon3.loadSet(pylonSets.empty);
@@ -206,7 +206,18 @@ var ag_rockets = func {
     }
 }
 
-var ag_bombs_heavy = func {
+var ag_s24 = func {
+    if(getprop("gear/gear[0]/wow")) {
+        pylon2.loadSet(pylonSets.s24la);
+        pylon3.loadSet(pylonSets.s24lb);
+        pylon5.loadSet(pylonSets.s24lc);
+        pylon6.loadSet(pylonSets.s24ld);
+    } else {
+        screen.log.write(msgA, 0.5, 0.5, 1);
+    }
+}
+
+var ag_f500 = func {
     if(getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.f500);
         pylon3.loadSet(pylonSets.empty);

@@ -12,17 +12,17 @@
                 </binding>
             </item>
             <item>
-                <label>Payload presets</label>
+                <label>Configuration</label>
                 <binding>
                     <command>dialog-show</command>
-                    <dialog-name>payload</dialog-name>
+                    <dialog-name>configuration</dialog-name>
                 </binding>
             </item>
             <item>
-                <label>Autostart</label>
+                <label>Event Log</label>
                 <binding>
-                    <command>nasal</command>
-                    <script>libraries.autostart();</script>
+                    <command>dialog-show</command>
+                    <dialog-name>flightlog</dialog-name>
                 </binding>
             </item>
         </menu>

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <name>payload</name>
+    <name>configuration</name>
     <modal type="bool">false</modal>
     <draggable>true</draggable>
     <resizable>true</resizable>
     <width>725</width>
     <layout>vbox</layout>
-
+    
     <group>
         <layout>hbox</layout>
         <empty>
             <stretch>1</stretch>
         </empty>
-
+        
         <text>
-            <label>MiG-23 payload presets</label>
+            <label>MiG-23 Configuration</label>
         </text>
-
+        
         <empty>
             <stretch>1</stretch>
         </empty>
-
+        
         <button>
             <pref-width>16</pref-width>
             <pref-height>16</pref-height>
             <legend></legend>
-
+            
             <default>1</default>
             <keynum>27</keynum>
             <border>2</border>
@@ -37,18 +37,22 @@
             </binding>
         </button>
     </group>
-
+    
     <hrule/>
-
+    
     <group>
         <layout>hbox</layout>
-
+        
         <button>
-            <legend>Refuel all tanks</legend>
+            <legend>Autostart</legend>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.autostart();</script>
+            </binding>
         </button>
-
+        
         <vrule/>
-
+        
         <button>
             <legend>Rearm cannons</legend>
             <binding>
@@ -56,9 +60,9 @@
                 <script>pylons.refill_cannons();</script>
             </binding>
         </button>
-
+        
         <vrule/>
-
+        
         <button>
             <legend>Refill chaff/flares</legend>
             <binding>
@@ -66,9 +70,9 @@
                 <script>pylons.refill_cf();</script>
             </binding>
         </button>
-
+        
         <vrule/>
-
+        
         <button>
             <legend>Repack chute</legend>
             <binding>
@@ -77,12 +81,12 @@
             </binding>
         </button>
     </group>
-
+    
     <hrule/>
-
+    
     <group>
         <layout>table</layout>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
@@ -93,7 +97,7 @@
                 <script>pylons.aa_default();</script>
             </binding>
         </button>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
@@ -101,10 +105,10 @@
             <legend>A/A Low Cost</legend>
             <binding>
                 <command>nasal</command>
-                <script>pylons.aa_low_cost();</script>
+                <script>pylons.aa_r3();</script>
             </binding>
         </button>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
@@ -112,46 +116,120 @@
             <legend>A/A Guns</legend>
             <binding>
                 <command>nasal</command>
-                <script>pylons.aa_guns();</script>
+                <script>pylons.aa_upk23();</script>
             </binding>
         </button>
-
+        
         <hrule>
             <row>1</row>
             <col>0</col>
             <colspan>6</colspan>
         </hrule>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>2</row>
             <col>0</col>
-            <legend>A/G Rockets</legend>
+            <legend>A/G Rockets Light</legend>
             <binding>
                 <command>nasal</command>
-                <script>pylons.ag_rockets();</script>
+                <script>pylons.ag_s5();</script>
             </binding>
         </button>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>2</row>
             <col>2</col>
-            <legend>A/G Bombs Light</legend>
+            <legend>A/G Rockets Heavy</legend>
+            <binding>
+                <command>nasal</command>
+                <script>pylons.ag_s24();</script>
+            </binding>
         </button>
-
+        
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>2</row>
             <col>4</col>
-            <legend>A/G Bombs Heavy</legend>
+            <legend>A/G Bombs</legend>
             <binding>
                 <command>nasal</command>
-                <script>pylons.ag_bombs_heavy();</script>
+                <script>pylons.ag_f500();</script>
             </binding>
         </button>
-
     </group>
-
+    
+    <group>
+        <layout>hbox</layout>
+        <empty>
+            <stretch>1</stretch>
+        </empty>
+        
+        <text>
+            <label>OPRF Damage</label>
+        </text>
+        <checkbox>
+            <property>payload/armament/msg</property>
+            <live>true</live>
+            <binding>
+                <command>property-toggle</command>
+                <property>payload/armament/msg</property>
+            </binding>
+        </checkbox>
+        
+        <empty>
+            <stretch>1</stretch>
+        </empty>
+        
+        <text>
+            <label>Chaff/Flare Dispenser</label>
+        </text>
+        <checkbox>
+            <property>fdm/jsbsim/fcs/cfd</property>
+            <live>true</live>
+            <binding>
+                <command>property-toggle</command>
+                <property>fdm/jsbsim/fcs/cfd</property>
+            </binding>
+        </checkbox>
+        
+        <empty>
+            <stretch>1</stretch>
+        </empty>
+        
+        <text>
+            <label>Vortex Generator</label>
+        </text>
+        <checkbox>
+            <property>fdm/jsbsim/fcs/vortex-generator</property>
+            <live>true</live>
+            <binding>
+                <command>property-toggle</command>
+                <property>fdm/jsbsim/fcs/vortex-generator</property>
+            </binding>
+        </checkbox>
+        
+        <empty>
+            <stretch>1</stretch>
+        </empty>
+        
+        <text>
+            <label>Dogtooth</label>
+        </text>
+        <checkbox>
+            <property>fdm/jsbsim/fcs/dogtooth</property>
+            <live>true</live>
+            <binding>
+                <command>property-toggle</command>
+                <property>fdm/jsbsim/fcs/dogtooth</property>
+            </binding>
+        </checkbox>
+        
+        <empty>
+            <stretch>1</stretch>
+        </empty>
+    </group>
+    
     <empty><stretch>1</stretch></empty>
 </PropertyList>
