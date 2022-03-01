@@ -30,7 +30,7 @@
                 <property>instrumentation/hud/knob</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['BFM', 'Gun', 'BVR'];
+                    var modes = ['Crosshairs', 'Pipper', 'Radar'];
                     return modes[arg[0]+1];
                 </script>
             </binding>

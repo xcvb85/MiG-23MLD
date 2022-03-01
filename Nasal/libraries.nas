@@ -12,6 +12,10 @@ else {
     SweepAngles=[16,45,72]; #16=fully forward
 }
 
+var prop = "payload/armament/fire-control";
+var actuator_fc = compat_failure_modes.set_unserviceable(prop);
+FailureMgr.add_failure_mode(prop, "Fire control", actuator_fc);
+
 var wingSweep = func(direction) {
     Sweep += direction;
 

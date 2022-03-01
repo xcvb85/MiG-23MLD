@@ -1,9 +1,9 @@
 var HUDInstance = {};
 
 var PageEnum = {
-    bfm: 0,
-    gun: 1,
-    bvr: 2
+    crosshairs: 0,
+    pipper: 1,
+    radar: 2
 };
 
 var HUD = {
@@ -11,9 +11,9 @@ var HUD = {
         var m = {parents:[HUD], Pages:{}};
         m.Instance = instance;
 
-        m.Pages[PageEnum.bfm] = hud_bfm.new(group.createChild('group'), instance);
-        m.Pages[PageEnum.gun] = hud_gun.new(group.createChild('group'), instance);
-        m.Pages[PageEnum.bvr] = hud_bvr.new(group.createChild('group'), instance);
+        m.Pages[PageEnum.crosshairs] = hud_crosshairs.new(group.createChild('group'), instance);
+        m.Pages[PageEnum.pipper] = hud_pipper.new(group.createChild('group'), instance);
+        m.Pages[PageEnum.radar] = hud_radar.new(group.createChild('group'), instance);
         m.Power = props.globals.getNode("fdm/jsbsim/electric/output/gunsight", 1);
         m.Knob = props.globals.getNode("instrumentation/hud/knob", 1);
 

@@ -1,9 +1,9 @@
-var hud_bfm = {
+var hud_crosshairs = {
 	new: func(canvasGroup, instance)
 	{
-		var m = { parents: [hud_bfm] };
+		var m = { parents: [hud_crosshairs] };
 		m.group = canvasGroup;
-		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_bfm.svg");
+		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_crosshairs.svg");
 		return m;
 	},
 	update: func()

@@ -14,9 +14,9 @@
         <file>Aircraft/MiG-23MLD/Nasal/libraries.nas</file>
     </libraries>
     <hud>
-        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_bfm.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_gun.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_bvr.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_crosshairs.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_pipper.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_radar.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud.nas</file>
     </hud>
     <radar_system>

@@ -1,9 +1,9 @@
-var hud_gun = {
+var hud_pipper = {
 	new: func(canvasGroup, instance)
 	{
-		var m = { parents: [hud_gun] };
+		var m = { parents: [hud_pipper] };
 		m.group = canvasGroup;
-		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_gun.svg");
+		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_pipper.svg");
 
 		var svg_keys = ["cross"];
 		foreach(var key; svg_keys) {
