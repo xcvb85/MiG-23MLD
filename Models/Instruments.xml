@@ -4,7 +4,7 @@
         <name>HUD</name>
         <path>Aircraft/MiG-23MLD/Models/Instruments/HUD/HUD.xml</path>
         <offsets>
-            <x-m>-5.400</x-m>
+            <x-m>-5.350</x-m>
             <y-m> 0.017</y-m>
             <z-m> 0.537</z-m>
         </offsets>

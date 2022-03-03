@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>HUD.ac</path>
+    <path>ASP-17ML.ac</path>
 <!--    <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/reflectglas-uber</inherits-from>
         <object-name>glass</object-name>
