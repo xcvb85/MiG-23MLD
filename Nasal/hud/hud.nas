@@ -4,7 +4,7 @@ var PageEnum = {
     crosshairs: 0,
     pipper: 1,
     radar: 2,
-    ccip: 1
+    ccip: 3
 };
 
 var HUD = {
@@ -13,7 +13,7 @@ var HUD = {
         m.Instance = instance;
 
         m.Pages[PageEnum.crosshairs] = hud_crosshairs.new(group.createChild('group'), instance);
-#        m.Pages[PageEnum.pipper] = hud_pipper.new(group.createChild('group'), instance);
+        m.Pages[PageEnum.pipper] = hud_pipper.new(group.createChild('group'), instance);
         m.Pages[PageEnum.ccip] = hud_ccip.new(group.createChild('group'), instance);
         m.Pages[PageEnum.radar] = hud_radar.new(group.createChild('group'), instance);
         m.Power = props.globals.getNode("fdm/jsbsim/electric/output/gunsight", 1);

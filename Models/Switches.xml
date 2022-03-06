@@ -4,7 +4,7 @@
         <name>Master Arm Switch</name>
         <path>Aircraft/MiG-23MLD/Models/Parts/masterarm.xml</path>
         <offsets>
-            <x-m>-5.285</x-m>
+            <x-m>-5.235</x-m>
             <y-m>-0.063</y-m>
             <z-m> 0.380</z-m>
         </offsets>

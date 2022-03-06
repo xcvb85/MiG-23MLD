@@ -44,11 +44,7 @@
         <layout>hbox</layout>
         
         <button>
-            <legend>Autostart</legend>
-            <binding>
-                <command>nasal</command>
-                <script>libraries.autostart();</script>
-            </binding>
+            <legend>Repair damage</legend>
         </button>
         
         <vrule/>
@@ -166,15 +162,18 @@
             <stretch>1</stretch>
         </empty>
         
-        <text>
-            <label>OPRF Damage</label>
-        </text>
         <checkbox>
+            <label>Weapons multiplayer damage</label>
+            <halign>left</halign>
             <property>payload/armament/msg</property>
             <live>true</live>
             <binding>
-                <command>property-toggle</command>
-                <property>payload/armament/msg</property>
+                <command>nasal</command>
+                <script>
+                    if(getprop("fdm/jsbsim/gear/unit[0]/WOW")) {
+                    setprop("payload/armament/msg", !getprop("payload/armament/msg"));
+                    }
+                </script>
             </binding>
         </checkbox>
         
@@ -182,10 +181,8 @@
             <stretch>1</stretch>
         </empty>
         
-        <text>
-            <label>Chaff/Flare Dispenser</label>
-        </text>
         <checkbox>
+            <label>Chaff/Flare Dispenser</label>
             <property>fdm/jsbsim/fcs/cfd</property>
             <live>true</live>
             <binding>
@@ -198,10 +195,8 @@
             <stretch>1</stretch>
         </empty>
         
-        <text>
-            <label>Vortex Generator</label>
-        </text>
         <checkbox>
+            <label>Vortex Generator</label>
             <property>fdm/jsbsim/fcs/vortex-generator</property>
             <live>true</live>
             <binding>
@@ -214,10 +209,8 @@
             <stretch>1</stretch>
         </empty>
         
-        <text>
-            <label>Dogtooth</label>
-        </text>
         <checkbox>
+            <label>Dogtooth</label>
             <property>fdm/jsbsim/fcs/dogtooth</property>
             <live>true</live>
             <binding>
@@ -233,3 +226,4 @@
     
     <empty><stretch>1</stretch></empty>
 </PropertyList>
+

@@ -25,6 +25,13 @@
                     <dialog-name>flightlog</dialog-name>
                 </binding>
             </item>
+            <item>
+                <label>Autostart</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>libraries.autostart();</script>
+                </binding>
+            </item>
         </menu>
     </default>
 </PropertyList>
