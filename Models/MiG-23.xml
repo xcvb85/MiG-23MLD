@@ -63,9 +63,14 @@
         <object-name>canopy.002</object-name>
     </effect>
     <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/reflectglas-uber</inherits-from>
-        <object-name>Glass1</object-name>
-        <object-name>Glass2.001</object-name>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
+        <object-name>Glass1E</object-name>
+        <object-name>Glass2E</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-internal</inherits-from>
+        <object-name>Glass1I</object-name>
+        <object-name>Glass2I</object-name>
     </effect>
     <animation>
         <type>material</type>

@@ -2,7 +2,7 @@
 <system name="misc">
     <property value="0">fcs/upk-23-trigger1</property>
     <property value="0">fcs/oxygen</property>
-
+    
     <channel name="UPK-23_1">
         <switch name="fcs/upk-23-trigger1">
             <default value="0"/>
@@ -20,6 +20,24 @@
                 fcs/guntrigger gt 0
             </test>
         </switch>
+    </channel>
+    
+    <channel name="frost">
+        <fcs_function name="fcs/frost">
+            <function>
+                <product>
+                    <max>
+                        <sum>
+                            <property>/position/altitude-ft</property>
+                            <value>-30000</value>
+                        </sum>
+                        <value>0</value>
+                    </max>
+                    <value>0.00001</value>
+                </product>
+            </function>
+            <output>fcs/frost</output>
+        </fcs_function>
     </channel>
     
     <channel name="breath" execrate="3">

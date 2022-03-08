@@ -25,7 +25,7 @@
         <pylon-stations>controls/armament</pylon-stations>
         <station-name type="string">station</station-name>
         <models type="string">Aircraft/MiG-23MLD/Models/Stores/</models>
-        <msg type="bool">true</msg>
+        <msg type="bool">false</msg>
         <tacview type="bool">false</tacview>
         <damage type="bool">true</damage>
         <GSh-30>

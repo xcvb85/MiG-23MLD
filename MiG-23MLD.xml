@@ -333,5 +333,5 @@
     <system file="jsb-chute"/>
     <system file="jsb-headsight"/>
     <flight_control file="Systems/jsb-controls"/>
-    <aerodynamics file="Systems/aerodynamics.xml"/>
+    <aerodynamics file="Systems/jsb-aerodynamics.xml"/>
 </fdm_config>
