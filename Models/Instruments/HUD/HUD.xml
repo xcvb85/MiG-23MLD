@@ -7,6 +7,48 @@
     </effect>-->
     <animation>
         <type>rotate</type>
+        <object-name>mode</object-name>
+        <property>instrumentation/hud/mode</property>
+        <factor>30</factor>
+        <center>
+            <x-m> 0.110</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-0.021</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>mode</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>gunsight-bug</tooltip-id>
+                <label>%s Mode</label>
+                <property>instrumentation/hud/mode</property>
+                <mapping>nasal</mapping>
+                <script>
+                    var modes = ['A/G', 'A/A'];
+                    return modes[arg[0]];
+                </script>
+            </binding>
+        </hovered>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/hud/mode</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
         <object-name>knob</object-name>
         <property>instrumentation/hud/knob</property>
         <factor>25</factor>
@@ -26,11 +68,11 @@
             <binding>
                 <command>set-tooltip</command>
                 <tooltip-id>hud-bug</tooltip-id>
-                <label>Gunsight %s</label>
+                <label>%s</label>
                 <property>instrumentation/hud/knob</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['Crosshairs', 'Pipper', 'Radar'];
+                    var modes = ['Crosshairs/CCIP', 'Gun Pipper', 'Radar/Rocket Pipper'];
                     return modes[arg[0]+1];
                 </script>
             </binding>
