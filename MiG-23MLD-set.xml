@@ -21,7 +21,7 @@
         </model>
         <flight-recorder include="Systems/flight-recorder.xml"/>
         <menubar include="gui/menubar.xml"/>
-        <help include="Systems/help.xml"/>
+        <help include="gui/help.xml"/>
         <sound>
             <path>Aircraft/MiG-23MLD/Sounds/Sounds.xml</path>
         </sound>
