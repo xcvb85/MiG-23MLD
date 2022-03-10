@@ -101,7 +101,7 @@
     </animation>
     <model>
         <name>S-24 Missile 1</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24.ac</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m>-1.560</y-m>
@@ -385,7 +385,7 @@
     </animation>
     <model>
         <name>S-24 Missile 2</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24.ac</path>
         <offsets>
             <x-m>-1.390</x-m>
             <y-m>-0.446</y-m>
@@ -583,7 +583,7 @@
     </animation>
     <model>
         <name>S-24 Missile 3</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24.ac</path>
         <offsets>
             <x-m>-1.390</x-m>
             <y-m> 0.446</y-m>
@@ -688,7 +688,7 @@
     </animation>
     <model>
         <name>S-24 Missile 4</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24.ac</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m> 1.560</y-m>

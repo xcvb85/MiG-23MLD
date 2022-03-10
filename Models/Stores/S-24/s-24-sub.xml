@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>S-24.ac</path>
+    <path>s-24.ac</path>
 
     <particlesystem>
         <name>s-5-smoke</name>

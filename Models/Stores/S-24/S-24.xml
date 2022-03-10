@@ -1,9 +1,0 @@
-<PropertyList>
-
-    <path>S-24.ac</path>
-    
-    <animation>
-        <enable-hot type="bool">false</enable-hot>
-    </animation>
-
-</PropertyList>

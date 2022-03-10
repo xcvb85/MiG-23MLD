@@ -397,7 +397,7 @@
     <!-- 16 -->
     <submodel>
         <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24-sub.xml</model>
+        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
         <trigger>fdm/jsbsim/fcs/s24atrigger</trigger>
         <speed>1200.0</speed>
         <repeat>false</repeat>
@@ -417,12 +417,12 @@
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact>true</impact>
         <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</submodel-path>
+        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
     </submodel>
     <!-- 17 -->
     <submodel>
         <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24-sub.xml</model>
+        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
         <trigger>fdm/jsbsim/fcs/s24btrigger</trigger>
         <speed>1200.0</speed>
         <repeat>false</repeat>
@@ -442,12 +442,12 @@
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact>true</impact>
         <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</submodel-path>
+        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
     </submodel>
     <!-- 18 -->
     <submodel>
         <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24-sub.xml</model>
+        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
         <trigger>fdm/jsbsim/fcs/s24ctrigger</trigger>
         <speed>1200.0</speed>
         <repeat>false</repeat>
@@ -467,12 +467,12 @@
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact>true</impact>
         <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</submodel-path>
+        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
     </submodel>
     <!-- 19 -->
     <submodel>
         <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/S-24-sub.xml</model>
+        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
         <trigger>fdm/jsbsim/fcs/s24dtrigger</trigger>
         <speed>1200.0</speed>
         <repeat>false</repeat>
@@ -492,6 +492,6 @@
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact>true</impact>
         <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</submodel-path>
+        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
     </submodel>
 </PropertyList>
