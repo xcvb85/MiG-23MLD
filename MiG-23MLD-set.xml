@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList include="Systems/initialization.xml">
     <sim include="Systems/views.xml">
+        <expected-aircraft-dir-name>MiG-23MLD</expected-aircraft-dir-name>
         <description>Mikoyan-Gurevich MiG-23MLD</description>
         <variant-id type="int">1</variant-id>
         <author>Tim Samedov (3D), Daniel Overbeck, Renaud "Wolf" Roquefort (Liveries)</author>

@@ -9,7 +9,7 @@
         <type>rotate</type>
         <object-name>mode</object-name>
         <property>instrumentation/hud/mode</property>
-        <factor>30</factor>
+        <factor>-40</factor>
         <center>
             <x-m> 0.110</x-m>
             <y-m> 0.000</y-m>
@@ -32,7 +32,7 @@
                 <property>instrumentation/hud/mode</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['A/G', 'A/A'];
+                    var modes = ['A/A', 'A/G'];
                     return modes[arg[0]];
                 </script>
             </binding>

@@ -117,7 +117,7 @@ if (fcs!=nil) {
 }
 
 var refill_cannons = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         # cannons
         setprop("ai/submodels/submodel[8]/count", 260);
         setprop("ai/submodels/submodel[9]/count", 260);
@@ -133,7 +133,7 @@ var refill_cannons = func {
 }
 
 var refill_cf = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         # chaffs/flares
         setprop("ai/submodels/submodel[0]/count", 40);
         setprop("ai/submodels/submodel[1]/count", 40);
@@ -151,7 +151,7 @@ var refill_cf = func {
 }
 
 var refill_chute = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         # drag chute
         setprop("fdm/jsbsim/systems/chute/deploy-rqst", 0);
         setprop("controls/flight/chute_jettisoned", 0);
@@ -163,7 +163,7 @@ var refill_chute = func {
 }
 
 var aa_default = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.R24R);
         pylon3.loadSet(pylonSets.R60M);
         pylon5.loadSet(pylonSets.R60M);
@@ -174,7 +174,7 @@ var aa_default = func {
 }
 
 var aa_r3 = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.R13M);
         pylon3.loadSet(pylonSets.R3S);
         pylon5.loadSet(pylonSets.R3S);
@@ -185,7 +185,7 @@ var aa_r3 = func {
 }
 
 var aa_upk23 = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.upk23);
         pylon3.loadSet(pylonSets.empty);
         pylon5.loadSet(pylonSets.empty);
@@ -196,7 +196,7 @@ var aa_upk23 = func {
 }
 
 var ag_s5 = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.ub32l);
         pylon3.loadSet(pylonSets.empty);
         pylon5.loadSet(pylonSets.empty);
@@ -207,7 +207,7 @@ var ag_s5 = func {
 }
 
 var ag_s24 = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.s24la);
         pylon3.loadSet(pylonSets.s24lb);
         pylon5.loadSet(pylonSets.s24lc);
@@ -218,7 +218,7 @@ var ag_s24 = func {
 }
 
 var ag_f500 = func {
-    if(getprop("gear/gear[0]/wow")) {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.f500);
         pylon3.loadSet(pylonSets.empty);
         pylon5.loadSet(pylonSets.empty);
