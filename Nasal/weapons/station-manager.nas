@@ -116,6 +116,14 @@ var Station = {
 							}
 							return {};
 						};
+					} elsif (me.weaponName == "Kh-23") {
+						mf = func (struct) {
+							if (struct.guidance == "remote") {
+								return {"remote_yaw":10*((getprop("controls/cmd/right") or 0) - (getprop("controls/cmd/left") or 0)),
+								"remote_pitch":10*((getprop("controls/cmd/up") or 0) - (getprop("controls/cmd/down") or 0))};
+							}
+							return {};
+						};
 					}
 					
 					me.aim = armament.AIM.new(me.id*100+me.i, me.weaponName, "", mf, me.position);

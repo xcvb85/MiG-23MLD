@@ -29,9 +29,12 @@
         </sound>
         <multiplay>
             <generic>
-                <bool  n="0" type="bool"   alias="/fdm/jsbsim/fcs/dogtooth"/>
-                <bool  n="1" type="bool"   alias="/fdm/jsbsim/fcs/vortex-generator"/>
-                <bool  n="2" type="bool"   alias="/fdm/jsbsim/fcs/cfd"/>
+                <bool  n="0" type="bool" alias="/damage/sounds/explode-on"/>
+                <bool  n="1" type="bool" alias="/damage/fire/serviceable"/>
+                <bool  n="2" type="bool">true</bool><!-- this must stay true to prevent bug in MP protocol for bools -->
+                <bool  n="10" type="bool"  alias="/fdm/jsbsim/fcs/dogtooth"/>
+                <bool  n="11" type="bool"  alias="/fdm/jsbsim/fcs/vortex-generator"/>
+                <bool  n="12" type="bool"  alias="/fdm/jsbsim/fcs/cfd"/>
                 <float n="0" type="double" alias="/fdm/jsbsim/fcs/wing-sweep"/>
                 <float n="1" type="double" alias="/engines/engine[0]/nozzle-pos-norm"/> <!-- Reheat  -->
                 <float n="2" type="double" alias="/engines/engine[0]/augmentation"/> <!-- Reheat  -->

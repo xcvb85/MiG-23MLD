@@ -127,7 +127,7 @@
     </animation>
     <model>
         <name>Kh-23 Missile 1</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/Kh-23/Kh-23.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/KH-23/Kh-23.ac</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m>-1.560</y-m>
@@ -139,10 +139,16 @@
         <object-name>Kh-23 Missile 1</object-name>
         <type>select</type>
         <condition>
-            <equals>
-                <property>payload/weight[0]/selected</property>
-                <value>Kh-23</value>
-            </equals>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-1-type</property>
+                    <value>Kh-23</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-1-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <model>
@@ -714,7 +720,7 @@
     </animation>
     <model>
         <name>Kh-23 Missile 2</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/Kh-23/Kh-23.ac</path>
+        <path>Aircraft/MiG-23MLD/Models/Stores/KH-23/Kh-23.ac</path>
         <offsets>
             <x-m>-1.368</x-m>
             <y-m> 1.560</y-m>
@@ -726,10 +732,16 @@
         <object-name>Kh-23 Missile 2</object-name>
         <type>select</type>
         <condition>
-            <equals>
-                <property>payload/weight[4]/selected</property>
-                <value>Kh-23</value>
-            </equals>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-5-type</property>
+                    <value>Kh-23</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-5-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
         </condition>
     </animation>
     <model>

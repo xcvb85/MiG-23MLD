@@ -46,8 +46,20 @@
         <desc>Trigger flare release</desc>
     </key>
     <key>
+        <name>i</name>
+        <desc>CMD up</desc>
+    </key>
+    <key>
+        <name>j</name>
+        <desc>CMD left</desc>
+    </key>
+    <key>
+        <name>k</name>
+        <desc>CMD down</desc>
+    </key>
+    <key>
         <name>l</name>
-        <desc>Landing lights</desc>
+        <desc>CMD right</desc>
     </key>
     <key>
         <name>L</name>
@@ -101,6 +113,7 @@ A/G Weapons
 UPK-23: External 23mm cannon
 UB-32: Launcher for unguided S-5 missiles
 S-24: Unguided missile
+Kh-23: Remote controlled missile (i,j,k,l keys)
 FAB-500: Bomb
 RBK-500: Cluster bomb
 </text>

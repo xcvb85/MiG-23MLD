@@ -116,13 +116,69 @@
             </binding>
         </mod-up>
     </key>
+    <key n="105">
+        <name>i</name>
+        <desc>CMD Up</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/cmd/up</property>
+            <value type="int">1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/cmd/up</property>
+                <value type="int">0</value>
+            </binding>
+        </mod-up>
+    </key>
+    <key n="106">
+        <name>j</name>
+        <desc>CMD Left</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/cmd/left</property>
+            <value type="int">1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/cmd/left</property>
+                <value type="int">0</value>
+            </binding>
+        </mod-up>
+    </key>
+    <key n="107">
+        <name>k</name>
+        <desc>CMD Down</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>controls/cmd/down</property>
+            <value type="int">1</value>
+        </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/cmd/down</property>
+                <value type="int">0</value>
+            </binding>
+        </mod-up>
+    </key>
     <key n="108">
         <name>l</name>
-        <desc>Landing Light</desc>
+        <desc>CMD Right</desc>
         <binding>
-            <command>property-toggle</command>
-            <property>fdm/jsbsim/electric/switches/landinglight</property>
+            <command>property-assign</command>
+            <property>controls/cmd/right</property>
+            <value type="int">1</value>
         </binding>
+        <mod-up>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/cmd/right</property>
+                <value type="int">0</value>
+            </binding>
+        </mod-up>
     </key>
     <key n="109">
         <name>m</name>
