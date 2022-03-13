@@ -5,15 +5,17 @@ var HUD = {
         var m = {parents:[HUD], Pages:{}};
         m.Instance = instance;
 
-        m.Pages[0] = hud_crosshairs.new(group.createChild('group'), instance);
-        m.Pages[1] = hud_pipper.new(group.createChild('group'), instance);
-        m.Pages[2] = hud_radar.new(group.createChild('group'), instance);
+        m.Pages[0] = hud_pipper.new(group.createChild('group'), instance);
+        m.Pages[1] = hud_crosshairs.new(group.createChild('group'), instance);
+        m.Pages[2] = hud_pipper.new(group.createChild('group'), instance);
         m.Pages[3] = hud_ccip.new(group.createChild('group'), instance);
-        m.Pages[4] = hud_pipper.new(group.createChild('group'), instance);
-        m.Pages[5] = hud_pipper.new(group.createChild('group'), instance);
+        m.Pages[4] = hud_crosshairs.new(group.createChild('group'), instance);
+        m.Pages[5] = hud_ccip.new(group.createChild('group'), instance);
+        m.Pages[6] = hud_radar.new(group.createChild('group'), instance);
         m.Power = props.globals.getNode("fdm/jsbsim/electric/output/gunsight", 1);
         m.Knob = props.globals.getNode("instrumentation/hud/knob", 1);
-        m.Mode = props.globals.getNode("instrumentation/hud/mode", 1);
+        m.HudMode = props.globals.getNode("instrumentation/hud/hud_mode", 1);
+        m.TargetMode = props.globals.getNode("instrumentation/hud/target_mode", 1);
         m.Index = 0;
 
         m.ActivatePage(1);
@@ -42,9 +44,17 @@ var HUD = {
     Update: func()
     {
         if(me.Power.getValue() > 20) {
-            me.Index = (me.Knob.getValue() or 0) + 1;
-            me.Index += (me.Mode.getValue() or 0) * 3;
-            if(me.ActivePage >= 0 and me.ActivePage < 6) {
+            if(me.HudMode.getValue() or 0) {
+                # radar mode
+                me.Index = 6;
+            }
+            else {
+                # gunsight mode
+                me.Index = (me.Knob.getValue() or 0) + 1;
+                me.Index += (me.TargetMode.getValue() or 0) * 3;
+            }
+
+            if(me.ActivePage >= 0 and me.ActivePage <= 6) {
                 if(me.ActivePage != me.Index) {
                     me.ActivatePage(me.Index);
                 }

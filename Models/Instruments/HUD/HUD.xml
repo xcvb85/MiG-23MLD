@@ -7,8 +7,50 @@
     </effect>-->
     <animation>
         <type>rotate</type>
-        <object-name>mode</object-name>
-        <property>instrumentation/hud/mode</property>
+        <object-name>hud_mode</object-name>
+        <property>instrumentation/hud/hud_mode</property>
+        <factor>-60</factor>
+        <center>
+            <x-m> 0.000</x-m>
+            <y-m>-0.079</y-m>
+            <z-m>-0.115</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>hud_mode</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>mode-bug</tooltip-id>
+                <label>%s Mode</label>
+                <property>instrumentation/hud/hud_mode</property>
+                <mapping>nasal</mapping>
+                <script>
+                    var modes = ['Gunsight', 'Radar'];
+                    return modes[arg[0]];
+                </script>
+            </binding>
+        </hovered>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/hud/hud_mode</property>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>target_mode</object-name>
+        <property>instrumentation/hud/target_mode</property>
         <factor>-40</factor>
         <center>
             <x-m> 0.110</x-m>
@@ -23,16 +65,16 @@
     </animation>
     <animation>
         <type>pick</type>
-        <object-name>mode</object-name>
+        <object-name>target_mode</object-name>
         <hovered>
             <binding>
                 <command>set-tooltip</command>
-                <tooltip-id>gunsight-bug</tooltip-id>
-                <label>%s Mode</label>
-                <property>instrumentation/hud/mode</property>
+                <tooltip-id>target-bug</tooltip-id>
+                <label>%s Target</label>
+                <property>instrumentation/hud/target_mode</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['A/A', 'A/G'];
+                    var modes = ['Moving', 'Non-Moving'];
                     return modes[arg[0]];
                 </script>
             </binding>
@@ -43,7 +85,7 @@
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/hud/mode</property>
+                <property>instrumentation/hud/target_mode</property>
             </binding>
         </action>
     </animation>
@@ -72,7 +114,7 @@
                 <property>instrumentation/hud/knob</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['Crosshairs/CCIP', 'Gun Pipper', 'Radar/Rocket Pipper'];
+                    var modes = ['Deflection Shooting/Retarded Bombs', 'Manual Shooting/Manual Bombs', 'Unsynchronized Mode/Standard Bombs'];
                     return modes[arg[0]+1];
                 </script>
             </binding>
