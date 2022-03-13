@@ -414,6 +414,32 @@
             </and>
         </condition>
     </animation>
+    <model>
+        <name>FAB-500 Bomb 2</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/FAB-500/FAB-500.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-1.188</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>FAB-500 Bomb 2</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-2-set</property>
+                    <value>FAB-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-2-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
 
     <!-- Central fuselage -->
     <model>
@@ -612,6 +638,32 @@
             </and>
         </condition>
     </animation>
+    <model>
+        <name>FAB-500 Bomb 3</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/FAB-500/FAB-500.ac</path>
+        <offsets>
+            <x-m>-1.390</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-1.188</z-m>
+            <pitch-deg>-2</pitch-deg>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>FAB-500 Bomb 3</object-name>
+        <type>select</type>
+        <condition>
+            <and>
+                <equals>
+                    <property>payload/armament/station/id-4-set</property>
+                    <value>FAB-500</value>
+                </equals>
+                <equals>
+                    <property>payload/armament/station/id-4-count</property>
+                    <value>1</value>
+                </equals>
+            </and>
+        </condition>
+    </animation>
 
     <!-- Right side -->
     <model>
@@ -785,7 +837,7 @@
         </condition>
     </animation>
     <model>
-        <name>FAB-500 Bomb 2</name>
+        <name>FAB-500 Bomb 4</name>
         <path>Aircraft/MiG-23MLD/Models/Stores/FAB-500/FAB-500.ac</path>
         <offsets>
             <x-m>-1.368</x-m>
@@ -795,7 +847,7 @@
         </offsets>
     </model>
     <animation>
-        <object-name>FAB-500 Bomb 2</object-name>
+        <object-name>FAB-500 Bomb 4</object-name>
         <type>select</type>
         <condition>
             <and>

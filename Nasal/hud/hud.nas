@@ -5,6 +5,9 @@ var HUD = {
         var m = {parents:[HUD], Pages:{}};
         m.Instance = instance;
 
+        # HUD .ac coords: upper-left lower-right
+        HudMath.init([-5.750,-0.078,0.717-0.35], [-5.750,0.082,0.557-0.35], [256,256], [0,1], [1,0], 0);
+
         m.Pages[0] = hud_pipper.new(group.createChild('group'), instance);
         m.Pages[1] = hud_crosshairs.new(group.createChild('group'), instance);
         m.Pages[2] = hud_pipper.new(group.createChild('group'), instance);
@@ -23,9 +26,6 @@ var HUD = {
         m.Timer.start();
         m.group = group;
         
-        # HUD .ac coords: upper-left lower-right        
-        #HudMath.init([-0.4-5.350,-0.095+0.017,0.18+0.537], [-0.4-5.350,0.065+0.017,0.02+0.537], [1024,1024], [0,1.0], [1,0.0], 0);
-        HudMath.init([-3.327,-0.06948,0.4658-0.060], [-3.37518,0.06683,0.34452-0.060], [1024,1024], [0,1.0], [1,0.0], 0);
         return m;
     },
     ActivatePage: func(input = -1)

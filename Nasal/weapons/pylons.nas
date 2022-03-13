@@ -72,9 +72,9 @@ var pylonSets = {
 if(variant==1) {
     var pylon1set = [pylonSets.empty];
     var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la, pylonSets.kh23];
-    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lb];
+    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24lb];
     var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.s24lc];
+    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24lc];
     var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld, pylonSets.kh23];
     var pylon7set = [pylonSets.empty];
 }
@@ -218,12 +218,34 @@ var ag_s24 = func {
     }
 }
 
+var ag_kh23 = func {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
+        pylon2.loadSet(pylonSets.kh23);
+        pylon3.loadSet(pylonSets.empty);
+        pylon5.loadSet(pylonSets.empty);
+        pylon6.loadSet(pylonSets.kh23);
+    } else {
+        screen.log.write(msgA, 0.5, 0.5, 1);
+    }
+}
+
 var ag_f500 = func {
     if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.f500);
+        pylon3.loadSet(pylonSets.f500);
+        pylon5.loadSet(pylonSets.f500);
+        pylon6.loadSet(pylonSets.f500);
+    } else {
+        screen.log.write(msgA, 0.5, 0.5, 1);
+    }
+}
+
+var ag_r500 = func {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
+        pylon2.loadSet(pylonSets.r500);
         pylon3.loadSet(pylonSets.empty);
         pylon5.loadSet(pylonSets.empty);
-        pylon6.loadSet(pylonSets.f500);
+        pylon6.loadSet(pylonSets.r500);
     } else {
         screen.log.write(msgA, 0.5, 0.5, 1);
     }

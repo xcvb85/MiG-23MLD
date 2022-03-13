@@ -148,10 +148,33 @@
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>2</row>
             <col>4</col>
+            <legend>A/G Missile Remote</legend>
+            <binding>
+                <command>nasal</command>
+                <script>pylons.ag_kh23();</script>
+            </binding>
+        </button>
+
+
+        <button>
+            <pref-width>225</pref-width><pref-height>23</pref-height>
+            <row>3</row>
+            <col>0</col>
             <legend>A/G Bombs</legend>
             <binding>
                 <command>nasal</command>
                 <script>pylons.ag_f500();</script>
+            </binding>
+        </button>
+
+        <button>
+            <pref-width>225</pref-width><pref-height>23</pref-height>
+            <row>3</row>
+            <col>2</col>
+            <legend>A/G Cluster Bombs</legend>
+            <binding>
+                <command>nasal</command>
+                <script>pylons.ag_r500();</script>
             </binding>
         </button>
     </group>
@@ -163,7 +186,7 @@
         </empty>
         
         <checkbox>
-            <label>Weapons multiplayer damage</label>
+            <label>MP Damage</label>
             <halign>left</halign>
             <property>payload/armament/msg</property>
             <live>true</live>
@@ -182,7 +205,7 @@
         </empty>
         
         <checkbox>
-            <label>Chaff/Flare Dispenser</label>
+            <label>CFD</label>
             <property>fdm/jsbsim/fcs/cfd</property>
             <live>true</live>
             <binding>
