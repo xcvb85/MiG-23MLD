@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
+    <model>
+        <path>Aircraft/MiG-23MLD/Models/Rails.xml</path>
+    </model>
     <!-- Drag Chute -->
     <model>
         <name>Drag Chute</name>
@@ -346,25 +349,6 @@
         </condition>
     </animation>
     <model>
-        <name>rail-left</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/rail.ac</path>
-        <offsets>
-            <x-m>-0.600</x-m>
-            <y-m>-0.446</y-m>
-            <z-m>-0.962</z-m>
-        </offsets>
-    </model>
-    <animation>
-        <object-name>rail-left</object-name>
-        <type>select</type>
-        <condition>
-            <equals>
-                <property>payload/armament/station/id-2-set</property>
-                <value>2 x R-60M</value>
-            </equals>
-        </condition>
-    </animation>
-    <model>
         <name>R-73 Missile 1</name>
         <path>Aircraft/MiG-23MLD/Models/Stores/R-73/R-73.ac</path>
         <offsets>
@@ -567,25 +551,6 @@
                     <value>0</value>
                 </gt>
             </and>
-        </condition>
-    </animation>
-    <model>
-        <name>rail-right</name>
-        <path>Aircraft/MiG-23MLD/Models/Stores/R-60M/rail.ac</path>
-        <offsets>
-            <x-m>-0.600</x-m>
-            <y-m> 0.446</y-m>
-            <z-m>-0.962</z-m>
-        </offsets>
-    </model>
-    <animation>
-        <object-name>rail-right</object-name>
-        <type>select</type>
-        <condition>
-            <equals>
-                <property>payload/armament/station/id-4-set</property>
-                <value>2 x R-60M</value>
-            </equals>
         </condition>
     </animation>
     <model>

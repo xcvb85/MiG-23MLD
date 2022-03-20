@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <model>
+        <name>apu-23m1-left</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Rails/APU-23M1/apu-23m1-left.ac</path>
+        <offsets>
+            <x-m>-0.920</x-m>
+            <y-m> 1.558</y-m>
+            <z-m> 0.100</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>apu-23m1-right</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Rails/APU-23M1/apu-23m1-right.ac</path>
+        <offsets>
+            <x-m>-0.920</x-m>
+            <y-m>-1.558</y-m>
+            <z-m> 0.100</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>apu-60-2-left</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Rails/APU-60-2/apu-60-2.ac</path>
+        <offsets>
+            <x-m>-0.600</x-m>
+            <y-m>-0.446</y-m>
+            <z-m>-0.962</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>apu-60-2-left</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-2-set</property>
+                <value>2 x R-60M</value>
+            </equals>
+        </condition>
+    </animation>
+    <model>
+        <name>apu-60-2-right</name>
+        <path>Aircraft/MiG-23MLD/Models/Stores/Rails/APU-60-2/apu-60-2.ac</path>
+        <offsets>
+            <x-m>-0.600</x-m>
+            <y-m> 0.446</y-m>
+            <z-m>-0.962</z-m>
+        </offsets>
+    </model>
+    <animation>
+        <object-name>apu-60-2-right</object-name>
+        <type>select</type>
+        <condition>
+            <equals>
+                <property>payload/armament/station/id-4-set</property>
+                <value>2 x R-60M</value>
+            </equals>
+        </condition>
+    </animation>
+</PropertyList>

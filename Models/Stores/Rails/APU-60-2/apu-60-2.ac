@@ -1,14 +1,14 @@
 AC3Db
-MATERIAL "rail" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.450 0.450 0.450  shi 64 trans 0.000
+MATERIAL "apu-60-2" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.000
 OBJECT world
-name "Blender_exporter_v3.3__rail.ac"
+name "Blender_exporter_v3.3__apu-60-2.ac"
 kids 1
 OBJECT poly
-name "R-60-rail"
+name "apu-60-2"
 data 5
 Plane
 crease 40.0
-texture "rail.png"
+texture "apu-60-2.png"
 numvert 96
 0.27431 -0.00363 0.14266
 -1.2389 -0.00363 0.14266
