@@ -1,4 +1,8 @@
 print("** Pylon & fire control system started. **");
+# launcher masses are a guess, used to identify type
+var apu23 = 90;
+var apu60 = 100;
+
 var variant = getprop("/sim/variant-id");
 var pylon1 = nil; #left outboard
 var pylon2 = nil; #left inboard
@@ -50,23 +54,23 @@ var pylonSets = {
     upk23: {name: "UPK-23", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 480, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
 
     # A/A weapons
-    R3S:    {name: "R-3S",      content: ["R-3S"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
-    R13M:   {name: "R-13M",     content: ["R-13M"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
-    R24R:   {name: "R-24R",     content: ["R-24R"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
-    R24T:   {name: "R-24T",     content: ["R-24T"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
-    R60M:   {name: "2 x R-60M", content: ["R-60M", "R-60M"], fireOrder: [0, 1], launcherDragArea: -0.05, launcherMass: 100, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1}, # FIXME: actual drag values
+    R3S:    {name: "R-3S",      content: ["R-3S"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
+    R13M:   {name: "R-13M",     content: ["R-13M"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
+    R24R:   {name: "R-24R",     content: ["R-24R"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
+    R24T:   {name: "R-24T",     content: ["R-24T"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
+    R60M:   {name: "2 x R-60M", content: ["R-60M", "R-60M"], fireOrder: [0, 1], launcherDragArea: -0.05, launcherMass: apu60, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1}, # FIXME: actual drag values
     R73:    {name: "R-73",      content: ["R-73"], fireOrder: [0], launcherDragArea: -0.05, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1}, # FIXME: actual drag values
 
     # A/G weapons
     ub32l: {name: "UB-32",   content: [s5l], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 230, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
     ub32r: {name: "UB-32",   content: [s5r], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 230, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24la: {name: "S-24",    content: [s24a], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24lb: {name: "S-24",    content: [s24b], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24lc: {name: "S-24",    content: [s24c], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24ld: {name: "S-24",    content: [s24d], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    kh23:  {name: "Kh-23",   content: ["Kh-23"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 3},
-    f500:  {name: "FAB-500", content: ["FAB-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: 70, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    r500:  {name: "RBK-500", content: ["RBK-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: 70, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    s24la: {name: "S-24",    content: [s24a], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    s24lb: {name: "S-24",    content: [s24b], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    s24lc: {name: "S-24",    content: [s24c], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    s24ld: {name: "S-24",    content: [s24d], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    kh23:  {name: "Kh-23",   content: ["Kh-23"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 3},
+    f500:  {name: "FAB-500", content: ["FAB-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    r500:  {name: "RBK-500", content: ["RBK-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
 };
 
 if(variant==1) {
@@ -163,6 +167,17 @@ var refill_chute = func {
     }
 }
 
+var empty = func {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
+        pylon2.loadSet(pylonSets.empty);
+        pylon3.loadSet(pylonSets.empty);
+        pylon5.loadSet(pylonSets.empty);
+        pylon6.loadSet(pylonSets.empty);
+    } else {
+        screen.log.write(msgA, 0.5, 0.5, 1);
+    }
+}
+
 var aa_default = func {
     if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.R24R);
@@ -180,17 +195,6 @@ var aa_r3 = func {
         pylon3.loadSet(pylonSets.R3S);
         pylon5.loadSet(pylonSets.R3S);
         pylon6.loadSet(pylonSets.R13M);
-    } else {
-        screen.log.write(msgA, 0.5, 0.5, 1);
-    }
-}
-
-var aa_upk23 = func {
-    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
-        pylon2.loadSet(pylonSets.upk23);
-        pylon3.loadSet(pylonSets.empty);
-        pylon5.loadSet(pylonSets.empty);
-        pylon6.loadSet(pylonSets.upk23);
     } else {
         screen.log.write(msgA, 0.5, 0.5, 1);
     }
@@ -246,6 +250,17 @@ var ag_r500 = func {
         pylon3.loadSet(pylonSets.empty);
         pylon5.loadSet(pylonSets.empty);
         pylon6.loadSet(pylonSets.r500);
+    } else {
+        screen.log.write(msgA, 0.5, 0.5, 1);
+    }
+}
+
+var ag_upk23 = func {
+    if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
+        pylon2.loadSet(pylonSets.upk23);
+        pylon3.loadSet(pylonSets.empty);
+        pylon5.loadSet(pylonSets.empty);
+        pylon6.loadSet(pylonSets.upk23);
     } else {
         screen.log.write(msgA, 0.5, 0.5, 1);
     }

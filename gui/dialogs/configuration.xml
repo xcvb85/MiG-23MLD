@@ -87,6 +87,17 @@
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
             <col>0</col>
+            <legend>Empty</legend>
+            <binding>
+                <command>nasal</command>
+                <script>pylons.empty();</script>
+            </binding>
+        </button>
+        
+        <button>
+            <pref-width>225</pref-width><pref-height>23</pref-height>
+            <row>0</row>
+            <col>2</col>
             <legend>A/A Default</legend>
             <binding>
                 <command>nasal</command>
@@ -97,22 +108,11 @@
         <button>
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
-            <col>2</col>
+            <col>4</col>
             <legend>A/A Low Cost</legend>
             <binding>
                 <command>nasal</command>
                 <script>pylons.aa_r3();</script>
-            </binding>
-        </button>
-        
-        <button>
-            <pref-width>225</pref-width><pref-height>23</pref-height>
-            <row>0</row>
-            <col>4</col>
-            <legend>A/A Guns</legend>
-            <binding>
-                <command>nasal</command>
-                <script>pylons.aa_upk23();</script>
             </binding>
         </button>
         
@@ -175,6 +175,17 @@
             <binding>
                 <command>nasal</command>
                 <script>pylons.ag_r500();</script>
+            </binding>
+        </button>
+        
+        <button>
+            <pref-width>225</pref-width><pref-height>23</pref-height>
+            <row>3</row>
+            <col>4</col>
+            <legend>A/G Guns</legend>
+            <binding>
+                <command>nasal</command>
+                <script>pylons.ag_upk23();</script>
             </binding>
         </button>
     </group>
