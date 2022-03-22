@@ -48,6 +48,7 @@
             <serviceable type="bool">true</serviceable>
             <path>Aircraft/MiG-23MLD/Systems/submodels.xml</path>
         </submodels>
+        <checklists include="gui/checklists.xml"/>
     </sim>
     <input>
         <keyboard include="Systems/keyboard.xml"/>

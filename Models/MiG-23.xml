@@ -114,13 +114,13 @@
         <texture>fuzcamo_afg.png</texture>
     </animation>
     <!--<model>
-        <name>taxi light</name>
-        <path>Aircraft/MiG-23MLD/Models/Effects/lights/taxi-light.xml</path>
-        <offsets>
-            <x-m>-5.400</x-m>
-            <y-m> 0.005</y-m>
-            <z-m>-1.620</z-m>
-        </offsets>
+    <name>taxi light</name>
+    <path>Aircraft/MiG-23MLD/Models/Effects/lights/taxi-light.xml</path>
+    <offsets>
+    <x-m>-5.400</x-m>
+    <y-m> 0.005</y-m>
+    <z-m>-1.620</z-m>
+    </offsets>
     </model>-->
     <model>
         <name>landing light1</name>
@@ -187,13 +187,13 @@
             <z-m>-0.1</z-m>
         </offsets>
     </model>
-
+    
     <!-- Stores -->
     <model>
         <name>Stores</name>
         <path>Aircraft/MiG-23MLD/Models/Stores.xml</path>
     </model>
-
+    
     <!-- nose gear -->
     <animation>
         <type>rotate</type>
@@ -299,7 +299,7 @@
             <z>0.0</z>
         </axis>
     </animation>
-
+    
     <!-- left gear -->
     <animation>
         <type>rotate</type>
@@ -407,7 +407,7 @@
             <z2-m>-0.555</z2-m>
         </axis>
     </animation>
-
+    
     <!-- right gear -->
     <animation>
         <type>rotate</type>
@@ -515,7 +515,7 @@
             <z2-m>-0.555</z2-m>
         </axis>
     </animation>
-
+    
     <!-- fin -->
     <animation>
         <type>rotate</type>
@@ -536,7 +536,7 @@
             <z>0.0</z>
         </axis>
     </animation>
-
+    
     <!-- wing sweep -->
     <animation>
         <type>rotate</type>
@@ -596,7 +596,7 @@
             <z>1</z>
         </axis>
     </animation>
-
+    
     <!-- ailerons -->
     <animation>
         <type>rotate</type>
@@ -626,7 +626,7 @@
             <z2-m> 0.318</z2-m>
         </axis>
     </animation>
-
+    
     <!-- rudder -->
     <animation>
         <type>rotate</type>
@@ -642,7 +642,7 @@
             <z2-m>2.330</z2-m>
         </axis>
     </animation>
-
+    
     <!-- elevator -->
     <animation>
         <type>rotate</type>
@@ -661,7 +661,7 @@
             <z>0.0</z>
         </axis>
     </animation>
-
+    
     <!-- ailerons -->
     <animation>
         <type>rotate</type>
@@ -691,7 +691,7 @@
             <z2-m> 0.318</z2-m>
         </axis>
     </animation>
-
+    
     <!-- slats -->
     <animation>
         <type>rotate</type>
@@ -729,7 +729,7 @@
             <z2-m> 0.300</z2-m>
         </axis>
     </animation>
-
+    
     <!-- intakes -->
     <animation>
         <type>rotate</type>
@@ -763,7 +763,7 @@
             <z>1.0</z>
         </axis>
     </animation>
-
+    
     <!-- speedbrake -->
     <animation>
         <type>rotate</type>
@@ -825,4 +825,7 @@
             <z2-m>-0.50</z2-m>
         </axis>
     </animation>
+    <model>
+        <path>Aircraft/Generic/marker.xml</path>
+    </model>
 </PropertyList>
