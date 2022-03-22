@@ -83,7 +83,13 @@
     </key>
     <text>Gunsight
 -------
-The ASP-17ML is a gunsight with integrated radar screen. Use the lever at the buttom left to switch between gunsight and radar mode. In gunsight mode use the big knob and the small switch next to it to select the different operating modes.
+The ASP-17ML is a gunsight (ASP) with integrated radar screen (RP). Use the lever at the buttom left to switch between the two.
+
+The gunsight has the following operating modes, which can be selected with the rotary knob:
+- deflection mode (PZ) when firing the gun at maneuvering (M) and non-maneuvering (NM) aerial targets
+- deflection mode (PZ) mode or non-synchronous mode (N.SIN) when firing cannon or unguided rockets at maneuvering and nonmaneuvering ground targets
+- bombing mode with conventional (OB) and retarded bombs (TB)
+- target designation mode when launching boost-phase ballistic missiles
 
 RWR
 ----
