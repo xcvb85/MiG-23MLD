@@ -76,6 +76,42 @@
         </axis>
     </animation>
     <animation>
+        <type>pick</type>
+        <object-name>ap_disable</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.ap_disable()</script>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>disable-bug</tooltip-id>
+                <label>AP Disable</label>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>ap_stabilize</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.ap_stabilize()</script>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>stabilize-bug</tooltip-id>
+                <label>AP Stabilize</label>
+            </binding>
+        </hovered>
+    </animation>
+    <animation>
         <type>translate</type>
         <object-name>throttle</object-name>
         <expression>

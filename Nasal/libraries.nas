@@ -46,6 +46,7 @@ var autostart = func {
     setprop("fdm/jsbsim/electric/switches/starterunit",1);
     setprop("fdm/jsbsim/electric/switches/dc-gen",1);
     setprop("fdm/jsbsim/electric/switches/ac-gen",1);
+    setprop("fdm/jsbsim/electric/switches/ap",1);
     setprop("fdm/jsbsim/fcs/wing-sweep-cmd",0);
     setprop("fdm/jsbsim/fcs/oxygen",1);
     setprop("controls/engines/engine[0]/starter", "true");
@@ -100,4 +101,24 @@ var flap_keybind = func(button) {
             flap_setting(1);
         }
     }
+}
+
+var ap_stabilize = func() {
+    if(getprop("fdm/jsbsim/electric/output/ap") > 17) {
+        setprop("autopilot/locks/heading", "wing-leveler");
+        setprop("autopilot/locks/altitude", "vertical-speed-hold");
+        setprop("autopilot/settings/vertical-speed-fpm", 0);
+    }
+}
+
+var ap_prmg = func() {
+    if(getprop("fdm/jsbsim/electric/output/ap") > 17) {
+        setprop("autopilot/locks/heading", "nav1-hold");
+        setprop("autopilot/locks/altitude", "gs1-hold");
+    }
+}
+
+var ap_disable = func() {
+    setprop("autopilot/locks/heading", "");
+    setprop("autopilot/locks/altitude", "");
 }
