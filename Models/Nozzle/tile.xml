@@ -4,7 +4,7 @@
     <animation>
         <type>rotate</type>
         <object-name>tile</object-name>
-        <property>sim/multiplay/generic/float[1]</property>
+        <property>sim/multiplay/generic/float[2]</property>
         <factor>-20</factor>
         <offset-deg>25</offset-deg>
         <axis>

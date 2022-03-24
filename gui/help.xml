@@ -13,10 +13,10 @@
         <name>Ctrl+b</name>
         <desc>Toggle speedbrake</desc>
     </key>
-<!--    <key>
-        <name>d/D</name>
-        <desc>open/close canopy</desc>
-    </key>-->
+    <key>
+        <name>C</name>
+        <desc>Toggle canopy</desc>
+    </key>
     <key>
         <name>e</name>
         <desc>Weapon trigger</desc>
@@ -27,7 +27,7 @@
     </key>
     <key>
         <name>m</name>
-        <desc>Masterarm toggle</desc>
+        <desc>Toggle masterarm</desc>
     </key>
     <key>
         <name>o</name>

@@ -3,7 +3,8 @@
     <fdm>
         <jsbsim>
             <fcs>
-                <wing-sweep-cmd type="double">1</wing-sweep-cmd>
+                <canopy-cmd-norm type="double">1</canopy-cmd-norm>
+                <wingsweep-cmd-norm type="double">1</wingsweep-cmd-norm>
                 <dogtooth type="bool">0</dogtooth>
                 <vortex-generator type="bool">0</vortex-generator>
                 <cfd type="bool">0</cfd>

@@ -64,13 +64,13 @@
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
-        <object-name>Glass1E</object-name>
-        <object-name>Glass2E</object-name>
+        <object-name>glass1E</object-name>
+        <object-name>glass2E</object-name>
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-internal</inherits-from>
-        <object-name>Glass1I</object-name>
-        <object-name>Glass2I</object-name>
+        <object-name>glass1I</object-name>
+        <object-name>glass2I</object-name>
     </effect>
     <animation>
         <type>material</type>
@@ -179,7 +179,7 @@
     <model>
         <path>Effects/afterburner/afterburner.xml</path>
         <condition>
-            <property>sim/multiplay/generic/float[2]</property>
+            <property>sim/multiplay/generic/float[3]</property>
         </condition>
         <offsets>
             <x-m> 6.5</x-m>
@@ -537,6 +537,34 @@
         </axis>
     </animation>
     
+    <!-- canopy -->
+    <animation>
+        <type>rotate</type>
+        <object-name>canopyE</object-name>
+        <object-name>canopyI</object-name>
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>56</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-4.050</x-m>
+            <y-m> 0.000</y-m>
+            <z-m> 0.647</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
     <!-- wing sweep -->
     <animation>
         <type>rotate</type>
@@ -545,7 +573,7 @@
         <object-name>slatL</object-name>
         <object-name>spoilerL</object-name>
         <object-name>aileronL</object-name>
-        <property>sim/multiplay/generic/float[0]</property>
+        <property>sim/multiplay/generic/float[1]</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -574,7 +602,7 @@
         <object-name>slatR</object-name>
         <object-name>spoilerR</object-name>
         <object-name>aileronR</object-name>
-        <property>sim/multiplay/generic/float[0]</property>
+        <property>sim/multiplay/generic/float[1]</property>
         <interpolation>
             <entry>
                 <ind>0</ind>

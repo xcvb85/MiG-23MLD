@@ -35,9 +35,10 @@
                 <bool  n="10" type="bool"  alias="/fdm/jsbsim/fcs/dogtooth"/>
                 <bool  n="11" type="bool"  alias="/fdm/jsbsim/fcs/vortex-generator"/>
                 <bool  n="12" type="bool"  alias="/fdm/jsbsim/fcs/cfd"/>
-                <float n="0" type="double" alias="/fdm/jsbsim/fcs/wing-sweep"/>
-                <float n="1" type="double" alias="/engines/engine[0]/nozzle-pos-norm"/> <!-- Reheat  -->
-                <float n="2" type="double" alias="/engines/engine[0]/augmentation"/> <!-- Reheat  -->
+                <float n="0" type="double" alias="/fdm/jsbsim/fcs/canopy-pos-norm"/>
+                <float n="1" type="double" alias="/fdm/jsbsim/fcs/wingsweep-pos-norm"/>
+                <float n="2" type="double" alias="/engines/engine[0]/nozzle-pos-norm"/>
+                <float n="3" type="double" alias="/engines/engine[0]/augmentation"/>
             </generic>
         </multiplay>
         <flaps>

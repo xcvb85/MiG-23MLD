@@ -41,13 +41,12 @@
             <script>libraries.wingSweep(1)</script>
         </binding>
     </key>
-    <key n="68">
-        <name>D</name>
-        <desc>Close Canopy</desc>
+    <key n="67">
+        <name>C</name>
+        <desc>Toggle canopy</desc>
         <binding>
-            <command>property-assign</command>
-            <property>sim/model/canopy-positions/Canopy/position-norm</property>
-            <value>0</value>
+            <command>property-toggle</command>
+            <property>/fdm/jsbsim/fcs/canopy-cmd-norm</property>
         </binding>
     </key>
     <key n="76">

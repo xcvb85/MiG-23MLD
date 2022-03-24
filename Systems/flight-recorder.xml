@@ -23,17 +23,22 @@
 
         <signal>
             <type>float</type>
-            <property type="string">fdm/jsbsim/fcs/wing-sweep</property>
+            <property type="string">sim/multiplay/generic/float[0]</property>
             <interpolation>linear</interpolation>
         </signal>
         <signal>
             <type>float</type>
-            <property type="string">engines/engine[0]/nozzle-pos-norm</property>
+            <property type="string">sim/multiplay/generic/float[1]</property>
             <interpolation>linear</interpolation>
         </signal>
         <signal>
             <type>float</type>
-            <property type="string">engines/engine[0]/augmentation</property>
+            <property type="string">sim/multiplay/generic/float[2]</property>
+            <interpolation>linear</interpolation>
+        </signal>
+        <signal>
+            <type>float</type>
+            <property type="string">sim/multiplay/generic/float[3]</property>
             <interpolation>linear</interpolation>
         </signal>
         <signal><!-- chute -->

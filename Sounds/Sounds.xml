@@ -7,12 +7,16 @@
             <mode>once</mode>
             <path>Sounds/engine/Mirage2000_Starting_Engine_OutsideV3.wav</path>
             <condition>
-                <and>
-                    <property>/controls/engines/engine[0]/starter</property>
-                    <not>
+                <property>/controls/engines/engine[0]/starter</property>
+                <not>
+                    <and>
                         <property>sim/current-view/internal</property>
-                    </not>
-                </and>
+                        <less-than>
+                            <property>sim/multiplay/generic/float[0]</property>
+                            <value>0.1</value>
+                        </less-than>
+                    </and>
+                </not>
             </condition>
             <orientation>
                 <x>1.0</x>
@@ -32,6 +36,10 @@
             <condition>
                 <property>/controls/engines/engine[0]/starter</property>
                 <property>sim/current-view/internal</property>
+                <less-than>
+                    <property>sim/multiplay/generic/float[0]</property>
+                    <value>0.1</value>
+                </less-than>
             </condition>
             <volume>
                 <max>0.5</max>
@@ -42,18 +50,22 @@
             <path>Sounds/engine/Mirage2000_Engine_Outside.wav</path>
             <mode>looped</mode>
             <condition>
-                <and>
-                    <greater-than>
-                        <property>engines/engine[0]/n1</property>
-                        <value>20</value>
-                    </greater-than>
-                    <not>
-                        <property>engines/engine[0]/out-of-fuel</property>
-                    </not>
-                    <not>
+                <greater-than>
+                    <property>engines/engine[0]/n1</property>
+                    <value>20</value>
+                </greater-than>
+                <not>
+                    <property>engines/engine[0]/out-of-fuel</property>
+                </not>
+                <not>
+                    <and>
                         <property>sim/current-view/internal</property>
-                    </not>
-                </and>
+                        <less-than>
+                            <property>sim/multiplay/generic/float[0]</property>
+                            <value>0.1</value>
+                        </less-than>
+                    </and>
+                </not>
             </condition>
             <orientation>
                 <x>1.0</x>
@@ -88,6 +100,10 @@
                     <property>engines/engine[0]/out-of-fuel</property>
                 </not>
                 <property>sim/current-view/internal</property>
+                <less-than>
+                    <property>sim/multiplay/generic/float[0]</property>
+                    <value>0.1</value>
+                </less-than>
             </condition>
             <pitch>
                 <property>engines/engine/n2</property>
@@ -112,7 +128,13 @@
                     <property>engines/engine[0]/out-of-fuel</property>
                 </not>
                 <not>
-                    <property>sim/current-view/internal</property>
+                    <and>
+                        <property>sim/current-view/internal</property>
+                        <less-than>
+                            <property>sim/multiplay/generic/float[0]</property>
+                            <value>0.1</value>
+                        </less-than>
+                    </and>
                 </not>
             </condition>
             <orientation>
@@ -134,6 +156,10 @@
                     <property>engines/engine[0]/out-of-fuel</property>
                 </not>
                 <property>sim/current-view/internal</property>
+                <less-than>
+                    <property>sim/multiplay/generic/float[0]</property>
+                    <value>0.1</value>
+                </less-than>
             </condition>
             <volume>
                 <max>0.5</max>
@@ -242,7 +268,7 @@
                 <max>0.40</max>
             </volume>
         </rain>
-
+        
         <!--================================= Avionics =============================-->
         <avionics>
             <name>inverter</name>
@@ -295,7 +321,7 @@
                 <factor>1.0</factor>
             </volume>
         </avionics>
-
+        
         <!--================================= Gears =============================-->
         <gears>
             <name>gear</name>
@@ -432,7 +458,7 @@
             <reference-dist>100</reference-dist>
             <max-dist>1000</max-dist>
         </flaps>
-
+        
         <!--================================= Guns =============================-->
         <guns>
             <name>gunfire</name>
@@ -479,7 +505,7 @@
                 <value>1</value>
             </volume>
         </guns>
-
+        
         <!--================================= Missiles =============================-->
         <missiles>
             <name>R-3S lock</name>
@@ -572,16 +598,16 @@
         </missiles>
         <!--
         <missiles>
-            <name>S-5</name>
-            <path>Sounds/weapons/hydra70.wav</path>
-            <mode>once</mode>
-            <condition>
-                <property>fdm/jsbsim/fcs/s5trigger</property>
-                <property>payload/armament/fire-control/serviceable</property>
-            </condition>
-            <volume>
-                <factor>0.3</factor>
-            </volume>
+        <name>S-5</name>
+        <path>Sounds/weapons/hydra70.wav</path>
+        <mode>once</mode>
+        <condition>
+        <property>fdm/jsbsim/fcs/s5trigger</property>
+        <property>payload/armament/fire-control/serviceable</property>
+        </condition>
+        <volume>
+        <factor>0.3</factor>
+        </volume>
         </missiles>
         -->
         <missiles>
@@ -601,7 +627,7 @@
                 <factor>0.3</factor>
             </volume>
         </missiles>
-
+        
         <!--================================= Bombs =============================-->
         <bombs>
             <name>FAB-500</name>
@@ -629,7 +655,7 @@
                 <max>1</max>
             </volume>
         </bombs>
-
+        
         <!--================================= Explosions =============================-->
         <explosions>
             <name>nearby-explode</name>

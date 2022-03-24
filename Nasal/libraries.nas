@@ -27,7 +27,7 @@ var wingSweep = func(direction) {
     }
     SweepIndicator = Sweep-1;
     if(SweepIndicator < 0) SweepIndicator = 0;
-    setprop("fdm/jsbsim/fcs/wing-sweep-cmd", (SweepAngles[Sweep]-16)/56.0);
+    setprop("fdm/jsbsim/fcs/wingsweep-cmd-norm", (SweepAngles[Sweep]-16)/56.0);
     setprop("fdm/jsbsim/fcs/wing-sweep-indicator", SweepIndicator);
 }
 
@@ -47,7 +47,8 @@ var autostart = func {
     setprop("fdm/jsbsim/electric/switches/dc-gen",1);
     setprop("fdm/jsbsim/electric/switches/ac-gen",1);
     setprop("fdm/jsbsim/electric/switches/ap",1);
-    setprop("fdm/jsbsim/fcs/wing-sweep-cmd",0);
+    setprop("fdm/jsbsim/fcs/canopy-cmd-norm",0);
+    setprop("fdm/jsbsim/fcs/wingsweep-cmd-norm",0);
     setprop("fdm/jsbsim/fcs/oxygen",1);
     setprop("controls/engines/engine[0]/starter", "true");
     settimer(func {
