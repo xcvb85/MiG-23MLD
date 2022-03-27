@@ -27,19 +27,6 @@ var s5r = stations.SubModelWeapon.new("UB-32", 8, 32, [15], [], props.globals.ge
 s5r.typeShort = "S-5";
 s5r.brevity = "Rockets away";
 
-var s24a = stations.SubModelWeapon.new("S-24", 520, 1, [16], [], props.globals.getNode("fdm/jsbsim/fcs/s24atrigger",1), 1, func{return 1;}, 1);
-s24a.typeShort = "S-24";
-s24a.brevity = "Rockets away";
-var s24b = stations.SubModelWeapon.new("S-24", 520, 1, [17], [], props.globals.getNode("fdm/jsbsim/fcs/s24btrigger",1), 1, func{return 1;}, 1);
-s24b.typeShort = "S-24";
-s24b.brevity = "Rockets away";
-var s24c = stations.SubModelWeapon.new("S-24", 520, 1, [18], [], props.globals.getNode("fdm/jsbsim/fcs/s24ctrigger",1), 1, func{return 1;}, 1);
-s24c.typeShort = "S-24";
-s24c.brevity = "Rockets away";
-var s24d = stations.SubModelWeapon.new("S-24", 520, 1, [19], [], props.globals.getNode("fdm/jsbsim/fcs/s24dtrigger",1), 1, func{return 1;}, 1);
-s24d.typeShort = "S-24";
-s24d.brevity = "Rockets away";
-
 var fuelTank1 = stations.FuelTank.new("Droptank", "droptank", 4, 200, "sim/model/MiG-23MLD/stores");
 var fuelTank2 = stations.FuelTank.new("Droptank", "droptank", 3, 200, "sim/model/MiG-23MLD/stores");
 var fuelTank3 = stations.FuelTank.new("Droptank", "droptank", 5, 200, "sim/model/MiG-23MLD/stores");
@@ -64,10 +51,7 @@ var pylonSets = {
     # A/G weapons
     ub32l: {name: "UB-32",   content: [s5l], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 230, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
     ub32r: {name: "UB-32",   content: [s5r], fireOrder: [0], launcherDragArea: 0.007, launcherMass: 230, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24la: {name: "S-24",    content: [s24a], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24lb: {name: "S-24",    content: [s24b], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24lc: {name: "S-24",    content: [s24c], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
-    s24ld: {name: "S-24",    content: [s24d], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
+    s24:   {name: "S-24",    content: ["S-24"], fireOrder: [0], launcherDragArea: 0.007, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
     kh23:  {name: "Kh-23",   content: ["Kh-23"], fireOrder: [0], launcherDragArea: -0.06, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 3},
     f500:  {name: "FAB-500", content: ["FAB-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
     r500:  {name: "RBK-500", content: ["RBK-500"], fireOrder: [0], launcherDragArea: 0.005, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 3},
@@ -75,11 +59,11 @@ var pylonSets = {
 
 if(variant==1) {
     var pylon1set = [pylonSets.empty];
-    var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la, pylonSets.kh23];
-    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24lb];
+    var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24, pylonSets.kh23];
+    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24];
     var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24lc];
-    var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld, pylonSets.kh23];
+    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24];
+    var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24, pylonSets.kh23];
     var pylon7set = [pylonSets.empty];
 }
 else {
@@ -213,10 +197,10 @@ var ag_s5 = func {
 
 var ag_s24 = func {
     if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
-        pylon2.loadSet(pylonSets.s24la);
-        pylon3.loadSet(pylonSets.s24lb);
-        pylon5.loadSet(pylonSets.s24lc);
-        pylon6.loadSet(pylonSets.s24ld);
+        pylon2.loadSet(pylonSets.s24);
+        pylon3.loadSet(pylonSets.s24);
+        pylon5.loadSet(pylonSets.s24);
+        pylon6.loadSet(pylonSets.s24);
     } else {
         screen.log.write(msgA, 0.5, 0.5, 1);
     }

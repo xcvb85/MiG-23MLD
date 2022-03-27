@@ -9,27 +9,26 @@
             <z-m> 0.100</z-m>
         </offsets>
     </model>
+<!--
     <animation>
         <name>apu-23m1-left</name>
         <type>select</type>
         <condition>
-            <or>
-                <equals>
-                    <property>payload/armament/station/id-1-launcherMass</property>
-                    <value>90</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-1-launcherMass</property>
-                    <value>230</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-1-launcherMass</property>
-                    <value>480</value>
-                </equals>
-            </or>
+            <equals>
+                <property>payload/armament/station/id-1-launcherMass</property>
+                <value>90</value>
+            </equals>
+            <equals>
+                <property>payload/armament/station/id-1-launcherMass</property>
+                <value>230</value>
+            </equals>
+            <equals>
+                <property>payload/armament/station/id-1-launcherMass</property>
+                <value>480</value>
+            </equals>
         </condition>
     </animation>
-    
+    -->
     <model>
         <name>apu-60-2-left</name>
         <path>Aircraft/MiG-23MLD/Models/Stores/Rails/APU-60-2/apu-60-2.ac</path>
@@ -79,24 +78,4 @@
             <z-m> 0.100</z-m>
         </offsets>
     </model>
-    <animation>
-        <name>apu-23m1-right</name>
-        <type>select</type>
-        <condition>
-            <or>
-                <equals>
-                    <property>payload/armament/station/id-5-launcherMass</property>
-                    <value>90</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-5-launcherMass</property>
-                    <value>230</value>
-                </equals>
-                <equals>
-                    <property>payload/armament/station/id-5-launcherMass</property>
-                    <value>480</value>
-                </equals>
-            </or>
-        </condition>
-    </animation>
 </PropertyList>

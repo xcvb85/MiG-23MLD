@@ -19,10 +19,6 @@
     13 ~ UPK-23 bullet
     14 ~ UB-32 launcher
     15 ~ UB-32 launcher
-    16 ~ S-24 missile
-    17 ~ S-24 missile
-    18 ~ S-24 missile
-    19 ~ S-24 missile
     -->
     <!-- 0 -->
     <submodel>
@@ -393,105 +389,5 @@
         <impact>true</impact>
         <impact-reports>ai/models/model-impact</impact-reports>
         <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-5/s-5-explosion-sub.xml</submodel-path>
-    </submodel>
-    <!-- 16 -->
-    <submodel>
-        <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
-        <trigger>fdm/jsbsim/fcs/s24atrigger</trigger>
-        <speed>1200.0</speed>
-        <repeat>false</repeat>
-        <delay>0</delay>
-        <count>0</count>
-        <offsets>
-            <x-m>-1.368</x-m>
-            <y-m>-1.560</y-m>
-            <z-m>-0.104</z-m>
-        </offsets>
-        <life>7.0</life><!-- since it has no drag, its lifetime should be as short as possible needed to hit stuff -->
-        <wind>true</wind>
-        <weight>8</weight>
-        <cd>0.0</cd><!-- since it has engine and submodels dont support that, its drag is set to zero -->
-        <eda>0.00136354</eda>
-        <collision>true</collision>
-        <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
-        <impact>true</impact>
-        <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
-    </submodel>
-    <!-- 17 -->
-    <submodel>
-        <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
-        <trigger>fdm/jsbsim/fcs/s24btrigger</trigger>
-        <speed>1200.0</speed>
-        <repeat>false</repeat>
-        <delay>0</delay>
-        <count>0</count>
-        <offsets>
-            <x-m>-1.390</x-m>
-            <y-m>-0.446</y-m>
-            <z-m>-1.042</z-m>
-        </offsets>
-        <life>7.0</life><!-- since it has no drag, its lifetime should be as short as possible needed to hit stuff -->
-        <wind>true</wind>
-        <weight>8</weight>
-        <cd>0.0</cd><!-- since it has engine and submodels dont support that, its drag is set to zero -->
-        <eda>0.00136354</eda>
-        <collision>true</collision>
-        <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
-        <impact>true</impact>
-        <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
-    </submodel>
-    <!-- 18 -->
-    <submodel>
-        <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
-        <trigger>fdm/jsbsim/fcs/s24ctrigger</trigger>
-        <speed>1200.0</speed>
-        <repeat>false</repeat>
-        <delay>0</delay>
-        <count>0</count>
-        <offsets>
-            <x-m>-1.390</x-m>
-            <y-m> 0.446</y-m>
-            <z-m>-1.042</z-m>
-        </offsets>
-        <life>7.0</life><!-- since it has no drag, its lifetime should be as short as possible needed to hit stuff -->
-        <wind>true</wind>
-        <weight>8</weight>
-        <cd>0.0</cd><!-- since it has engine and submodels dont support that, its drag is set to zero -->
-        <eda>0.00136354</eda>
-        <collision>true</collision>
-        <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
-        <impact>true</impact>
-        <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
-    </submodel>
-    <!-- 19 -->
-    <submodel>
-        <name>S-24</name>
-        <model>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-sub.xml</model>
-        <trigger>fdm/jsbsim/fcs/s24dtrigger</trigger>
-        <speed>1200.0</speed>
-        <repeat>false</repeat>
-        <delay>0</delay>
-        <count>0</count>
-        <offsets>
-            <x-m>-1.368</x-m>
-            <y-m> 1.560</y-m>
-            <z-m>-0.104</z-m>
-        </offsets>
-        <life>7.0</life><!-- since it has no drag, its lifetime should be as short as possible needed to hit stuff -->
-        <wind>true</wind>
-        <weight>8</weight>
-        <cd>0.0</cd><!-- since it has engine and submodels dont support that, its drag is set to zero -->
-        <eda>0.00136354</eda>
-        <collision>true</collision>
-        <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
-        <impact>true</impact>
-        <impact-reports>ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/MiG-23MLD/Models/Stores/S-24/s-24-explosion-sub.xml</submodel-path>
     </submodel>
 </PropertyList>

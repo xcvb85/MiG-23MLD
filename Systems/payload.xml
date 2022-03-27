@@ -14,7 +14,7 @@
         <mlw_max type="double">2.25</mlw_max>
         <auto_flare_caller type="bool">false</auto_flare_caller>
     </d-config>
-
+    
     <armament>
         <modelsUseCase type="bool">true</modelsUseCase>
         <modelsUpperCase type="bool">true</modelsUpperCase>
@@ -40,7 +40,7 @@
         <MAW-bearing type="double">0</MAW-bearing>
         <MAW-active type="bool">false</MAW-active>
         <spike type="bool">false</spike>
-
+        
         <r-3s>
             <type-id type="int">78</type-id>
             <short-name type="string">R-3S</short-name>
@@ -92,7 +92,7 @@
             <detect-range-nm type="double">9.7</detect-range-nm>
             <ready-time type="double">0.5</ready-time>
         </r-3s>
-
+        
         <r-13m>
             <type-id type="int">74</type-id>
             <short-name type="string">R-13M</short-name>
@@ -144,7 +144,7 @@
             <detect-range-nm type="double">9.7</detect-range-nm>
             <ready-time type="double">0.5</ready-time>
         </r-13m>
-
+        
         <r-24r>
             <!--detection and firing-->
             <type-id type="int">75</type-id>
@@ -207,7 +207,7 @@
             <telemetry type="bool">true</telemetry> <!-- Boolean. Data link back to aircraft when missile is flying. [optional] -->
             <DLZ type="bool">false</DLZ> <!-- Supports dynamic launch zone info. For now only works with A/A. [optional] -->
         </r-24r>
-
+        
         <r-24t>
             <!--detection and firing-->
             <type-id type="int">76</type-id>
@@ -270,7 +270,7 @@
             <telemetry type="bool">true</telemetry> <!-- Boolean. Data link back to aircraft when missile is flying. [optional] -->
             <DLZ type="bool">false</DLZ> <!-- Supports dynamic launch zone info. For now only works with A/A. [optional] -->
         </r-24t>
-
+        
         <r-60m>
             <type-id type="int">80</type-id>
             <short-name type="string">R-60M</short-name>
@@ -322,7 +322,7 @@
             <detect-range-nm type="double">9.7</detect-range-nm>
             <ready-time type="double">0.5</ready-time>
         </r-60m>
-
+        
         <r-73>
             <type-id type="int">70</type-id>
             <short-name type="string">R-73</short-name>
@@ -374,7 +374,7 @@
             <detect-range-nm type="double">9.7</detect-range-nm>
             <ready-time type="double">0.5</ready-time>
         </r-73>
-
+        
         <kh-23>                <!-- lots of info at http://survincity.com/2012/08/x-66-the-product-66-the-first-russian-tactical/ -->
             <!--detection and firing-->
             <type-id type="int">27</type-id>
@@ -436,7 +436,60 @@
             <telemetry type="bool">false</telemetry> <!-- Boolean. Data link back to aircraft when missile is flying. [optional] -->
             <DLZ type="bool">false</DLZ> <!-- Supports dynamic launch zone info. For now only works with A/A. [optional] -->
         </kh-23>
-
+        
+        <s-24>
+            <type-id type="int">44</type-id>
+            <max-fire-range-nm type="double">100.0</max-fire-range-nm>
+            <min-fire-range-nm type="double">0.5</min-fire-range-nm>
+            <FCS-field-deg type="int">15</FCS-field-deg>
+            <class type="string">AGM</class>
+            <fire-msg type="string">Rockets away</fire-msg>
+            <coolable type="bool">false</coolable>
+            <cool-time type="double">0.0</cool-time>
+            <cool-duration type="int">0.0</cool-duration>
+            <warm-detect-range-nm type="double">100.0</warm-detect-range-nm>
+            <detect-range-nm type="double">100.0</detect-range-nm>
+            <seeker-beam-width-deg type="double">20.0</seeker-beam-width-deg>
+            <ready-time type="double">0.3</ready-time>
+            <seeker-field-deg type="int">20.0</seeker-field-deg>
+            <guidance type="string">unguided</guidance>
+            <navigation type="string">direct</navigation>
+            <all-aspect type="bool">true</all-aspect>
+            <seeker-angular-speed-dps type="double"></seeker-angular-speed-dps>
+            <lock-on-sun-deg type="double"></lock-on-sun-deg>
+            <loft-altitude type="int">0</loft-altitude>
+            <terrain-follow type="bool">false</terrain-follow>
+            <reaquire type="bool">true</reaquire>
+            <thrust-lbf-stage-1 type="double">8000</thrust-lbf-stage-1>
+            <thrust-lbf-stage-2 type="double">0.0</thrust-lbf-stage-2>
+            <stage-1-duration-sec type="double">6.0</stage-1-duration-sec>
+            <stage-2-duration-sec type="double">0.0</stage-2-duration-sec>
+            <weight-fuel-lbm type="double">61</weight-fuel-lbm>
+            <vector-thrust type="bool">false</vector-thrust>
+            <weight-launch-lbs type="double">633</weight-launch-lbs>
+            <drag-coeff type="double">0.5</drag-coeff>
+            <cross-section-sqft type="double">0.64</cross-section-sqft>
+            <max-g type="int">15</max-g>
+            <min-speed-for-guiding-mach type="double">0.3</min-speed-for-guiding-mach>
+            <weight-warhead-lbs type="double">245</weight-warhead-lbs>
+            <arming-time-sec type="double">0.4</arming-time-sec>
+            <self-destruct-time-sec type="double">40</self-destruct-time-sec>
+            <self-destruct-at-lock-lost type="double">40</self-destruct-at-lock-lost>
+            <max-report-distance type="double">200</max-report-distance>
+            <hit-everything-nearby type="bool">true</hit-everything-nearby>
+            <vol-search type="double">0.0</vol-search>
+            <vol-track type="double">0.0</vol-track>
+            <rail type="bool">true</rail>
+            <rail-length-m type="double">1.5</rail-length-m>
+            <rail-point-forward type="bool">true</rail-point-forward>
+            <drop-time type="double">0.0</drop-time>
+            <deploy-time type="double">0.0</deploy-time>
+            <chaff-resistnace type="double">0.950</chaff-resistnace>
+            <flare-resistance type="double">0.950</flare-resistance>
+            <telemetry type="bool">false</telemetry>
+            <DLZ type="bool">false</DLZ>
+        </s-24>
+        
         <fab-500> 
             <type-id type="int">17</type-id>
             <short-name type="string">FAB-500</short-name>
@@ -480,7 +533,7 @@
             <ejector-speed-fps type="double">10</ejector-speed-fps>
             <ready-time type="double">0.5</ready-time>
         </fab-500>
-
+        
         <rbk-500> 
             <type-id type="int">12</type-id> <!-- Id of CBU-87 which should be very similar -->
             <short-name type="string">RBK-500</short-name>

@@ -4,7 +4,7 @@ OBJECT world
 name "Blender_exporter_v2.25__S-24.ac"
 kids 1
 OBJECT poly
-name "s24"
+name "S-24"
 data 5
 Plane
 crease 65.3

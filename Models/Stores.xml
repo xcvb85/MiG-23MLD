@@ -115,14 +115,15 @@
     <animation>
         <object-name>S-24 Missile 1</object-name>
         <type>select</type>
+        <type>select</type>
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-1-set</property>
+                    <property>payload/armament/station/id-1-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
-                    <property>ai/submodels/submodel[16]/count</property>
+                    <property>payload/armament/station/id-1-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -388,11 +389,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-2-set</property>
+                    <property>payload/armament/station/id-2-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
-                    <property>ai/submodels/submodel[17]/count</property>
+                    <property>payload/armament/station/id-2-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -593,11 +594,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-4-set</property>
+                    <property>payload/armament/station/id-4-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
-                    <property>ai/submodels/submodel[18]/count</property>
+                    <property>payload/armament/station/id-4-count</property>
                     <value>1</value>
                 </equals>
             </and>
@@ -725,11 +726,11 @@
         <condition>
             <and>
                 <equals>
-                    <property>payload/armament/station/id-5-set</property>
+                    <property>payload/armament/station/id-5-type</property>
                     <value>S-24</value>
                 </equals>
                 <equals>
-                    <property>ai/submodels/submodel[19]/count</property>
+                    <property>payload/armament/station/id-5-count</property>
                     <value>1</value>
                 </equals>
             </and>
