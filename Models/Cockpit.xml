@@ -32,7 +32,7 @@
             <red>0.042</red>
             <green>0.0125</green>
             <blue>0.0125</blue>
-            <factor-prop>fdm/jsbsim/electric/output/lights</factor-prop>
+            <factor-prop>fdm/jsbsim/electric/output/label-lights</factor-prop>
         </emission>
     </animation>
     <animation>

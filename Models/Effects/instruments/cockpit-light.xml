@@ -40,7 +40,7 @@
 		<spot-cutoff>60</spot-cutoff>
 		<range-m>0.6</range-m>
 		<dim-factor>
-			<property>fdm/jsbsim/electric/output/lights</property>
+			<property>fdm/jsbsim/electric/output/domelight</property>
 		</dim-factor>
 	</light>
 </PropertyList>

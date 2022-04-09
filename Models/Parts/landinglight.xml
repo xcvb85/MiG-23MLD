@@ -9,11 +9,11 @@
             <binding>
                 <command>set-tooltip</command>
                 <tooltip-id>landinglight-bug</tooltip-id>
-                <label>Landing Light %s</label>
+                <label>Light %s</label>
                 <property>fdm/jsbsim/electric/switches/landinglight</property>
                 <mapping>nasal</mapping>
                 <script>
-                    var modes = ['OFF', 'ON'];
+                    var modes = ['Off', 'Landing', 'Taxi'];
                     return modes[arg[0]];
                 </script>
             </binding>
@@ -21,10 +21,38 @@
         <visible>true</visible>
         <action>
             <button>0</button>
-            <repeatable>false</repeatable>
+            <repeatable>true</repeatable>
             <binding>
-                <command>property-toggle</command>
+                <command>property-adjust</command>
                 <property>fdm/jsbsim/electric/switches/landinglight</property>
+                <step>1</step>
+                <min>0</min>
+                <max>3</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>fdm/jsbsim/electric/switches/landinglight</property>
+                <step>1</step>
+                <min>0</min>
+                <max>3</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>fdm/jsbsim/electric/switches/landinglight</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>3</max>
+                <wrap>1</wrap>
             </binding>
         </action>
     </animation>
@@ -34,7 +62,7 @@
         <property>fdm/jsbsim/electric/switches/landinglight</property>
         <interpolation>
             <entry><ind>0.0</ind><dep>-25</dep></entry>
-            <entry><ind>1.0</ind><dep>25</dep></entry>
+            <entry><ind>2.0</ind><dep>25</dep></entry>
         </interpolation>
         <axis>
             <x>0.0</x>

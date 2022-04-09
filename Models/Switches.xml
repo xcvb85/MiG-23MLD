@@ -48,8 +48,28 @@
     </model>
 
     <model>
-        <name>Cockpit Lights Knob</name>
-        <path>Aircraft/MiG-23MLD/Models/Parts/lights.xml</path>
+        <name>Dome Light Knob</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/domelight.xml</path>
+        <offsets>
+            <x-m>-5.209</x-m>
+            <y-m> 0.350</y-m>
+            <z-m> 0.299</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Instrument Lights Knob</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/instrument-lights.xml</path>
+        <offsets>
+            <x-m>-5.080</x-m>
+            <y-m> 0.352</y-m>
+            <z-m> 0.291</z-m>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+    </model>
+    <model>
+        <name>Label Lights Knob</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/label-lights.xml</path>
         <offsets>
             <x-m>-5.017</x-m>
             <y-m> 0.355</y-m>

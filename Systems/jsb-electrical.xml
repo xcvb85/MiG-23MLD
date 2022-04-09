@@ -4,20 +4,22 @@
     <property value="0">electric/switches/battery</property>
     <property value="0">electric/switches/ac-gen</property>
     <property value="0">electric/switches/dc-gen</property>
-
-    <property value="0">electric/switches/lights</property>
+    
+    <property value="0">electric/switches/domelight</property>
+    <property value="0">electric/switches/instrument-lights</property>
+    <property value="0">electric/switches/label-lights</property>
     <property value="0">electric/switches/landinglight</property>
     <property value="0">electric/switches/radio</property>
     <property value="0">electric/switches/ap</property>
     <property value="0">electric/switches/ark</property>
     <property value="0">electric/switches/rsbn</property>
     <property value="0">electric/switches/instruments</property>
-
+    
     <property value="0">electric/switches/cannon</property>
     <property value="0">electric/switches/gunsight</property>
     <property value="0">electric/switches/starterunit</property>
     <property value="0">electric/switches/pump</property>
-
+    
     <channel name="sources">
         <fcs_function name="electric/sources/battery">
             <function>
@@ -70,14 +72,44 @@
             <output>electric/sources/output-dc</output>
         </fcs_function>
     </channel>
-
+    
     <channel name="output">
-        <switch name="electric/output/lights">
-            <default value="0"/>
-            <test logic="AND" value="electric/sources/output-dc">
-                electric/switches/lights == 1
-            </test>
-        </switch>
+        <fcs_function name="electric/output/domelight">
+            <function>
+                <min>
+                    <property>electric/sources/output-dc</property>
+                    <product>
+                        <property>electric/switches/domelight</property>
+                        <value>24</value>
+                    </product>
+                </min>
+            </function>
+            <output>electric/output/domelight</output>
+        </fcs_function>
+        <fcs_function name="electric/output/instrument-lights">
+            <function>
+                <min>
+                    <property>electric/sources/output-dc</property>
+                    <product>
+                        <property>electric/switches/instrument-lights</property>
+                        <value>24</value>
+                    </product>
+                </min>
+            </function>
+            <output>electric/output/instrument-lights</output>
+        </fcs_function>
+        <fcs_function name="electric/output/label-lights">
+            <function>
+                <min>
+                    <property>electric/sources/output-dc</property>
+                    <product>
+                        <property>electric/switches/label-lights</property>
+                        <value>24</value>
+                    </product>
+                </min>
+            </function>
+            <output>electric/output/label-lights</output>
+        </fcs_function>
         <switch name="electric/output/landinglight">
             <default value="0"/>
             <test logic="AND" value="electric/sources/output-ac">

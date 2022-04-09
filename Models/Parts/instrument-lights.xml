@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <path>knob.ac</path>
+    <animation>
+        <type>pick</type>
+        <object-name>knob</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>instrument-lights-bug</tooltip-id>
+                <label>Instrument Lights</label>
+            </binding>
+        </hovered>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>fdm/jsbsim/electric/switches/instrument-lights</property>
+            </binding>
+        </action>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>fdm/jsbsim/electric/switches/instrument-lights</property>
+                <step>-0.05</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>fdm/jsbsim/electric/switches/instrument-lights</property>
+                <step>0.05</step>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>knob</object-name>
+        <property>fdm/jsbsim/electric/switches/instrument-lights</property>
+        <factor>180</factor>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+</PropertyList>

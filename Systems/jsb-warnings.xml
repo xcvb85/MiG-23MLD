@@ -71,10 +71,15 @@
                             <property>warning-lights/masterwarn-cycle</property>
                             <value>20</value>
                         </gt>
-                        <gt>
-                            <property>/orientation/alpha-deg</property>
-                            <value>15</value>
-                        </gt>
+                        <and>
+                            <gt>
+                                <property>/orientation/alpha-deg</property>
+                                <value>15</value>
+                            </gt>
+                            <not>
+                                <property>/gear/gear/wow</property>
+                            </not>
+                        </and>
                     </max>
                     <property>electric/sources/output-dc</property>
                 </product>
