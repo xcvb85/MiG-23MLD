@@ -59,7 +59,6 @@
             </function>
             <output>fcs/breath-cycle</output>
         </fcs_function>
-        
         <fcs_function name="fcs/breath-animation">
             <function>
                 <product>

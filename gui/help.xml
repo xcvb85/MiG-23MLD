@@ -62,10 +62,6 @@
         <desc>CMD right</desc>
     </key>
     <key>
-        <name>L</name>
-        <desc>Cockpit lights</desc>
-    </key>
-    <key>
         <name>y/Y</name>
         <desc>Select next/prev radar contact</desc>
     </key>

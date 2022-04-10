@@ -29,9 +29,9 @@
         <type>material</type>
         <object-name>labels</object-name>
         <emission>
-            <red>0.042</red>
-            <green>0.0125</green>
-            <blue>0.0125</blue>
+            <red>1.0</red>
+            <green>0.3</green>
+            <blue>0.3</blue>
             <factor-prop>fdm/jsbsim/electric/output/label-lights</factor-prop>
         </emission>
     </animation>
@@ -201,7 +201,7 @@
     <animation>
         <type>rotate</type>
         <object-name>sweepLever</object-name>
-        <property>fdm/jsbsim/fcs/wing-sweep-cmd</property>
+        <property>fdm/jsbsim/fcs/wingsweep-cmd-norm</property>
         <factor>50</factor>
         <center>
             <x-m>-5.020</x-m>

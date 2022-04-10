@@ -23,7 +23,7 @@
         <location name="AERORP" unit="M">
             <x>  0.3 </x>
             <y>  0.0 </y>
-            <z> -0.1 </z>
+            <z>  0.0 </z>
         </location>
         <location name="EYEPOINT" unit="M">
             <x> -5.0 </x>
@@ -45,7 +45,7 @@
         <location name="CG" unit="M">
             <x>  0.0 </x>
             <y>  0.0 </y>
-            <z> -0.1 </z>
+            <z>  0.0 </z>
         </location>
         <pointmass name="Station1"><!-- left wing pylon -->
             <weight unit="LBS"> 0 </weight>

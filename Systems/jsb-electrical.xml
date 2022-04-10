@@ -5,7 +5,7 @@
     <property value="0">electric/switches/ac-gen</property>
     <property value="0">electric/switches/dc-gen</property>
     
-    <property value="0">electric/switches/domelight</property>
+    <property value="0">electric/switches/floodlight</property>
     <property value="0">electric/switches/instrument-lights</property>
     <property value="0">electric/switches/label-lights</property>
     <property value="0">electric/switches/landinglight</property>
@@ -74,26 +74,20 @@
     </channel>
     
     <channel name="output">
-        <fcs_function name="electric/output/domelight">
+        <fcs_function name="electric/output/floodlight">
             <function>
                 <min>
                     <property>electric/sources/output-dc</property>
-                    <product>
-                        <property>electric/switches/domelight</property>
-                        <value>24</value>
-                    </product>
+                    <property>electric/switches/floodlight</property>
                 </min>
             </function>
-            <output>electric/output/domelight</output>
+            <output>electric/output/floodlight</output>
         </fcs_function>
         <fcs_function name="electric/output/instrument-lights">
             <function>
                 <min>
                     <property>electric/sources/output-dc</property>
-                    <product>
-                        <property>electric/switches/instrument-lights</property>
-                        <value>24</value>
-                    </product>
+                    <property>electric/switches/instrument-lights</property>
                 </min>
             </function>
             <output>electric/output/instrument-lights</output>
@@ -102,10 +96,7 @@
             <function>
                 <min>
                     <property>electric/sources/output-dc</property>
-                    <product>
-                        <property>electric/switches/label-lights</property>
-                        <value>24</value>
-                    </product>
+                    <property>electric/switches/label-lights</property>
                 </min>
             </function>
             <output>electric/output/label-lights</output>

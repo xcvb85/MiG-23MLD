@@ -49,14 +49,6 @@
             <property>/fdm/jsbsim/fcs/canopy-cmd-norm</property>
         </binding>
     </key>
-    <key n="76">
-        <name>L</name>
-        <desc>Cockpit Light</desc>
-        <binding>
-            <command>property-toggle</command>
-            <property>fdm/jsbsim/electric/switches/lights</property>
-        </binding>
-    </key>
     <key n="79">
         <name>O</name>
         <desc>Release Chute</desc>

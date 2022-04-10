@@ -48,8 +48,8 @@
     </model>
 
     <model>
-        <name>Dome Light Knob</name>
-        <path>Aircraft/MiG-23MLD/Models/Parts/domelight.xml</path>
+        <name>Floodlight Knob</name>
+        <path>Aircraft/MiG-23MLD/Models/Parts/floodlight.xml</path>
         <offsets>
             <x-m>-5.209</x-m>
             <y-m> 0.350</y-m>
