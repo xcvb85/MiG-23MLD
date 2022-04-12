@@ -302,7 +302,7 @@
                         <sum>
                             <property>fcs/dogtooth</property>
                             <property>fcs/vortex-generator</property>
-                            <property>fcs/intake-pos-norm</property>
+                            <property>fcs/intake2-pos-norm</property>
                         </sum>
                         <value>0.05</value>
                     </product>
@@ -331,7 +331,7 @@
                         <sum>
                             <property>fcs/dogtooth</property>
                             <property>fcs/vortex-generator</property>
-                            <property>fcs/intake-pos-norm</property>
+                            <property>fcs/intake2-pos-norm</property>
                         </sum>
                         <value>0.03</value>
                     </product>

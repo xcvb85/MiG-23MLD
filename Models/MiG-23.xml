@@ -54,8 +54,10 @@
         <object-name>rightDoor3</object-name>
         <object-name>rightGear2</object-name>
         <object-name>rightGear6</object-name>
-        <object-name>intakeL</object-name>
-        <object-name>intakeR</object-name>
+        <object-name>intake1L</object-name>
+        <object-name>intake1R</object-name>
+        <object-name>intake2L</object-name>
+        <object-name>intake2R</object-name>
         <object-name>speedbrakeLB1</object-name>
         <object-name>speedbrakeRB1</object-name>
         <object-name>speedbrakeLT1</object-name>
@@ -102,8 +104,10 @@
         <object-name>rightDoor3</object-name>
         <object-name>rightGear2</object-name>
         <object-name>rightGear6</object-name>
-        <object-name>intakeL</object-name>
-        <object-name>intakeR</object-name>
+        <object-name>intake1L</object-name>
+        <object-name>intake1R</object-name>
+        <object-name>intake2L</object-name>
+        <object-name>intake2R</object-name>
         <object-name>speedbrakeLB1</object-name>
         <object-name>speedbrakeRB1</object-name>
         <object-name>speedbrakeLT1</object-name>
@@ -761,12 +765,12 @@
     <!-- intakes -->
     <animation>
         <type>rotate</type>
-        <object-name>intakeL</object-name>
-        <property>fdm/jsbsim/fcs/intake-pos-norm</property>
-        <factor>-2.2</factor>
+        <object-name>intake1L</object-name>
+        <property>fdm/jsbsim/fcs/intake1-pos-norm</property>
+        <factor>-9</factor>
         <center>
-            <x-m>-3.90</x-m>
-            <y-m>-0.50</y-m>
+            <x-m>-4.34</x-m>
+            <y-m>-0.51</y-m>
             <z-m> 0.00</z-m>
         </center>
         <axis>
@@ -777,12 +781,12 @@
     </animation>
     <animation>
         <type>rotate</type>
-        <object-name>intakeR</object-name>
-        <property>fdm/jsbsim/fcs/intake-pos-norm</property>
-        <factor>2.2</factor>
+        <object-name>intake1R</object-name>
+        <property>fdm/jsbsim/fcs/intake1-pos-norm</property>
+        <factor>9</factor>
         <center>
-            <x-m>-3.90</x-m>
-            <y-m> 0.50</y-m>
+            <x-m>-4.34</x-m>
+            <y-m> 0.51</y-m>
             <z-m> 0.00</z-m>
         </center>
         <axis>
@@ -791,7 +795,41 @@
             <z>1.0</z>
         </axis>
     </animation>
-    
+    <animation>
+        <type>rotate</type>
+        <object-name>intake2L</object-name>
+        <object-name>intake2LI</object-name>
+        <property>fdm/jsbsim/fcs/intake2-pos-norm</property>
+        <factor>30</factor>
+        <center>
+            <x-m>-2.55</x-m>
+            <y-m>-0.94</y-m>
+            <z-m> 0.00</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>intake2R</object-name>
+        <object-name>intake2RI</object-name>
+        <property>fdm/jsbsim/fcs/intake2-pos-norm</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-2.55</x-m>
+            <y-m> 0.94</y-m>
+            <z-m> 0.00</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+    </animation>
+
     <!-- speedbrake -->
     <animation>
         <type>rotate</type>
