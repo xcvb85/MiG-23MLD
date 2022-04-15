@@ -68,11 +68,11 @@ if(variant==1) {
 }
 else {
     var pylon1set = [pylonSets.empty];
-    var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24la, pylonSets.kh23];
-    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24lb];
+    var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24, pylonSets.kh23];
+    var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24];
     var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24lc];
-    var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24ld, pylonSets.kh23];
+    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24];
+    var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24, pylonSets.kh23];
     var pylon7set = [pylonSets.empty];
 }
 

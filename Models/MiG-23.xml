@@ -62,7 +62,7 @@
         <object-name>speedbrakeRB1</object-name>
         <object-name>speedbrakeLT1</object-name>
         <object-name>speedbrakeRT1</object-name>
-        <object-name>canopy.002</object-name>
+        <object-name>canopyE</object-name>
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
@@ -112,7 +112,7 @@
         <object-name>speedbrakeRB1</object-name>
         <object-name>speedbrakeLT1</object-name>
         <object-name>speedbrakeRT1</object-name>
-        <object-name>canopy.002</object-name>
+        <object-name>canopyE</object-name>
         <property-base>sim/model/livery/</property-base>
         <texture-prop>texture</texture-prop>
         <texture>fuzcamo_afg.png</texture>
