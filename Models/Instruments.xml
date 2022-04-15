@@ -37,21 +37,21 @@
         </offsets>
     </model>
     <model>
-        <name>EGT</name>
-        <path>Aircraft/MiG-23MLD/Models/Instruments/EGT/EGT.xml</path>
-        <offsets>
-            <x-m>-5.330</x-m>
-            <y-m> 0.249</y-m>
-            <z-m> 0.254</z-m>
-        </offsets>
-    </model>
-    <model>
         <name>AOA</name>
         <path>Aircraft/MiG-23MLD/Models/Instruments/AOA/AOA.xml</path>
         <offsets>
             <x-m>-5.329</x-m>
             <y-m>-0.137</y-m>
             <z-m> 0.506</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>Intake</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/Intake/Intake.xml</path>
+        <offsets>
+            <x-m>-5.329</x-m>
+            <y-m> 0.153</y-m>
+            <z-m> 0.511</z-m>
         </offsets>
     </model>
     <model>
@@ -125,6 +125,15 @@
             <x-m>-5.330</x-m>
             <y-m>-0.033</y-m>
             <z-m> 0.225</z-m>
+        </offsets>
+    </model>
+    <model>
+        <name>EGT</name>
+        <path>Aircraft/MiG-23MLD/Models/Instruments/EGT/EGT.xml</path>
+        <offsets>
+            <x-m>-5.330</x-m>
+            <y-m> 0.249</y-m>
+            <z-m> 0.254</z-m>
         </offsets>
     </model>
     <model>

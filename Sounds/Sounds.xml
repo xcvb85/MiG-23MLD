@@ -596,37 +596,6 @@
                 <factor>0.75</factor>
             </volume>
         </missiles>
-        <!--
-        <missiles>
-        <name>S-5</name>
-        <path>Sounds/weapons/hydra70.wav</path>
-        <mode>once</mode>
-        <condition>
-        <property>fdm/jsbsim/fcs/s5trigger</property>
-        <property>payload/armament/fire-control/serviceable</property>
-        </condition>
-        <volume>
-        <factor>0.3</factor>
-        </volume>
-        </missiles>
-        -->
-        <missiles>
-            <name>S-24</name>
-            <path>Sounds/weapons/missile.wav</path>
-            <mode>once</mode>
-            <condition>
-                <or>
-                    <property>fdm/jsbsim/fcs/s24atrigger</property>
-                    <property>fdm/jsbsim/fcs/s24btrigger</property>
-                    <property>fdm/jsbsim/fcs/s24ctrigger</property>
-                    <property>fdm/jsbsim/fcs/s24dtrigger</property>
-                </or>
-                <property>payload/armament/fire-control/serviceable</property>
-            </condition>
-            <volume>
-                <factor>0.3</factor>
-            </volume>
-        </missiles>
         
         <!--================================= Bombs =============================-->
         <bombs>

@@ -109,7 +109,7 @@
             <pref-width>225</pref-width><pref-height>23</pref-height>
             <row>0</row>
             <col>4</col>
-            <legend>A/A Low Cost</legend>
+            <legend>A/A Short Range</legend>
             <binding>
                 <command>nasal</command>
                 <script>pylons.aa_r3();</script>
