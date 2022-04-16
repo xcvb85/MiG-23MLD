@@ -216,4 +216,15 @@
             <script>pylons.fcs.cycleLoadedWeapon();</script>
         </binding>
     </key>
+    <key n="262">
+        <name>F6</name>
+        <desc>noop</desc>
+        <repeatable type="bool">false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>
+                libraries.eject();
+            </script>
+        </binding>
+    </key>
 </PropertyList>

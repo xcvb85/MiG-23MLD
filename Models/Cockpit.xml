@@ -26,6 +26,26 @@
         </offsets>
     </model>
     <animation>
+        <type>pick</type>
+        <visible>true</visible>
+        <object-name>eject</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>eject-bug</tooltip-id>
+                <label>Eject</label>
+            </binding>
+        </hovered>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>libraries.eject();</script>
+            </binding>
+        </action>
+    </animation>
+    <animation>
         <type>material</type>
         <object-name>labels</object-name>
         <emission>

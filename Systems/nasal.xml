@@ -28,6 +28,12 @@
     <damage>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/damage.nas</file>
     </damage>
+    <ai>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/AI_list.nas</file>
+    </ai>
+    <view>
+        <file>Aircraft/MiG-23MLD/Nasal/weapons/MissileView.nas</file>
+    </view>
     <armament>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/missile-code.nas</file><!-- must be before station-manager -->
     </armament>

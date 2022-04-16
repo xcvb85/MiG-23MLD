@@ -12,10 +12,6 @@ else {
     SweepAngles=[16,45,72]; #16=fully forward
 }
 
-var prop = "payload/armament/fire-control";
-var actuator_fc = compat_failure_modes.set_unserviceable(prop);
-FailureMgr.add_failure_mode(prop, "Fire control", actuator_fc);
-
 var wingSweep = func(direction) {
     Sweep += direction;
 
@@ -123,3 +119,27 @@ var ap_disable = func() {
     setprop("autopilot/locks/heading", "");
     setprop("autopilot/locks/altitude", "");
 }
+
+var eject = func{
+#    if (getprop("controls/ejected")==1 or !getprop("controls/seat/ejection-safety-lever")) {
+    if (getprop("controls/ejected")==1) {
+        return;
+    }
+    # ACES II activation
+    view.setViewByIndex(1);
+    setprop("controls/ejected",1);
+    settimer(eject2, 1.5);# this is to give the sim time to load the exterior view, so there is no stutter while seat fires and it gets stuck.
+    damage.damageLog.push("Pilot ejected");
+}
+
+var eject2 = func{
+    setprop("canopy/not-serviceable", 1);
+    var es = armament.AIM.new(10, "es", "gamma", nil, [-3.65,0,0.7]);
+    es.releaseAtNothing();
+    view.view_firing_missile(es);
+    settimer(func {setprop("sim/crashed",1);},3.5);
+}
+
+var prop = "payload/armament/fire-control";
+var actuator_fc = compat_failure_modes.set_unserviceable(prop);
+FailureMgr.add_failure_mode(prop, "Fire control", actuator_fc);

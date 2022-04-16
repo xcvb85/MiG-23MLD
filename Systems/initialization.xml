@@ -18,6 +18,7 @@
         </jsbsim>
     </fdm>
     <controls>
+        <ejected>0</ejected>
         <gear>
             <brake-parking>1</brake-parking>
         </gear>
