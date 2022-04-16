@@ -77,6 +77,10 @@
         <name>[ ]</name>
         <desc>Flaps up/down</desc>
     </key>
+    <key>
+        <name>F6</name>
+        <desc>Eject</desc>
+    </key>
     <text>Gunsight
 -------
 The ASP-17ML is a gunsight (ASP) with integrated radar screen (RP). Use the lever at the buttom left to switch between the two.

@@ -28,20 +28,6 @@ var AImodel = {
         return m;
     },
 
-    init: func() {
-        #me.L = [];
-        #append(me.L, setlistener("ai/models/model-added", func(n) {
-            # Defer update() to the next convenient time to allow the
-            # new MP entry to become fully initialized.
-            #settimer(func me.update(), 0);
-        #}));
-        #append(me.L, setlistener("ai/models/model-removed", func(n) {
-            # Defer update() to the next convenient time to allow the
-            # old MP entry to become fully deactivated.
-            #settimer(func me.update(), 0);
-        #}));
-        me.update();
-    },
     update: func(n = nil) {
         var changedNode = props.globals.getNode(n, 1);
         me.data = {};
@@ -78,7 +64,6 @@ var AImodel = {
             setprop("ai/models/num-ai", size(me.list));
             setprop("sim/signals/ai-updated", 1);
         }
-        settimer(func(){ me.update() }, 0.5);
     },
     get_list: func(){
         return me.list;

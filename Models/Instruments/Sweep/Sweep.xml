@@ -8,6 +8,7 @@
  <effect>
      <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
      <object-name>face</object-name>
+     <object-name>needle</object-name>
      <object-name>needleLeft</object-name>
      <object-name>needleRight</object-name>
      <object-name>indicatorM</object-name>

@@ -1,4 +1,5 @@
 print("*** LOADING MissileView.nas ... ***");
+var myModel = ai.AImodel.new();
 var missile_view_handler = {
   init: func(node) {
     me.viewN = node;
@@ -45,7 +46,7 @@ var missile_view_handler = {
   _update_: func {
     var self = { callsign: getprop("/sim/multiplay/callsign"), model:,
         node: props.globals, root: '/' };
-    #ai.myModel.update();
+    myModel.update();
     me.list = [self] ~ myModel.get_list();
     if (!me.find(me.current))
       me.select(0);
@@ -82,11 +83,6 @@ var missile_view_handler = {
   },
 };
 
-var myModel = ai.AImodel.new();
-myModel.init();
-
-view.manager.register("Missile View", missile_view_handler);
-
 var view_firing_missile = func(myMissile)
 {
     # We select the missile name
@@ -111,3 +107,5 @@ var view_firing_missile = func(myMissile)
     # We feed the handler
     view.missile_view_handler.setup(data);
 }
+
+view.manager.register("Missile View", missile_view_handler);
