@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">SyAAF 2786</name>
+                <texture>LiveriesMLD/2786_SyAAF.png</texture>
+            </livery>
+        </model>
+    </sim>
+    <fdm>
+        <jsbsim>
+            <fcs>
+                <dogtooth type="bool">1</dogtooth>
+                <vortex-generator type="bool">0</vortex-generator>
+                <cfd type="bool">1</cfd>
+            </fcs>
+        </jsbsim>
+    </fdm>
+</PropertyList>
