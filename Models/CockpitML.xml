@@ -11,7 +11,7 @@
         <path>Aircraft/MiG-23MLD/Models/Instruments/RWR/SPO-10.xml</path>
         <offsets>
             <x-m>-5.290</x-m>
-            <y-m>-0.244</y-m>
+            <y-m>-0.270</y-m>
             <z-m> 0.540</z-m>
             <pitch-deg>-18</pitch-deg>
         </offsets>

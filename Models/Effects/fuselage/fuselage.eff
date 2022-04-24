@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <name>Aircraft/MiG-23MLD/Models/Effects/fuselage/mig21-fuselage</name>
+    <name>fuselage</name>
     <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/model-combined-fuselage</inherits-from>
     <parameters>
         <!--<metallic type="float"><use>light/metal</use></metallic>

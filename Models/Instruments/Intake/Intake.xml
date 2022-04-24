@@ -50,7 +50,7 @@
     <animation>
         <type>rotate</type>
         <object-name>needle1</object-name>
-        <property>fdm/jsbsim/fcs/intake1-pos-norm</property>
+        <property>fdm/jsbsim/fcs/intake1-cmd-norm</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
@@ -75,7 +75,7 @@
     <animation>
         <type>rotate</type>
         <object-name>needle2</object-name>
-        <property>fdm/jsbsim/fcs/intake1-cmd-norm</property>
+        <property>fdm/jsbsim/fcs/intake1-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
