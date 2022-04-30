@@ -85,11 +85,31 @@
 -------
 The ASP-17ML is a gunsight (ASP) with integrated radar screen (RP). Use the lever at the buttom left to switch between the two.
 
-The gunsight has the following operating modes, which can be selected with the rotary knob:
-- deflection mode (PZ) when firing the gun at maneuvering (M) and non-maneuvering (NM) aerial targets
-- deflection mode (PZ) mode or non-synchronous mode (N.SIN) when firing cannon or unguided rockets at maneuvering and nonmaneuvering ground targets
-- bombing mode with conventional (OB) and retarded bombs (TB)
-- target designation mode when launching boost-phase ballistic missiles
+The gunsight has different operating modes, which can be selected with the rotary knob and the little switch next to it.
+M: Modes against maneuvering targets (aerial and ground targets)
+PZ: deflection mode when firing the gun
+RUTSH: manual mode when firing guided IR-missiles
+N.SIN: non-synchronous mode when firing unguided rockets
+NM: Modes against non-maneuvering targets (ground targets)
+OB: bombing with conventional bombs (CCIP)
+RUTSH: manual bombing mode
+TB: bombing with retarded bombs (CCIP)
+
+The radar screen can show the following symbols:
+30: radar range scale 30km
+15: radar altimeter scale 1500m
+A:  radar lock (radar in STT mode)
+TP: IRST lock
+cross: reference symbol (e.g. for flight director)
+circle: flight director
+dot: radar direction in STT mode (position of target as seen through the window)
+=: friend in RWS mode (radar screen on gunsight)
+-: foe in RWS mode (radar screen on gunsight)
+1-4: missiles ready to fire
+K: localizer signal received
+G: glideslope signal received
+PR: launch authorization
+lines: range to target, missile range (min/max), radar height, artificial horizon
 
 RWR
 ----
