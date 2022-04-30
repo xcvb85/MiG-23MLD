@@ -49,7 +49,9 @@ file, these values will be used (they are hardcoded).
   </altimeter>
 
   <radar-altimeter>
-    <limit-bug type="double">164</limit-bug>
+    <name>radar-altimeter</name>
+    <number>0</number>
+    <update-interval-sec>0.1</update-interval-sec>
   </radar-altimeter>
 
   <attitude-indicator>

@@ -33,4 +33,12 @@
             <chute_jettisoned type="int">0</chute_jettisoned>
         </flight>
     </controls>
+    <instrumentation>
+        <marker-beacon>
+            <serviceable type="bool">false</serviceable>
+        </marker-beacon>
+        <radar-altimeter>
+            <serviceable type="bool">true</serviceable>
+        </radar-altimeter>
+    </instrumentation>
 </PropertyList>

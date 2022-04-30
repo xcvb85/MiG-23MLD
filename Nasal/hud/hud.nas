@@ -33,6 +33,7 @@ var HUD = {
         me.ActivePage = 0;
         for(var i=0; i < size(me.Pages); i=i+1) {
             if(i == input) {
+                me.Pages[i].update();
                 me.Pages[i].show();
                 me.ActivePage = i;
             }
@@ -58,7 +59,9 @@ var HUD = {
                 if(me.ActivePage != me.Index) {
                     me.ActivatePage(me.Index);
                 }
-                me.Pages[me.ActivePage].update();
+                else {
+                    me.Pages[me.ActivePage].update();
+                }
             }
             me.group.show();
         }
