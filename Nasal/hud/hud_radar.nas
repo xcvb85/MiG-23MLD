@@ -5,34 +5,63 @@ var hud_radar = {
 		m.group = canvasGroup;
 		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_radar.svg");
 
-		var svg_keys = ["horizonBar", "marker", "course", "glideslope",
-						"ralt", "radar", "irst",
+		var svg_keys = ["horizonBar", "fd", "localizer", "glideslope",
+						"ralt", "radar_lock", "irst_lock", "target",
 						"w1", "w2", "w3", "w4", "la"];
 		foreach(var key; svg_keys) {
 			m[key] = canvasGroup.getElementById(key);
 		}
 		
-		m.marker.hide();
-		m.course.hide();
-		m.radar.hide();
-		m.irst.hide();
-		m.glideslope.hide();
-		m.w1.hide();
-		m.w2.hide();
-		m.w3.hide();
-		m.w4.hide();
+		m.radar_lock.hide();
+		m.irst_lock.hide();
 		m.la.hide();
+		m.target.hide();
 		
-		m.roll = props.globals.getNode("orientation/roll-deg", 1);
-		m.pitch = props.globals.getNode("orientation/pitch-deg", 1);
-		m.altitude = props.globals.getNode("instrumentation/radar-altimeter/radar-altitude-ft", 1);
+		m.p_roll = props.globals.getNode("orientation/roll-deg", 1);
+		m.p_pitch = props.globals.getNode("orientation/pitch-deg", 1);
+		m.p_altitude = props.globals.getNode("instrumentation/radar-altimeter/radar-altitude-ft", 1);
+		
+		m.p_localizer = props.globals.getNode("instrumentation/nav/in-range", 1);
+		m.p_glideslope = props.globals.getNode("instrumentation/nav/has-gs", 1);
+		m.p_loc_deflection = props.globals.getNode("instrumentation/nav/heading-needle-deflection-norm", 1);
+		m.p_gs_deflection = props.globals.getNode("instrumentation/nav/gs-needle-deflection-norm", 1);
+		
+		m.p_marm = props.globals.getNode("controls/armament/master-arm", 1);
+		m.p_w1 = props.globals.getNode("payload/armament/station/id-1-count", 1);
+		m.p_w2 = props.globals.getNode("payload/armament/station/id-5-count", 1);
+		m.p_w3 = props.globals.getNode("payload/armament/station/id-2-count", 1);
+		m.p_w4 = props.globals.getNode("payload/armament/station/id-4-count", 1);
 		return m;
 	},
 	update: func()
 	{
-		me.horizonBar.setRotation(me.roll.getValue()*D2R, me.horizonBar.getCenter());
-		me.horizonBar.setTranslation(0, -2*me.pitch.getValue());
-		me.ralt.setTranslation(0, -0.03*me.altitude.getValue());
+		me.horizonBar.setRotation(me.p_roll.getValue()*D2R, me.horizonBar.getCenter());
+		me.horizonBar.setTranslation(0, -2*me.p_pitch.getValue());
+		me.ralt.setTranslation(0, -0.03*me.p_altitude.getValue());
+		
+		if(me.p_localizer.getValue()) {
+			me.localizer.show();
+			me.p_glideslope.getValue()?me.glideslope.show():me.glideslope.hide();
+			me.fd.show();
+			me.fd.setTranslation(50*me.p_loc_deflection.getValue(), -50*me.p_gs_deflection.getValue());
+		}
+		else {
+			me.localizer.hide();
+			me.fd.hide();
+		}
+		
+		if(me.p_marm.getValue()) {
+			me.p_w1.getValue()>0?me.w1.show():me.w1.hide();
+			me.p_w2.getValue()>0?me.w2.show():me.w2.hide();
+			me.p_w3.getValue()>0?me.w3.show():me.w3.hide();
+			me.p_w4.getValue()>0?me.w4.show():me.w4.hide();
+		}
+		else {
+			me.w1.hide();
+			me.w2.hide();
+			me.w3.hide();
+			me.w4.hide();
+		}
 	},
 	show: func()
 	{

@@ -6,71 +6,71 @@
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>glass</object-name>
   </effect>
- <effect>
-     <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
-     <object-name>HIazimuth</object-name>
-     <object-name>Compass</object-name>
-     <object-name>Center</object-name>
-     <object-name>Localizer</object-name>
-     <object-name>Glideslope</object-name>
-     <object-name>LocalizerFlag</object-name>
-     <object-name>GlideslopeFlag</object-name>
-     <object-name>Back</object-name>
- </effect>
-
-<animation>
-  <type>rotate</type>
-  <object-name>Compass</object-name>
-  <property>orientation/heading-magnetic-deg</property>
-  <axis>
-   <x>1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-</animation>
-
+  <effect>
+    <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
+    <object-name>HIazimuth</object-name>
+    <object-name>Compass</object-name>
+    <object-name>Center</object-name>
+    <object-name>Localizer</object-name>
+    <object-name>Glideslope</object-name>
+    <object-name>LocalizerFlag</object-name>
+    <object-name>GlideslopeFlag</object-name>
+    <object-name>Back</object-name>
+  </effect>
+  
   <animation>
-  <type>rotate</type>
-  <object-name>Localizer</object-name>
-  <property>instrumentation/nav/heading-needle-deflection</property>
-  <interpolation>
-   <entry><ind> 4</ind><dep> 30</dep></entry> 
-   <entry><ind> 0</ind><dep>  0</dep></entry>
-   <entry><ind>-4</ind><dep>-30</dep></entry>
-  </interpolation>
-  <center>
-   <x-m>-0.03</x-m>
-   <y-m> 0.00</y-m>
-   <z-m> 0.00</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>0</y>
-   <z>1</z>
-  </axis>
- </animation>
-
+    <type>rotate</type>
+    <object-name>Compass</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
   <animation>
-  <type>rotate</type>
-  <object-name>Glideslope</object-name>
-  <property>instrumentation/nav/gs-needle-deflection</property>
-  <interpolation>
-   <entry><ind>-4</ind><dep> 30</dep></entry>
-   <entry><ind> 0</ind><dep>  0</dep></entry>
-   <entry><ind> 4</ind><dep>-30</dep></entry>
-  </interpolation>
-  <center>
-   <x-m>-0.03</x-m>
-   <y-m> 0.00</y-m>
-   <z-m> 0.00</z-m>
-  </center>
-  <axis>
-   <x>0</x>
-   <y>1</y>
-   <z>0</z>
-  </axis>
- </animation>
- 
+    <type>rotate</type>
+    <object-name>Localizer</object-name>
+    <property>instrumentation/nav/heading-needle-deflection</property>
+    <interpolation>
+      <entry><ind> 4</ind><dep> 30</dep></entry> 
+      <entry><ind> 0</ind><dep>  0</dep></entry>
+      <entry><ind>-4</ind><dep>-30</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>-0.03</x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.00</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Glideslope</object-name>
+    <property>instrumentation/nav/gs-needle-deflection</property>
+    <interpolation>
+      <entry><ind>-4</ind><dep> 30</dep></entry>
+      <entry><ind> 0</ind><dep>  0</dep></entry>
+      <entry><ind> 4</ind><dep>-30</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>-0.03</x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.00</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
   <animation>
     <type>select</type>
     <object-name>LocalizerFlag</object-name>
@@ -80,7 +80,7 @@
       </not>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>GlideslopeFlag</object-name>
@@ -90,95 +90,95 @@
       </not>
     </condition>
   </animation>
-
- <animation>
-  <type>rotate</type>
-  <object-name>RadialNeedle</object-name>
-  <expression>
-   <difference>
-    <property>instrumentation/nav/radials/selected-deg</property>
-    <property>orientation/heading-magnetic-deg</property>
-   </difference>
-  </expression>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
-  <object-name>BearingNeedle</object-name>
-  <expression>
-   <difference>
-   <property>autopilot/settings/heading-bug-deg</property>
-    <property>orientation/heading-magnetic-deg</property>
-   </difference>
-  </expression>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
-
-<!--     Heading Bug control    -->
- <animation>
-  <type>pick</type>
-  <object-name>Knob</object-name>
-  <action>
-    <name>small decrease</name>
-    <button>0</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>/autopilot/settings/heading-bug-deg</property>
-      <step>-1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-  <action>
-    <name>large decrease</name>
-    <button>1</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>/autopilot/settings/heading-bug-deg</property>
-      <step>-5</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-  <action>
-    <name>small decrease (scrollwheel)</name>
-    <button>3</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>/autopilot/settings/heading-bug-deg</property>
-      <step>-1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
-  <action>
-    <name>small increase (scrollwheel)</name>
-    <button>4</button>
-    <repeatable>true</repeatable>
-    <binding>
-      <command>property-adjust</command>
-      <property>/autopilot/settings/heading-bug-deg</property>
-      <step>1</step>
-      <min>0</min>
-      <max>360</max>
-      <wrap>1</wrap>
-    </binding>
-  </action>
- </animation>
-
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RadialNeedle</object-name>
+    <expression>
+      <difference>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <property>orientation/heading-magnetic-deg</property>
+      </difference>
+    </expression>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>BearingNeedle</object-name>
+    <expression>
+      <difference>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <property>orientation/heading-magnetic-deg</property>
+      </difference>
+    </expression>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <!--     Heading Bug control    -->
+  <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small increase (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/heading-bug-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+  
 </PropertyList>
