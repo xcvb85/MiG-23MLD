@@ -24,6 +24,7 @@
     <radar_system>
         <file>Aircraft/MiG-23MLD/Nasal/radar/radar-system.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/radar/rwr-only.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/rwr.nas</file>
     </radar_system>
     <damage>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/damage.nas</file>

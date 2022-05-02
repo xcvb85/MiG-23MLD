@@ -9,7 +9,7 @@
         <type>rotate</type>
         <object-name>hud_mode</object-name>
         <property>instrumentation/hud/hud_mode</property>
-        <factor>-60</factor>
+        <factor>60</factor>
         <center>
             <x-m> 0.000</x-m>
             <y-m>-0.079</y-m>
