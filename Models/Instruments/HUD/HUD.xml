@@ -202,4 +202,114 @@
             </binding>
         </action>
     </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>hud_vert</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>vert-bug</tooltip-id>
+                <label>Vertical Alignment</label>
+                <property>instrumentation/hud/hud_vert</property>
+                <mapping>nasal</mapping>
+                <script>
+                    screen.log.write(sprintf("Vertical Alignment %d", arg[0] or 0));
+                </script>
+            </binding>
+        </hovered>
+        <action>
+            <name>small decrease</name>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_vert</property>
+                <step>5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <name>small decrease (scrollwheel)</name>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_vert</property>
+                <step>-5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <name>small increase (scrollwheel)</name>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_vert</property>
+                <step>5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>hud_horz</object-name>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>horz-bug</tooltip-id>
+                <label>Horizontal Alignment</label>
+                <property>instrumentation/hud/hud_horz</property>
+                <mapping>nasal</mapping>
+                <script>
+                    screen.log.write(sprintf("Horizontal Alignment %d", arg[0] or 0));
+                </script>
+            </binding>
+        </hovered>
+        <action>
+            <name>small decrease</name>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_horz</property>
+                <step>5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <name>small decrease (scrollwheel)</name>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_horz</property>
+                <step>-5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+        <action>
+            <name>small increase (scrollwheel)</name>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/hud/hud_horz</property>
+                <step>5</step>
+                <min>0</min>
+                <max>360</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
 </PropertyList>
