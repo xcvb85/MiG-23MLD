@@ -16,7 +16,7 @@
     <hud>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud_math.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud_crosshairs.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_pipper.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/hud/hud_manual.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud_ccip.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud_radar.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud.nas</file>
