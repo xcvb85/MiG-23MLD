@@ -8,11 +8,11 @@ var HUD = {
         # HUD .ac coords: upper-left lower-right
         HudMath.init([-5.750,-0.078,0.717-0.35], [-5.750,0.082,0.557-0.35], [256,256], [0,1], [1,0], 0);
 
-        m.Pages[0] = hud_pipper.new(group.createChild('group'), instance);
-        m.Pages[1] = hud_crosshairs.new(group.createChild('group'), instance);
-        m.Pages[2] = hud_pipper.new(group.createChild('group'), instance);
+        m.Pages[0] = hud_crosshairs.new(group.createChild('group'), instance);
+        m.Pages[1] = hud_manual.new(group.createChild('group'), instance, 0);
+        m.Pages[2] = hud_crosshairs.new(group.createChild('group'), instance);
         m.Pages[3] = hud_ccip.new(group.createChild('group'), instance);
-        m.Pages[4] = hud_crosshairs.new(group.createChild('group'), instance);
+        m.Pages[4] = hud_manual.new(group.createChild('group'), instance, 1);
         m.Pages[5] = hud_ccip.new(group.createChild('group'), instance);
         m.Pages[6] = hud_radar.new(group.createChild('group'), instance);
         m.Power = props.globals.getNode("fdm/jsbsim/electric/output/gunsight", 1);

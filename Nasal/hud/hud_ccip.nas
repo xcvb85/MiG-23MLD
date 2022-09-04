@@ -4,7 +4,7 @@ var hud_ccip = {
 		var m = { parents: [hud_ccip] };
 		m.group = canvasGroup;
 		#m.group.setTranslation(HudMath.getCenterOrigin());
-		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_pipper.svg");
+		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_crosshairs.svg");
 
 		var svg_keys = ["cross"];
 		foreach(var key; svg_keys) {
