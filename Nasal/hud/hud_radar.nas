@@ -7,7 +7,7 @@ var hud_radar = {
 
 		var svg_keys = ["horizonBar", "fd", "localizer", "glideslope",
 						"ralt", "radar_lock", "irst_lock", "target",
-						"w1", "w2", "w3", "w4", "la"];
+						"w1", "w2", "w3", "w4", "la", "layer1"];
 		foreach(var key; svg_keys) {
 			m[key] = canvasGroup.getElementById(key);
 		}
@@ -16,6 +16,8 @@ var hud_radar = {
 		m.irst_lock.hide();
 		m.la.hide();
 		m.target.hide();
+		
+		m.hud_night = props.globals.getNode("instrumentation/hud/hud_night", 1);
 		
 		m.p_roll = props.globals.getNode("orientation/roll-deg", 1);
 		m.p_pitch = props.globals.getNode("orientation/pitch-deg", 1);
@@ -38,6 +40,13 @@ var hud_radar = {
 		me.horizonBar.setRotation(me.p_roll.getValue()*D2R, me.horizonBar.getCenter());
 		me.horizonBar.setTranslation(0, -2*me.p_pitch.getValue());
 		me.ralt.setTranslation(0, -0.03*me.p_altitude.getValue());
+		
+		if(me.hud_night.getValue() or 0) {
+			me.layer1.setColor(1, 1, 0);
+		}
+		else {
+			me.layer1.setColor(0, 1, 0);
+		}
 		
 		if(me.p_localizer.getValue()) {
 			me.localizer.show();
