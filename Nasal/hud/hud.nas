@@ -80,6 +80,7 @@ var hudListener = setlistener("sim/signals/fdm-initialized", func () {
         "mipmapping": 1
     });
     hudCanvas.addPlacement({"node": "HUD_Screen"});
+    hudCanvas.set("additive-blend", 1);
     hudCanvas.setColorBackground(0, 0, 0, 0);
     HUDInstance = HUD.new(hudCanvas.createGroup(), 0);
     removelistener(hudListener);
