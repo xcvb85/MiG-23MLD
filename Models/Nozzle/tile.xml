@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <path>tile.ac</path>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/tile/tile</inherits-from>
+        <object-name>tile</object-name>
+    </effect>
     <animation>
         <type>rotate</type>
         <object-name>tile</object-name>

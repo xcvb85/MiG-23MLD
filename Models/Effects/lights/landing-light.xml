@@ -42,7 +42,7 @@
 			<b>0.8</b>
 			<a>1</a>
 		</color>
-		<intensity>50000</intensity>
+		<intensity>300000</intensity>
 		<spot-exponent>100</spot-exponent>
 		<spot-cutoff>20</spot-cutoff>
 		<range-m>300</range-m>

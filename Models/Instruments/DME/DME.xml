@@ -15,4 +15,116 @@
         <object-name>tens</object-name>
         <object-name>ones</object-name>
     </effect>
+    <animation>
+        <object-name>flag</object-name>
+        <type>select</type>
+        <condition>
+            <not>
+            <property>instrumentation/nav[0]/dme-in-range</property>
+            </not>
+        </condition>
+    </animation>
+<animation>
+  <type>rotate</type>
+  <object-name>ones</object-name>
+<property>instrumentation/nav[0]/nav-distance</property>
+  <factor>0.036</factor>
+  <center>
+    <x-m>-0.014</x-m>
+    <y-m> 0.000</y-m>
+    <z-m> 0.012</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>tens</object-name>
+<property>instrumentation/nav[0]/nav-distance</property>
+  <expression>
+    <table>
+      <mod>
+        <abs><property>instrumentation/nav[0]/nav-distance</property></abs>
+        <value>100000</value>
+      </mod>
+      <entry><ind>	    0</ind>	<dep>	0</dep></entry>
+      <entry><ind>	 9900</ind>	<dep>	0</dep></entry>
+      <entry><ind>	10000</ind>	<dep>	36</dep></entry>
+      <entry><ind>	19900</ind>	<dep>	36</dep></entry>
+      <entry><ind>	20000</ind>	<dep>	72</dep></entry>
+      <entry><ind>	29900</ind>	<dep>	72</dep></entry>
+      <entry><ind>	30000</ind>	<dep>	108</dep></entry>
+      <entry><ind>	39900</ind>	<dep>	108</dep></entry>
+      <entry><ind>	40000</ind>	<dep>	144</dep></entry>
+      <entry><ind>	49900</ind>	<dep>	144</dep></entry>
+      <entry><ind>	50000</ind>	<dep>	180</dep></entry>
+      <entry><ind>	59900</ind>	<dep>	180</dep></entry>
+      <entry><ind>	60000</ind>	<dep>	216</dep></entry>
+      <entry><ind>	69900</ind>	<dep>	216</dep></entry>
+      <entry><ind>	70000</ind>	<dep>	252</dep></entry>
+      <entry><ind>	79900</ind>	<dep>	252</dep></entry>
+      <entry><ind>	80000</ind>	<dep>	288</dep></entry>
+      <entry><ind>	89900</ind>	<dep>	288</dep></entry>
+      <entry><ind>	90000</ind>	<dep>	324</dep></entry>
+      <entry><ind>	99900</ind>	<dep>	324</dep></entry>
+      <entry><ind>	99990</ind>	<dep>	359.9</dep></entry>
+    </table>
+  </expression>
+  <center>
+    <x-m>-0.014</x-m>
+    <y-m> 0.000</y-m>
+    <z-m> 0.012</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+<animation>
+  <type>rotate</type>
+  <object-name>hundreds</object-name>
+  <expression>
+    <table>
+      <mod>
+        <abs><property>instrumentation/nav[0]/nav-distance</property></abs>
+        <value>1000000</value>
+      </mod>
+      <entry><ind>	    0</ind>	<dep>	0</dep></entry>
+      <entry><ind>	 99000</ind>	<dep>	0</dep></entry>
+      <entry><ind>	100000</ind>	<dep>	36</dep></entry>
+      <entry><ind>	199000</ind>	<dep>	36</dep></entry>
+      <entry><ind>	200000</ind>	<dep>	72</dep></entry>
+      <entry><ind>	299000</ind>	<dep>	72</dep></entry>
+      <entry><ind>	300000</ind>	<dep>	108</dep></entry>
+      <entry><ind>	399000</ind>	<dep>	108</dep></entry>
+      <entry><ind>	400000</ind>	<dep>	144</dep></entry>
+      <entry><ind>	499000</ind>	<dep>	144</dep></entry>
+      <entry><ind>	500000</ind>	<dep>	180</dep></entry>
+      <entry><ind>	599000</ind>	<dep>	180</dep></entry>
+      <entry><ind>	600000</ind>	<dep>	216</dep></entry>
+      <entry><ind>	699000</ind>	<dep>	216</dep></entry>
+      <entry><ind>	700000</ind>	<dep>	252</dep></entry>
+      <entry><ind>	799000</ind>	<dep>	252</dep></entry>
+      <entry><ind>	800000</ind>	<dep>	288</dep></entry>
+      <entry><ind>	899000</ind>	<dep>	288</dep></entry>
+      <entry><ind>	900000</ind>	<dep>	324</dep></entry>
+      <entry><ind>	999000</ind>	<dep>	324</dep></entry>
+      <entry><ind>	999900</ind>	<dep>	359.9</dep></entry>
+    </table>
+  </expression>
+  <center>
+    <x-m>-0.014</x-m>
+    <y-m> 0.000</y-m>
+    <z-m> 0.012</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
 </PropertyList>
