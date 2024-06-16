@@ -93,10 +93,10 @@
   
   <animation>
     <type>rotate</type>
-    <object-name>RadialNeedle</object-name>
+    <object-name>Course</object-name>
     <expression>
       <difference>
-        <property>instrumentation/nav/radials/selected-deg</property>
+		<property>instrumentation/nav[0]/radials/selected-deg</property>
         <property>orientation/heading-magnetic-deg</property>
       </difference>
     </expression>
@@ -106,7 +106,23 @@
       <z>0</z>
     </axis>
   </animation>
-  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RadioCompass</object-name>
+    <expression>
+      <difference>
+        <property>instrumentation/nav[0]/heading-deg</property>
+        <property>orientation/heading-magnetic-deg</property>
+      </difference>
+    </expression>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>BearingNeedle</object-name>
@@ -122,63 +138,50 @@
       <z>0</z>
     </axis>
   </animation>
-  
-  <!--     Heading Bug control    -->
-  <animation>
-    <type>pick</type>
-    <object-name>Knob</object-name>
-    <action>
-      <name>small decrease</name>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
-        <step>-1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
-      </binding>
-    </action>
-    <action>
-      <name>large decrease</name>
-      <button>1</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
-        <step>-5</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
-      </binding>
-    </action>
-    <action>
-      <name>small decrease (scrollwheel)</name>
-      <button>3</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
-        <step>-1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
-      </binding>
-    </action>
-    <action>
-      <name>small increase (scrollwheel)</name>
-      <button>4</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/autopilot/settings/heading-bug-deg</property>
-        <step>1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
-      </binding>
-    </action>
-  </animation>
-  
+
+	<animation>
+		<type>knob</type>
+		<object-name>Knob</object-name>
+		<property>instrumentation/nav[0]/radials/selected-deg</property>
+		<factor>10</factor>
+		<offset-deg>0</offset-deg>
+		<interval-sec>0.075</interval-sec>
+		<center>
+			<x-m> 0.00</x-m>
+			<y-m> 0.04</y-m>
+			<z-m>-0.04</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<increase>
+			<binding>
+				<command>property-adjust</command>
+				<property>instrumentation/nav[0]/radials/selected-deg</property>
+				<step>1</step>
+				<min>0</min>
+				<max>360</max>
+				<wrap>true</wrap>
+			</binding>
+		</increase>
+		<decrease>
+			<binding>
+				<command>property-adjust</command>
+				<property>instrumentation/nav[0]/radials/selected-deg</property>
+				<step>-1</step>
+				<min>0</min>
+				<max>360</max>
+				<wrap>true</wrap>
+			</binding>
+		</decrease>
+		<hovered>
+			<binding>
+				<command>set-tooltip</command>
+				<tooltip-id>crs</tooltip-id>
+				<label>Course</label>
+			</binding>
+		</hovered>
+	</animation>
 </PropertyList>

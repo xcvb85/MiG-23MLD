@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <system name="misc">
     <property value="0">fcs/upk-23-trigger1</property>
+    <property value="0">fcs/upk-23-trigger2</property>
     <property value="0">fcs/oxygen</property>
     
     <channel name="UPK-23_1">

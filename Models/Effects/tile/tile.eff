@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>Aircraft/MiG-23MLD/Models/Effects/tile/tile</name>
+  <inherits-from>Effects/model-default</inherits-from>
+
+  <parameters>
+    <!--
+        NOTE: The texture units that correspond to each texture type (e.g.
+        0 for base color, 1 for normal map, etc.) must match the ones in:
+        1. PBR Effect: $FG_ROOT/Effects/model-pbr.eff
+        2. glTF loader: simgear/scene/model/ReaderWriterGLTF.cxx
+        3. PBR animations: simgear/scene/model/SGPBRAnimation.cxx
+    -->
+    <!-- Base Color -->
+    <texture n="0">
+      <type>white</type>
+    </texture>
+    <base-color-factor type="vec4d">1.0 1.0 1.0 1.0</base-color-factor>
+    <!-- Normalmap -->
+    <texture n="1">
+      <type>null-normalmap</type>
+    </texture>
+    <!-- ORM Texture (Occlusion R, Roughness G and Metallic B) -->
+    <texture n="2">
+      <image>Aircraft/MiG-23MLD/Models/Effects/tile/orm.png</image>
+      <type>2d</type>
+      <filter>linear-mipmap-linear</filter>
+      <wrap-s>clamp</wrap-s>
+      <wrap-t>clamp</wrap-t>
+      <internal-format>normalized</internal-format>
+    </texture>
+    <metallic-factor type="float">1.0</metallic-factor>
+    <roughness-factor type="float">1.0</roughness-factor>
+    <!-- Emissive -->
+    <texture n="3">
+      <type>white</type>
+    </texture>
+    <emissive-factor type="vec3d">0.0 0.0 0.0</emissive-factor>
+    <!-- Double Sided -->
+    <cull-face>back</cull-face>
+    <!-- Whether to flip the texture vertically -->
+    <flip-vertically>false</flip-vertically>
+  </parameters>
+
+  <technique n="109">
+    <scheme>hdr-geometry</scheme>
+    <pass>
+      <depth>
+        <enabled>true</enabled>
+        <function>less</function>
+        <write-mask>true</write-mask>
+      </depth>
+      <stencil>
+        <function>always</function>
+        <value>8</value>
+        <pass>replace</pass>
+      </stencil>
+      <texture-unit>
+        <unit>0</unit>
+        <type><use>texture[0]/type</use></type>
+        <image><use>texture[0]/image</use></image>
+        <filter><use>texture[0]/filter</use></filter>
+        <mag-filter><use>texture[0]/mag-filter</use></mag-filter>
+        <wrap-s><use>texture[0]/wrap-s</use></wrap-s>
+        <wrap-t><use>texture[0]/wrap-t</use></wrap-t>
+      </texture-unit>
+      <texture-unit>
+        <unit>1</unit>
+        <type><use>texture[1]/type</use></type>
+        <image><use>texture[1]/image</use></image>
+        <filter><use>texture[1]/filter</use></filter>
+        <mag-filter><use>texture[1]/mag-filter</use></mag-filter>
+        <wrap-s><use>texture[1]/wrap-s</use></wrap-s>
+        <wrap-t><use>texture[1]/wrap-t</use></wrap-t>
+      </texture-unit>
+      <texture-unit>
+        <unit>2</unit>
+        <type><use>texture[2]/type</use></type>
+        <image><use>texture[2]/image</use></image>
+        <filter><use>texture[2]/filter</use></filter>
+        <mag-filter><use>texture[2]/mag-filter</use></mag-filter>
+        <wrap-s><use>texture[2]/wrap-s</use></wrap-s>
+        <wrap-t><use>texture[2]/wrap-t</use></wrap-t>
+      </texture-unit>
+      <texture-unit>
+        <unit>3</unit>
+        <type><use>texture[3]/type</use></type>
+        <image><use>texture[3]/image</use></image>
+        <filter><use>texture[3]/filter</use></filter>
+        <mag-filter><use>texture[3]/mag-filter</use></mag-filter>
+        <wrap-s><use>texture[3]/wrap-s</use></wrap-s>
+        <wrap-t><use>texture[3]/wrap-t</use></wrap-t>
+      </texture-unit>
+      <blend>0</blend>
+      <rendering-hint>opaque</rendering-hint>
+      <cull-face><use>cull-face</use></cull-face>
+      <program>
+        <vertex-shader>Shaders/HDR/model_pbr.vert</vertex-shader>
+        <vertex-shader>Shaders/HDR/logarithmic_depth.glsl</vertex-shader>
+        <fragment-shader>Shaders/HDR/model_pbr.frag</fragment-shader>
+        <fragment-shader>Shaders/HDR/logarithmic_depth.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/gbuffer_pack.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/normal_encoding.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/normalmap.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/color.glsl</fragment-shader>
+      </program>
+      <uniform>
+        <name>base_color_tex</name>
+        <type>sampler-2d</type>
+        <value type="int">0</value>
+      </uniform>
+      <uniform>
+        <name>normal_tex</name>
+        <type>sampler-2d</type>
+        <value type="int">1</value>
+      </uniform>
+      <uniform>
+        <name>orm_tex</name>
+        <type>sampler-2d</type>
+        <value type="int">2</value>
+      </uniform>
+      <uniform>
+        <name>emissive_tex</name>
+        <type>sampler-2d</type>
+        <value type="int">3</value>
+      </uniform>
+      <uniform>
+        <name>base_color_factor</name>
+        <type>float-vec4</type>
+        <value><use>base-color-factor</use></value>
+      </uniform>
+      <uniform>
+        <name>metallic_factor</name>
+        <type>float</type>
+        <value><use>metallic-factor</use></value>
+      </uniform>
+      <uniform>
+        <name>roughness_factor</name>
+        <type>float</type>
+        <value><use>roughness-factor</use></value>
+      </uniform>
+      <uniform>
+        <name>emissive_factor</name>
+        <type>float-vec3</type>
+        <value><use>emissive-factor</use></value>
+      </uniform>
+      <uniform>
+        <name>flip_vertically</name>
+        <type>bool</type>
+        <value><use>flip-vertically</use></value>
+      </uniform>
+    </pass>
+  </technique>
+
+  <technique n="119">
+    <scheme>hdr-shadow</scheme>
+    <pass>
+      <color-mask type="vec4d">0 0 0 0</color-mask>
+      <cull-face>back</cull-face>
+      <blend>0</blend>
+      <polygon-offset>
+        <factor>1.1</factor>
+        <units>4.0</units>
+      </polygon-offset>
+      <program>
+        <vertex-shader>Shaders/HDR/model_shadow.vert</vertex-shader>
+        <fragment-shader>Shaders/HDR/model_shadow.frag</fragment-shader>
+      </program>
+    </pass>
+  </technique>
+</PropertyList>

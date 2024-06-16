@@ -1,9 +1,9 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.000
-MATERIAL "Glass.001" rgb 0.640 0.640 0.640  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.154 0.154 0.154  shi 64 trans 0.800
+MATERIAL "glass" rgb 0.640 0.640 0.640  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.900
 OBJECT world
-name "Blender_exporter_v3.3__DME.ac"
-kids 6
+name "Blender_exporter_v4.1__DME.ac"
+kids 7
 OBJECT poly
 name "bezel"
 data 10
@@ -2070,6 +2070,26 @@ refs 3
 32 0.472931 0.539373
 31 0.842903 0.539373
 0 0.835762 0.611576
+kids 0
+OBJECT poly
+name "flag"
+data 5
+Plane
+crease 40.0
+texture "DME.png"
+numvert 4
+-0 0.01321 0.01326
+0 0.01144 0.01326
+-0 0.01321 -0.01326
+0 0.01144 -0.01326
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0.005542 0.023477
+1 0.005542 0.012794
+3 0.166333 0.012794
+2 0.166333 0.023477
 kids 0
 OBJECT poly
 name "glass"

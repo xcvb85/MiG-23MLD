@@ -65,7 +65,7 @@
         <object-name>canopyE</object-name>
     </effect>
     <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
+        <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>glass1E</object-name>
         <object-name>glass2E</object-name>
     </effect>
@@ -546,6 +546,7 @@
         <type>rotate</type>
         <object-name>canopyE</object-name>
         <object-name>canopyI</object-name>
+        <object-name>glass2E</object-name>
         <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
