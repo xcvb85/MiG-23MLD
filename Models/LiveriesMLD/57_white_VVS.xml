@@ -3,12 +3,12 @@
     <sim>
         <model>
             <livery>
-                <name type="string">VVS 55 White (Afghanistan)</name>
-                <texture>LiveriesMLD/55_white_VVS.png</texture>
+                <name type="string">VVS 57 White (Afghanistan)</name>
+                <texture>LiveriesMLD/57_white_VVS.png</texture>
             </livery>
             <pilotsuit>
                 <name type="string">CamoFlightsuit</name>
-                <texture>pilot_camo.png</texture>
+                <texture>Aircraft/MiG-23MLD/Models/Pilot/Liveries/pilot_camo.png</texture>
             </pilotsuit>
         </model>
     </sim>

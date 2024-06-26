@@ -24,6 +24,18 @@
             <property>sim/multiplay/generic/bool[12]</property>
         </condition>
     </animation>
+    <animation>
+        <type>select</type>
+        <object-name>canopyE</object-name>
+        <object-name>canopyI</object-name>
+        <object-name>glass2E</object-name>
+        <object-name>glass2I</object-name>
+        <condition>
+            <not>
+                <property>controls/ejected</property>
+			</not>
+		</condition>
+    </animation>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/fuselage</inherits-from>
         <object-name>fuselage</object-name>
@@ -63,9 +75,16 @@
         <object-name>speedbrakeLT1</object-name>
         <object-name>speedbrakeRT1</object-name>
         <object-name>canopyE</object-name>
+        <object-name>Droptank</object-name>
+
+        <!-- <object-name>apu-13u2</object-name>
+        <object-name>apu-23m1</object-name>
+        <object-name>apu-60-2</object-name>
+        <object-name>apu-68</object-name>
+        <object-name>hangers</object-name> -->
     </effect>
     <effect>
-        <inherits-from>Effects/model-transparent</inherits-from>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
         <object-name>glass1E</object-name>
         <object-name>glass2E</object-name>
     </effect>
@@ -117,6 +136,7 @@
         <texture-prop>texture</texture-prop>
         <texture>fuzcamo_afg.png</texture>
     </animation>
+
     <!--<model>
     <name>taxi light</name>
     <path>Aircraft/MiG-23MLD/Models/Effects/lights/taxi-light.xml</path>
@@ -126,6 +146,44 @@
     <z-m>-1.620</z-m>
     </offsets>
     </model>-->
+
+    <!-- Pilot -->
+	<model>
+		<path>Aircraft/MiG-23MLD/Models/Pilot/pilot.xml</path>
+		<offsets>
+			<!-- <x-m>-3.32</x-m>
+			<y-m>0.00</y-m>
+			<z-m>2.23</z-m> -->
+			<x-m>-4.663</x-m>
+			<y-m>0.00</y-m>
+			<z-m>-0.269</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+		<condition>
+			<not>
+				<property>/sim/current-view/internal</property>
+			</not>
+            <not>
+                <property>controls/ejected</property>
+			</not>
+		</condition>
+	</model>
+
+	<animation>
+        <type>material</type>
+        <object-name>pilot_body</object-name>
+        <object-name>pilot_head</object-name>
+        <object-name>pilot_helmet</object-name>
+        <object-name>pilot_hands</object-name>
+        <object-name>pilot_boots</object-name>
+        <object-name>pilot_belts</object-name>
+        <object-name>pilot_vest</object-name>
+        <property-base>sim/model/pilotsuit/</property-base>
+        <texture-prop>texture</texture-prop>
+      	<texture>Pilot/Liveries/pilot_camo.png</texture>
+    </animation>
+
+
     <model>
         <name>landing light1</name>
         <path>Aircraft/MiG-23MLD/Models/Effects/lights/landing-light.xml</path>
@@ -546,7 +604,6 @@
         <type>rotate</type>
         <object-name>canopyE</object-name>
         <object-name>canopyI</object-name>
-        <object-name>glass2E</object-name>
         <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
