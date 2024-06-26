@@ -4,7 +4,7 @@
         <expected-aircraft-dir-name>MiG-23MLD</expected-aircraft-dir-name>
         <description>Mikoyan-Gurevich MiG-23MLD</description>
         <variant-id type="int">1</variant-id>
-        <author>Tim Samedov (3D), Daniel Overbeck, Renaud "Wolf" Roquefort (Liveries)</author>
+        <author>Tim Samedov (3D), Daniel Overbeck, Sergei Salyshka (Improvements), Renaud "Wolf" Roquefort (Liveries)</author>
         <long-description>The Mikoyan-Gurevich MiG-23MLD Flogger-K is the ultimate variant of this 3rd generation fighter jet. It has Tumanskiy R35-300 engines and was produced since 1984. This model simulates the Izdeliye 23-18 subvariant (Flogger-K), as well as the export version Izdeliye 23-22 (Flogger-G, same Nato designation as the older MiG-23ML/MLA), which did not receive all aerodynamic updates. The latest subvariants Izdeliye 23-19 (autolanding) or 23-98 (R-27/R-77 compatible) are not included.</long-description>
         <startup>
             <splash-texture>Aircraft/MiG-23MLD/splashMLD.png</splash-texture>

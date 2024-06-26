@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>pilot.ac</path>
+  
+  <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>300</max-m>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>pilot_visor</object-name>
+  </animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>pilot_head</object-name>
+    <object-name>pilot_body</object-name>
+    <object-name>pilot_helmet</object-name>
+    <object-name>pilot_boots</object-name>
+    <object-name>pilot_hands</object-name>
+    <object-name>pilot_vest</object-name>
+    <object-name>pilot_belts</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>pilot_visor</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>pilot_visor</object-name>
+  </animation>
+
+  <animation>
+    <name>AnimeHead</name>
+    <object-name>pilot_visor</object-name>
+    <object-name>pilot_head</object-name>
+    <object-name>pilot_helmet</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pilot_visor</object-name>
+    <property>/canopy/position-norm</property>
+    <factor>45</factor>
+    <center>
+      <x-m> 0.01303 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.64337 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeHead</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -15 </factor> 
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.488 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeHead</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>-25</factor>
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.488 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeHead</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -10.0</factor>
+    <center>
+      <x-m> 0.067 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.488 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation> 
+
+</PropertyList>
+

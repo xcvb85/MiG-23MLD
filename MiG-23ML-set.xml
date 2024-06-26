@@ -5,7 +5,7 @@
         <description>Mikoyan-Gurevich MiG-23ML</description>
         <variant-of>MiG-23MLD</variant-of>
         <variant-id type="int">2</variant-id>
-        <author>Tim Samedov (3D), Daniel Overbeck, Renaud "Wolf" Roquefort (Liveries)</author>
+        <author>Tim Samedov (3D), Daniel Overbeck, Sergei Salyshka (Improvements), Renaud "Wolf" Roquefort (Liveries)</author>
         <long-description>The Mikoyan-Gurevich MiG-23ML Flogger-G is the mid-life upgrade of this 3rd generation fighter jet. It has Tumanskiy R35-300 engines and was produced since 1975.</long-description>
         <startup>
             <splash-texture>Aircraft/MiG-23MLD/splashML.png</splash-texture>

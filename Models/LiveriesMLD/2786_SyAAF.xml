@@ -6,6 +6,10 @@
                 <name type="string">SyAAF 2786</name>
                 <texture>LiveriesMLD/2786_SyAAF.png</texture>
             </livery>
+            <pilotsuit>
+                <name type="string">GreenFlightsuit</name>
+                <texture>Aircraft/MiG-23MLD/Models/Pilot/Liveries/pilot_green.png</texture>
+            </pilotsuit>
         </model>
     </sim>
     <fdm>
