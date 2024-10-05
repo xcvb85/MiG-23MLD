@@ -101,12 +101,16 @@
             </function>
             <output>electric/output/label-lights</output>
         </fcs_function>
-        <switch name="electric/output/landinglight">
-            <default value="0"/>
-            <test logic="AND" value="electric/sources/output-ac">
-                electric/switches/landinglight == 1
-            </test>
-        </switch>
+        <fcs_function name="electric/output/landinglight">
+            <function>
+                <product>
+                    <property>electric/switches/landinglight</property>
+                    <property>electric/sources/output-ac</property>
+                    <value>2600</value>
+                </product>
+            </function>
+            <output>electric/output/label-lights</output>
+        </fcs_function>
         <switch name="electric/output/radio">
             <default value="0"/>
             <test logic="AND" value="electric/sources/output-dc">

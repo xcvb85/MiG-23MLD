@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
-    <name>shaders</name>
-    <inherits-from>/Effects/model-combined-deferred</inherits-from>
-    <parameters>
-        <lightmap-enabled type="int">1</lightmap-enabled>
-        <texture n="3">
-            <image>Aircraft/MiG-23MLD/Models/Effects/instruments/lmWarnings.png</image>
-        </texture>
-    </parameters>
+  <name>lmWarnings</name>
+  <inherits-from>Effects/model-pbr</inherits-from>
+
+  <parameters>
+    <!-- Emissive -->
+    <texture n="3">
+      <image>Aircraft/MiG-23MLD/Models/Effects/instruments/lmWarnings.png</image>
+      <type>2d</type>
+      <filter>linear-mipmap-linear</filter>
+      <wrap-s>clamp</wrap-s>
+      <wrap-t>clamp</wrap-t>
+      <internal-format>normalized</internal-format>
+    </texture>
+    <emissive-factor type="vec3d">2.0 0.8 0.8</emissive-factor>
+  </parameters>
 </PropertyList>

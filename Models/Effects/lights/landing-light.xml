@@ -42,12 +42,10 @@
 			<b>0.8</b>
 			<a>1</a>
 		</color>
-		<intensity>300000</intensity>
+		<intensity><property>fdm/jsbsim/electric/output/landinglight</property></intensity>
+		<dim-factor><property>fdm/jsbsim/electric/output/landinglight</property></dim-factor>
 		<spot-exponent>100</spot-exponent>
 		<spot-cutoff>20</spot-cutoff>
 		<range-m>300</range-m>
-		<dim-factor>
-			<property>fdm/jsbsim/electric/output/landinglight</property>
-		</dim-factor>
 	</light>
 </PropertyList>
