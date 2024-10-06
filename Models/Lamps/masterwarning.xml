@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <path>masterwarning.ac</path>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/masterWarning</inherits-from>
+        <object-name>lampon</object-name>
+    </effect>
     <animation>
         <type>pick</type>
         <object-name>lampon</object-name>

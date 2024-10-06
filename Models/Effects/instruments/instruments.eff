@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+  <name>Effects/instruments</name>
+  <parameters>
+    <emissive-color type="vec3d"> 1.0 0.0 0.0 </emissive-color>
+    <emissive-factor type="float"><use>fdm/jsbsim/electric/output/instrument-lights</use></emissive-factor>
+    <emissive-offset type="float">0.05</emissive-offset>
+  </parameters>
+
+  <technique n="109">
+    <scheme>hdr-geometry</scheme>
+    <pass>
+      <depth>
+        <enabled>true</enabled>
+        <function>less</function>
+        <write-mask>true</write-mask>
+      </depth>
+      <stencil>
+        <function>always</function>
+        <value>8</value>
+        <pass>replace</pass>
+      </stencil>
+      <texture-unit>
+        <unit>0</unit>
+        <type><use>texture[0]/type</use></type>
+        <image><use>texture[0]/image</use></image>
+        <filter><use>texture[0]/filter</use></filter>
+        <mag-filter><use>texture[0]/mag-filter</use></mag-filter>
+        <wrap-s><use>texture[0]/wrap-s</use></wrap-s>
+        <wrap-t><use>texture[0]/wrap-t</use></wrap-t>
+      </texture-unit>
+      <blend>0</blend>
+      <rendering-hint>opaque</rendering-hint>
+      <cull-face><use>cull-face</use></cull-face>
+      <program>
+        <vertex-shader>Shaders/HDR/model_pbr.vert</vertex-shader>
+        <vertex-shader>Shaders/HDR/logarithmic_depth.glsl</vertex-shader>
+        <fragment-shader>Aircraft/MiG-23MLD/Models/Effects/instruments/model_emission.frag</fragment-shader>
+        <fragment-shader>Shaders/HDR/logarithmic_depth.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/gbuffer_pack.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/normal_encoding.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/normalmap.glsl</fragment-shader>
+        <fragment-shader>Shaders/HDR/color.glsl</fragment-shader>
+      </program>
+      <uniform>
+        <name>base_color_tex</name>
+        <type>sampler-2d</type>
+        <value type="int">0</value>
+      </uniform>
+      <uniform>
+        <name>emissive_color</name>
+        <type>float-vec3</type>
+        <value><use>emissive-color</use></value>
+      </uniform>
+      <uniform>
+        <name>emissive_factor</name>
+        <type>float</type>
+        <value><use>emissive-factor</use></value>
+      </uniform>
+      <uniform>
+        <name>emissive_offset</name>
+        <type>float</type>
+        <value><use>emissive-offset</use></value>
+      </uniform>
+    </pass>
+  </technique>
+
+  <technique n="119">
+    <scheme>hdr-shadow</scheme>
+    <pass>
+      <color-mask type="vec4d">0 0 0 0</color-mask>
+      <cull-face>back</cull-face>
+      <blend>0</blend>
+      <polygon-offset>
+        <factor>1.1</factor>
+        <units>4.0</units>
+      </polygon-offset>
+      <program>
+        <vertex-shader>Shaders/HDR/model_shadow.vert</vertex-shader>
+        <fragment-shader>Shaders/HDR/model_shadow.frag</fragment-shader>
+      </program>
+    </pass>
+  </technique>
+</PropertyList>

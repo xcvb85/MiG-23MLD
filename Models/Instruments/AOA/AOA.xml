@@ -7,11 +7,8 @@
         <object-name>glass</object-name>
     </effect>
     <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/instruments</inherits-from>
         <object-name>face</object-name>
-    </effect>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm2</inherits-from>
         <object-name>needleA</object-name>
         <object-name>needleG</object-name>
     </effect>

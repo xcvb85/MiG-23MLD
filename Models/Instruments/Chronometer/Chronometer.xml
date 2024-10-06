@@ -8,16 +8,13 @@
      <object-name>glass</object-name>
  </effect>
  <effect>
-     <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm1</inherits-from>
-     <object-name>face</object-name>
-     <object-name>mode_ind_flag</object-name>
- </effect>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lm3</inherits-from>
-        <object-name>hour_needle</object-name>
-        <object-name>min_needle</object-name>
-        <object-name>sec_needle</object-name>
-    </effect>
+    <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/instruments</inherits-from>
+    <object-name>face</object-name>
+    <object-name>mode_ind_flag</object-name>
+    <object-name>hour_needle</object-name>
+    <object-name>min_needle</object-name>
+    <object-name>sec_needle</object-name>
+  </effect>
 
  <animation>
    <type>material</type>

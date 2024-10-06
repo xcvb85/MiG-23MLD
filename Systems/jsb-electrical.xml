@@ -76,10 +76,11 @@
     <channel name="output">
         <fcs_function name="electric/output/floodlight">
             <function>
-                <min>
+                <product>
                     <property>electric/sources/output-dc</property>
                     <property>electric/switches/floodlight</property>
-                </min>
+                    <value>5</value>
+                </product>
             </function>
             <output>electric/output/floodlight</output>
         </fcs_function>
@@ -109,7 +110,7 @@
                     <value>2600</value>
                 </product>
             </function>
-            <output>electric/output/label-lights</output>
+            <output>electric/output/landinglight</output>
         </fcs_function>
         <switch name="electric/output/radio">
             <default value="0"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
-  <name>lmWarnings</name>
+  <name>masterWarnings</name>
   <inherits-from>Effects/model-pbr</inherits-from>
 
   <parameters>
     <!-- Emissive -->
     <texture n="3">
-      <image>Aircraft/MiG-23MLD/Models/Effects/instruments/lmWarnings.png</image>
+      <image>Aircraft/MiG-23MLD/Models/Lamps/masterwarning.png</image>
       <type>2d</type>
       <filter>linear-mipmap-linear</filter>
       <wrap-s>clamp</wrap-s>

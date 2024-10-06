@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <path>cockpit.ac</path>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/labels</inherits-from>
+        <object-name>labels</object-name>
+    </effect>
     <model>
         <path>Aircraft/MiG-23MLD/Models/Switches.xml</path>
     </model>
@@ -44,16 +48,6 @@
                 <script>libraries.eject();</script>
             </binding>
         </action>
-    </animation>
-    <animation>
-        <type>material</type>
-        <object-name>labels</object-name>
-        <emission>
-            <red>1.0</red>
-            <green>0.3</green>
-            <blue>0.3</blue>
-            <factor-prop>fdm/jsbsim/electric/output/label-lights</factor-prop>
-        </emission>
     </animation>
     <animation>
         <type>rotate</type>
