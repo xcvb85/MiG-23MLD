@@ -37,8 +37,9 @@
                     <table>
                         <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
                         <tableData>
-                            0.0	 0.0
-                            30.0	24.0
+                            0.0     0.0
+                            29.0    0.0
+                            30.0    24.0
                             100.0   28.0
                         </tableData>
                     </table>
@@ -53,8 +54,9 @@
                     <table>
                         <independentVar lookup="row">propulsion/engine[0]/n1</independentVar>
                         <tableData>
-                            0.0	 0.0
-                            30.0	112.0
+                            0.0     0.0
+                            29.0    0.0
+                            30.0    112.0
                             100.0   116.0
                         </tableData>
                     </table>

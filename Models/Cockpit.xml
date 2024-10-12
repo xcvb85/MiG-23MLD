@@ -13,7 +13,7 @@
     </model>
     <model>
         <name>lights1</name>
-        <path>Aircraft/MiG-23MLD/Models/Effects/instruments/cockpit-light.xml</path>
+        <path>Aircraft/MiG-23MLD/Models/Effects/lights/cockpit-light.xml</path>
         <offsets>
             <x-m>-4.83</x-m>
             <y-m> 0.36</y-m>
@@ -177,7 +177,7 @@
     <animation>
         <type>rotate</type>
         <object-name>gearLever</object-name>
-        <property>controls/gear/gear-down</property>
+        <property>fdm/jsbsim/fcs/gear_animation</property>
         <factor>50</factor>
         <axis>
             <x1-m>-5.288</x1-m>
@@ -215,7 +215,7 @@
     <animation>
         <type>rotate</type>
         <object-name>sweepLever</object-name>
-        <property>fdm/jsbsim/fcs/wingsweep-cmd-norm</property>
+        <property>fdm/jsbsim/fcs/wingsweep_animation</property>
         <factor>50</factor>
         <center>
             <x-m>-5.020</x-m>
@@ -320,7 +320,7 @@
     <animation>
         <type>rotate</type>
         <object-name>valve</object-name>
-        <property>fdm/jsbsim/fcs/oxygen</property>
+        <property>fdm/jsbsim/fcs/oxygen_animation</property>
         <factor>-60</factor>
         <center>
             <x-m>-5.168</x-m>
