@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
  <name>fuselage</name>
- <inherits-from>Aircraft/Su-27/Models/Effects/model-pbr-default</inherits-from>
+ <inherits-from>Aircraft/MiG-23MLD/Models/Effects/model-pbr-default</inherits-from>
   <parameters>
     <!-- Base Color -->
     <texture n="0">
