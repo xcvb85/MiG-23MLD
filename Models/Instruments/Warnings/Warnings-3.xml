@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Labels based on MiG-29 version -->
 <PropertyList>
-    <path>warnings2.ac</path>
+    <path>warnings3.gltf</path>
     <model>
         <path>warnings.ac</path>
     </model>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/lmWarnings</inherits-from>
-        <object-name>warnings</object-name>
-    </effect>
     <animation>
         <object-name>warnings</object-name>
         <type>select</type>
@@ -21,33 +17,48 @@
     </animation>
     <animation>
         <object-name>L01</object-name>
-        <type>select</type>
+        <type>pbr</type>
         <condition>
             <greater-than>
                 <property>engines/engine/n1</property>
                 <value>95</value>
             </greater-than>
         </condition>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>15.0</green>
+            <blue>10.0</blue>
+        </emissive-factor>
     </animation>
     <animation>
         <object-name>L02</object-name>
-        <type>select</type>
+        <type>pbr</type>
         <condition>
             <property>engines/engine[0]/augmentation</property>
         </condition>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>15.0</green>
+            <blue>10.0</blue>
+        </emissive-factor>
     </animation>
     <animation>
         <object-name>L04</object-name>
         <object-name>L06</object-name>
-        <type>select</type>
+        <type>pbr</type>
             <greater-than>
                 <property>fdm/jsbsim/electric/output/pump</property>
                 <value>18</value>
             </greater-than>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>15.0</green>
+            <blue>10.0</blue>
+        </emissive-factor>
     </animation>
     <animation>
         <object-name>L05</object-name>
-        <type>select</type>
+        <type>pbr</type>
         <condition>
             <and>
                 <equals>
@@ -60,37 +71,40 @@
                 </equals>
             </and>
         </condition>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>15.0</green>
+            <blue>10.0</blue>
+        </emissive-factor>
     </animation>
     <animation>
         <object-name>L09</object-name>
-        <type>select</type>
+        <type>pbr</type>
         <condition>
             <less-than>
                 <property>engines/engine/n1</property>
                 <value>5</value>
             </less-than>
         </condition>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>5.0</green>
+            <blue>5.0</blue>
+        </emissive-factor>
     </animation>
     <animation>
         <object-name>L10</object-name>
-        <type>select</type>
+        <type>pbr</type>
         <condition>
             <less-than>
                 <property>fdm/jsbsim/electric/sources/ac-gen</property>
                 <value>18</value>
             </less-than>
         </condition>
-    </animation>
-    <animation>
-        <object-name>L03</object-name>
-        <object-name>L07</object-name>
-        <object-name>L08</object-name>
-        <type>select</type>
-        <condition>
-            <greater-than>
-                <value>0</value>
-                <value>1</value>
-            </greater-than>
-        </condition>
+        <emissive-factor>
+            <red>10.0</red>
+            <green>5.0</green>
+            <blue>5.0</blue>
+        </emissive-factor>
     </animation>
 </PropertyList>
