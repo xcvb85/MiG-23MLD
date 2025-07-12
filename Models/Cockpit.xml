@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>cockpit.ac</path>
+    <path>cockpit.gltf</path>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/labels</inherits-from>
         <object-name>labels</object-name>

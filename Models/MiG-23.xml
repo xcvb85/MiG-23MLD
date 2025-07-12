@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>model.ac</path>
+    <path>model.gltf</path>
     <animation>
         <type>select</type>
         <object-name>leadingEdge</object-name>
@@ -33,66 +33,9 @@
         <condition>
             <not>
                 <property>controls/ejected</property>
-			</not>
-		</condition>
+            </not>
+        </condition>
     </animation>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/fuselage/fuselage</inherits-from>
-        <object-name>fuselage</object-name>
-        <object-name>radom</object-name>
-        <object-name>wingL</object-name>
-        <object-name>wingR</object-name>
-        <object-name>flapL</object-name>
-        <object-name>flapR</object-name>
-        <object-name>slatL</object-name>
-        <object-name>slatR</object-name>
-        <object-name>spoilerL</object-name>
-        <object-name>spoilerR</object-name>
-        <object-name>aileronL</object-name>
-        <object-name>aileronR</object-name>
-        <object-name>elevatorL</object-name>
-        <object-name>elevatorR</object-name>
-        <object-name>rudder</object-name>
-        <object-name>fin</object-name>
-        <object-name>noseDoorL1</object-name>
-        <object-name>noseDoorL2</object-name>
-        <object-name>noseDoorR1</object-name>
-        <object-name>noseDoorR2</object-name>
-        <object-name>leftDoor1</object-name>
-        <object-name>leftDoor3</object-name>
-        <object-name>leftGear2</object-name>
-        <object-name>leftGear6</object-name>
-        <object-name>rightDoor1</object-name>
-        <object-name>rightDoor3</object-name>
-        <object-name>rightGear2</object-name>
-        <object-name>rightGear6</object-name>
-        <object-name>intake1L</object-name>
-        <object-name>intake1R</object-name>
-        <object-name>intake2L</object-name>
-        <object-name>intake2R</object-name>
-        <object-name>speedbrakeLB1</object-name>
-        <object-name>speedbrakeRB1</object-name>
-        <object-name>speedbrakeLT1</object-name>
-        <object-name>speedbrakeRT1</object-name>
-        <object-name>canopyE</object-name>
-        <object-name>Droptank</object-name>
-
-        <!-- <object-name>apu-13u2</object-name>
-        <object-name>apu-23m1</object-name>
-        <object-name>apu-60-2</object-name>
-        <object-name>apu-68</object-name>
-        <object-name>hangers</object-name> -->
-    </effect>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-external</inherits-from>
-        <object-name>glass1E</object-name>
-        <object-name>glass2E</object-name>
-    </effect>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/glass/glass-internal</inherits-from>
-        <object-name>glass1I</object-name>
-        <object-name>glass2I</object-name>
-    </effect>
     <animation>
         <type>material</type>
         <object-name>fuselage</object-name>
