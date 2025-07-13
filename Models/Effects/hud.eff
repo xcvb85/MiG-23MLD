@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
 	<name>Effects/hud</name>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <technique n="5">
-        <pass n="0">
-            <blend>
-                <source>one</source>
-                <destination>one</destination>
-                <active type="bool">true</active>
-            </blend>
-        </pass>
-    </technique>
-    <technique n="11">
-        <pass n="0">
-            <blend>
-                <source>one</source>
-                <destination>one</destination>
-                <active type="bool">true</active>
-            </blend>
-        </pass>
-    </technique>
+	<inherits-from>Effects/model-pbr-transparent</inherits-from>
+	<parameters>
+		<emissive-factor type="vec3d"> -750.0 </emissive-factor>
+	</parameters>
 </PropertyList>

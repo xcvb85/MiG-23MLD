@@ -6,7 +6,7 @@ OBJECT world
 name "Blender_exporter_v3.3__ASP-17ML.ac"
 kids 10
 OBJECT poly
-name "glass"
+name "HUD.Glass"
 data 19
 kabina.014.mesh.003
 crease 30.0
