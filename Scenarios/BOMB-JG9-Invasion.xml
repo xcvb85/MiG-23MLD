@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <scenario>
+    <name>Bombable: (EDCP) MiG-23/JG9 - Peenemünde Invasion</name>
+    <description></description>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>aircraft</type>
+      <callsign>Warthog1_20</callsign>
+      <name>Warthog1_20</name>
+      <model type="string">Aircraft/A-10-Bombable/Models/A-10.xml</model>
+      <latitude type="double">54.40</latitude>
+      <longitude type="double">13.60</longitude>
+      <altitude type="double">100</altitude>
+      <speed>270.0</speed>
+      <bank type="double">-10</bank>
+      <heading type="double">160</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>aircraft</type>
+      <callsign>Warthog2_20</callsign>
+      <name>Warthog2_20</name>
+      <model type="string">Aircraft/A-10-Bombable/Models/A-10.xml</model>
+      <latitude type="double">54.40</latitude>
+      <longitude type="double">13.61</longitude>
+      <altitude type="double">100</altitude>
+      <speed>270.0</speed>
+      <bank type="double">-10</bank>
+      <heading type="double">160</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>ferry1_20</callsign>
+      <name>ferry1_20</name>
+      <model type="string">Aircraft/Ferry-Bombable/FerryBoat2.xml</model>
+      <latitude type="double">54.20</latitude>
+      <longitude type="double">13.87</longitude>
+      <altitude>-3</altitude>
+      <speed>25.0</speed>
+      <rudder type="double">-40</rudder>
+      <bank type="double">-40</bank>
+      <heading type="double">200</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>ferry2_20</callsign>
+      <name>ferry2_20</name>
+      <model type="string">Aircraft/Ferry-Bombable/FerryBoat2.xml</model>
+      <latitude type="double">54.21</latitude>
+      <longitude type="double">13.88</longitude>
+      <altitude>-3</altitude>
+      <speed>25.0</speed>
+      <rudder type="double">-40</rudder>
+      <bank type="double">-40</bank>
+      <heading type="double">200</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>ferry3_20</callsign>
+      <name>ferry3_20</name>
+      <model type="string">Aircraft/Ferry-Bombable/FerryBoat2.xml</model>
+      <latitude type="double">54.22</latitude>
+      <longitude type="double">13.89</longitude>
+      <altitude>-3</altitude>
+      <speed>25.0</speed>
+      <rudder type="double">-40</rudder>
+      <bank type="double">-40</bank>
+      <heading type="double">200</heading>
+    </entry>
+  </scenario>
+</PropertyList>
