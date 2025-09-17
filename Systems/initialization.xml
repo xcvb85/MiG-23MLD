@@ -18,6 +18,9 @@
         </jsbsim>
     </fdm>
     <controls>
+        <armament>
+            <master-arm-switch type="int">0</master-arm-switch>
+        </armament>
         <ejected>0</ejected>
         <gear>
             <brake-parking>1</brake-parking>

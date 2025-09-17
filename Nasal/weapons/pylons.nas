@@ -1,3 +1,7 @@
+var ARM_SIM = -1;
+var ARM_OFF = 0;# these 3 are needed by fire-control.
+var ARM_ARM = 1;
+
 print("** Pylon & fire control system started. **");
 # launcher masses are a guess, used to identify type
 var apu23 = 90;
