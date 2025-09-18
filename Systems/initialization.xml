@@ -35,6 +35,9 @@
             <elevator-trim>0.00</elevator-trim>
             <chute_jettisoned type="int">0</chute_jettisoned>
         </flight>
+        <radar>
+            <antennae-knob type="double">0</antennae-knob>
+        </radar>
     </controls>
     <instrumentation>
         <marker-beacon>

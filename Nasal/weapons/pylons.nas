@@ -43,6 +43,7 @@ var pylonSets = {
     fueltank3: {name: "Droptank", content: [fuelTank3], fireOrder: [0], launcherDragArea: 0.35, launcherMass: 531, launcherJettisonable: 1, showLongTypeInsteadOfCount: 1, category: 2},
     mm23:  {name: "23mm Cannon", content: [cannon], fireOrder: [0], launcherDragArea: 0.0, launcherMass: 0, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1},
     upk23: {name: "UPK-23", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 480, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
+    delta: {name: "DELTA Antenna", content: [], fireOrder: [], launcherDragArea: 0.0, launcherMass: 480, launcherJettisonable: 0, showLongTypeInsteadOfCount: 0, category: 1},
 
     # A/A weapons
     R3S:    {name: "R-3S",      content: ["R-3S"], fireOrder: [0], launcherDragArea: -0.025, launcherMass: apu23, launcherJettisonable: 0, showLongTypeInsteadOfCount: 1, category: 1}, # FIXME: actual drag values
@@ -66,7 +67,7 @@ if(variant==1) {
     var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24, pylonSets.kh23];
     var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24];
     var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24];
+    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.R73, pylonSets.f500, pylonSets.s24, pylonSets.delta];
     var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24, pylonSets.kh23];
     var pylon7set = [pylonSets.empty];
 }
@@ -75,7 +76,7 @@ else {
     var pylon2set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32l, pylonSets.s24, pylonSets.kh23];
     var pylon3set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24];
     var pylon4set = [pylonSets.empty, pylonSets.fueltank1];
-    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24];
+    var pylon5set = [pylonSets.empty, pylonSets.R3S, pylonSets.R13M, pylonSets.R60M, pylonSets.s24, pylonSets.delta];
     var pylon6set = [pylonSets.empty, pylonSets.R13M, pylonSets.R24R, pylonSets.R24T, pylonSets.upk23, pylonSets.f500, pylonSets.r500, pylonSets.ub32r, pylonSets.s24, pylonSets.kh23];
     var pylon7set = [pylonSets.empty];
 }
@@ -214,7 +215,7 @@ var ag_kh23 = func {
     if(!getprop("payload/armament/msg") or getprop("gear/gear[0]/wow")) {
         pylon2.loadSet(pylonSets.kh23);
         pylon3.loadSet(pylonSets.empty);
-        pylon5.loadSet(pylonSets.empty);
+        pylon5.loadSet(pylonSets.delta);
         pylon6.loadSet(pylonSets.kh23);
     } else {
         screen.log.write(msgA, 0.5, 0.5, 1);

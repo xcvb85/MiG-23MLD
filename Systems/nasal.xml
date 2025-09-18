@@ -3,6 +3,22 @@
     <vector>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/vector.nas</file>
     </vector>
+    <steerpoints>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/steerpoints.nas</file>
+    </steerpoints>
+    <rcs>
+        <!-- must be before radar -->
+        <file>Aircraft/MiG-23MLD/Nasal/radar/rcs_mand.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/rcs.nas</file>
+    </rcs>
+<!--
+    <datalink>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/datalink.nas</file>
+    </datalink>
+-->
+    <tacview>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/tacview.nas</file>
+    </tacview>
     <notifications>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/ArmamentNotification.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/weapons/GeoBridgedTransmitter.nas</file>
@@ -22,8 +38,9 @@
         <file>Aircraft/MiG-23MLD/Nasal/hud/hud.nas</file>
     </hud>
     <radar_system>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/radar-system-database.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/radar/radar-system.nas</file>
-        <file>Aircraft/MiG-23MLD/Nasal/radar/rwr-only.nas</file>
+        <file>Aircraft/MiG-23MLD/Nasal/radar/saphir-23.nas</file>
         <file>Aircraft/MiG-23MLD/Nasal/radar/rwr.nas</file>
     </radar_system>
     <damage>
