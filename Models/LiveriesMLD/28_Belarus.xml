@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Belarus 28</name>
+                <texture>LiveriesMLD/28_Belarus.png</texture>
+            </livery>
+            <pilotsuit>
+                <name type="string">BlueHelmet</name>
+                <texture>Aircraft/MiG-23MLD/Models/Pilot/Liveries/pilot_blue.png</texture>
+            </pilotsuit>
+        </model>
+    </sim>
+    <fdm>
+        <jsbsim>
+            <fcs>
+                <dogtooth type="bool">1</dogtooth>
+                <vortex-generator type="bool">0</vortex-generator>
+                <cfd type="bool">0</cfd>
+            </fcs>
+        </jsbsim>
+    </fdm>
+</PropertyList>

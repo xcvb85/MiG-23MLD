@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <scenario>
+    <name>Bombable: (OIAX) MiG-23/120IAP - Convoy attack near Bagram</name>
+    <description></description>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep1_20</callsign>
+      <name>jeep1_20</name>
+      <model type="string">Aircraft/jeep-Bombable/Models/Jeep.xml</model>
+      <latitude type="double">34.7770</latitude>
+      <longitude type="double">69.6600</longitude>
+      <altitude>4215</altitude>
+      <speed>6.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">173</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep2_20</callsign>
+      <name>jeep1_20</name>
+      <model type="string">Aircraft/jeep-Bombable/Models/Jeep.xml</model>
+      <latitude type="double">34.7775</latitude>
+      <longitude type="double">69.6600</longitude>
+      <altitude>4215</altitude>
+      <speed>6.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">173</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep3_20</callsign>
+      <name>jeep2_20</name>
+      <model type="string">Aircraft/jeep-Bombable/Models/Jeep.xml</model>
+      <latitude type="double">34.7780</latitude>
+      <longitude type="double">69.6600</longitude>
+      <altitude>4215</altitude>
+      <speed>6.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">173</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep4_20</callsign>
+      <name>jeep1_20</name>
+      <model type="string">Aircraft/jeep-Bombable/Models/Jeep.xml</model>
+      <latitude type="double">34.7785</latitude>
+      <longitude type="double">69.6600</longitude>
+      <altitude>4215</altitude>
+      <speed>6.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">173</heading>
+    </entry>
+    <entry>
+      <search-order>PREFER_AI</search-order>
+      <type>ship</type>
+      <callsign>jeep5_20</callsign>
+      <name>jeep3_20</name>
+      <model type="string">Aircraft/jeep-Bombable/Models/Jeep.xml</model>
+      <latitude type="double">34.7790</latitude>
+      <longitude type="double">69.6600</longitude>
+      <altitude>4215</altitude>
+      <speed>6.0</speed>
+      <rudder type="double">0</rudder>
+      <heading type="double">173</heading>
+    </entry>
+  </scenario>
+</PropertyList>

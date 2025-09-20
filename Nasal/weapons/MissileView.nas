@@ -1,5 +1,4 @@
-print("*** LOADING MissileView.nas ... ***");
-var myModel = ai.AImodel.new();
+#print("*** LOADING MissileView.nas ... ***");
 var missile_view_handler = {
   init: func(node) {
     me.viewN = node;
@@ -46,7 +45,7 @@ var missile_view_handler = {
   _update_: func {
     var self = { callsign: getprop("/sim/multiplay/callsign"), model:,
         node: props.globals, root: '/' };
-    myModel.update();
+    #ai.myModel.update();
     me.list = [self] ~ myModel.get_list();
     if (!me.find(me.current))
       me.select(0);
@@ -66,6 +65,8 @@ var missile_view_handler = {
     setprop("/sim/current-view/z-offset-m", zoffset);
     setprop("/sim/current-view/heading-offset-deg", 110);
     setprop("/sim/current-view/pitch-offset-deg", 30);
+    
+    #print(me.current);
 
     me.viewN.getNode("config").setValues({
       "eye-lat-deg-path": data.root ~ "/position/latitude-deg",
@@ -83,8 +84,15 @@ var missile_view_handler = {
   },
 };
 
+var myModel = ai.AImodel.new();
+myModel.init();
+
+view.manager.register("Missile View",missile_view_handler);
+
+
 var view_firing_missile = func(myMissile)
 {
+
     # We select the missile name
     var myMissileName = string.replace(myMissile.ai.getPath(), "/ai/models/", "");
     if (myMissile.ai.getNode("callsign") != nil and myMissile.ai.getNode("callsign").getValue()!=nil) {
@@ -98,14 +106,8 @@ var view_firing_missile = func(myMissile)
     var data = { node: myMissile.ai, callsign: myMissileName, root: myMissile.ai.getPath()};
 
     # We activate the AI view (on this aircraft it is the number 8)
-    if (getprop("sim/view[8]/name") == "Still View") {# sigh, what a hack..
-        setprop("sim/current-view/view-number",9);
-    } else {
-        setprop("sim/current-view/view-number",8);
-    }
-
+    view.setViewByIndex(101);
+    
     # We feed the handler
-    view.missile_view_handler.setup(data);
+    missile_view_handler.setup(data);
 }
-
-view.manager.register("Missile View", missile_view_handler);

@@ -213,11 +213,6 @@
 
     <propulsion>
         <engine file="Tumansky-R35-300">
-            <location unit="M">
-                <x>  3.0 </x>
-                <y>  0.0 </y>
-                <z> -0.1 </z>
-            </location>
             <feed>0</feed>
             <feed>1</feed>
             <feed>2</feed>
@@ -239,11 +234,6 @@
         </engine>
 
         <engine file="APU-TS21">
-            <location unit="M">
-                <x>  3.0 </x>
-                <y>  0.0 </y>
-                <z> -0.1 </z>
-            </location>
             <feed>0</feed>
             <feed>1</feed>
             <feed>2</feed>
