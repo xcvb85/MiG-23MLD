@@ -5,7 +5,7 @@ var hud_crosshairs = {
 		m.group = canvasGroup;
 		canvas.parsesvg(canvasGroup, "Aircraft/MiG-23MLD/Nasal/hud/hud_crosshairs.svg");
 
-		var svg_keys = ["cross"];
+		var svg_keys = ["cross", "wingspan"];
 		foreach(var key; svg_keys) {
 			m[key] = canvasGroup.getElementById(key);
 		}
@@ -16,6 +16,7 @@ var hud_crosshairs = {
 	update: func()
 	{
 		me.cross.setTranslation(-500*me.Yaw.getValue() or 0, 1500*me.Pitch.getValue() or 0);
+		me.wingspan.setRotation(45);
 	},
 	show: func()
 	{
