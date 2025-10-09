@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <name>glass</name>
+    <inherits-from>Effects/model-pbr-transparent</inherits-from>
+    <parameters>
+        <base-color-factor type="vec4d">0.0 0.0 0.0 0.02</base-color-factor>
+        <roughness-factor type="float">0.1</roughness-factor>
+    </parameters>
+</PropertyList>

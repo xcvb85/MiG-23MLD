@@ -3,7 +3,7 @@
 <PropertyList>
  <path>uvpd-15.ac</path>
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
+    <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/glass</inherits-from>
     <object-name>glass</object-name>
   </effect>
     <effect>
