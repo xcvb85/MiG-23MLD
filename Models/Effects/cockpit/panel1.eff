@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+  <name>panel1</name>
+  <inherits-from>Effects/model-pbr</inherits-from>
+
+  <parameters>
+    <!--
+        NOTE: The texture units that correspond to each texture type (e.g.
+        0 for base color, 1 for normal map, etc.) must match the ones in:
+        1. PBR Effect: $FG_ROOT/Effects/model-pbr.eff
+        2. glTF loader: simgear/scene/model/ReaderWriterGLTF.cxx
+        3. PBR animations: simgear/scene/model/SGPBRAnimation.cxx
+        4. Canvas: flightgear/src/Canvas/texture_replace.cxx
+    -->
+    <!-- Base Color -->
+    <texture n="0">
+      <type>white</type>
+    </texture>
+    <base-color-factor type="vec4d">1.0 1.0 1.0 1.0</base-color-factor>
+    <!-- Normalmap -->
+    <texture n="1">
+      <image>Aircraft/MiG-23MLD/Models/Effects/cockpit/panel1-normal.png</image>
+      <type>2d</type>
+    </texture>
+    <!-- ORM Texture (Occlusion R, Roughness G and Metallic B) -->
+    <texture n="2">
+      <type>white</type>
+    </texture>
+    <metallic-factor type="float">0.0</metallic-factor>
+    <roughness-factor type="float">0.5</roughness-factor>
+    <!-- Emissive -->
+    <texture n="3">
+      <type>white</type>
+    </texture>
+    <emissive-factor type="vec3d">0.0 0.0 0.0</emissive-factor>
+    <!-- Double Sided -->
+    <cull-face>back</cull-face>
+    <!-- Whether to flip the texture vertically -->
+    <flip-vertically>false</flip-vertically>
+  </parameters>
+</PropertyList>

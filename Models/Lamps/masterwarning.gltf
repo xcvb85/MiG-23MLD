@@ -30,7 +30,6 @@
     ],
     "materials" : [
         {
-            "doubleSided" : true,
             "name" : "off",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
@@ -41,7 +40,6 @@
             }
         },
         {
-            "doubleSided" : true,
             "emissiveFactor" : [
                 10,
                 1,

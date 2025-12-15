@@ -10,7 +10,7 @@
         <object-name>HUD_Screen</object-name>
     </effect>
     <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/joystick</inherits-from>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/metal</inherits-from>
         <object-name>hud</object-name>
         <object-name>knob</object-name>
     </effect>

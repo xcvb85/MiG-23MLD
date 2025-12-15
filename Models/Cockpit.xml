@@ -2,24 +2,26 @@
 <PropertyList>
     <path>cockpit.ac</path>
     <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/panel</inherits-from>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/joystick</inherits-from>
+        <object-name>joystick</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/panel1</inherits-from>
         <object-name>kabina.001</object-name>
         <object-name>kabina.003</object-name>
         <object-name>kabina.292</object-name>
+    </effect>
+    <effect>
+        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/panel2</inherits-from>
+        <object-name>throttle</object-name>
         <object-name>pedalLeft</object-name>
         <object-name>pedalRight</object-name>
         <object-name>kabina.015</object-name>
-        <object-name>kabina.007</object-name>
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/metal</inherits-from>
         <object-name>kabina.008</object-name>
         <object-name>valve</object-name>
-    </effect>
-    <effect>
-        <inherits-from>Aircraft/MiG-23MLD/Models/Effects/cockpit/joystick</inherits-from>
-        <object-name>joystick</object-name>
-        <object-name>throttle</object-name>
     </effect>
     <effect>
         <inherits-from>Aircraft/MiG-23MLD/Models/Effects/instruments/labels</inherits-from>

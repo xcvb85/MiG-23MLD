@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
-  <name>joystick</name>
-  <inherits-from>Aircraft/MiG-23MLD/Models/Effects/model-pbr-bump</inherits-from>
+  <name>panel1</name>
+  <inherits-from>Effects/model-pbr</inherits-from>
 
   <parameters>
     <!--
@@ -19,7 +19,8 @@
     <base-color-factor type="vec4d">1.0 1.0 1.0 1.0</base-color-factor>
     <!-- Normalmap -->
     <texture n="1">
-      <type>null-normalmap</type>
+      <image>Aircraft/MiG-23MLD/Models/Effects/cockpit/panel1-normal.png</image>
+      <type>2d</type>
     </texture>
     <!-- ORM Texture (Occlusion R, Roughness G and Metallic B) -->
     <texture n="2">
